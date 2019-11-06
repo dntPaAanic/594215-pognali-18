@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виталий Кондрашин](https://up.htmlacademy.ru/adaptive/18/user/594215).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Аверин](https://htmlacademy.ru/profile/id1061531).
 
 ---
 
