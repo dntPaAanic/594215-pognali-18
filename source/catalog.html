@@ -1,272 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Погнали</title>
-</head>
-<body>
-<header class="page-header">
-  <nav class="page-header__nav main-nav">
-    <div class="page-header__wrapper">
-      <div class="main-nav__wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/100x19" alt="Погнали?" width="100" height="19">
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="page-header__nav main-nav">
+        <div class="page-header__wrapper">
+          <div class="main-nav__wrapper">
+            <a class="page-header__logo">
+              <img class="page-header__logo-image" src="https://via.placeholder.com/100x19" alt="Погнали?" width="100" height="19">
+            </a>
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
+          <div class="main-nav__nav-wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html" class="site-list__link"><span class="site-list__text" data-hover="О сервисе">О сервисе</span></a></li>
+              <li class="site-list__item">
+                <a href="form.html" class="site-list__link"><span class="site-list__text" data-hover="Направления">Направления</span></a></li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--current"><span class="site-list__text" data-hover="Попутчики">Попутчики</span></a></li>
+            </ul>
+
+            <a href="#" class="main-nav__button button">Авторизация</a>
+
+            <ul class="main-nav__contact-list contact-list">
+              <li class="contact-list__item"><a href="tel:+78005558628" class="contact-list__tel">8 800 555-86-28</a></li>
+              <li class="contact-list__item"><a href="mailto:mail@htmlacademy.ru" class="contact-list__email">mail@htmlacademy.ru</a></li>
+            </ul>
+
+            <ul class="main-nav__social-list social-list">
+              <li class="social-list__item"><a href="#" class="social-list__link social-list__link--fb">"Погнали" в фейсбуке</a></li>
+              <li class="social-list__item"><a href="#" class="social-list__link social-list__link--vk">"Погнали" в вконтакте</a></li>
+              <li class="social-list__item"><a href="#" class="social-list__link social-list__link--in">"Погнали" в инстаграме</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main catalog">
+      <h1 class="visually-hidden">"Погнали?" - сервис для поиска попутчиков для путешествий</h1>
+
+      <div class="catalog__wrapper">
+        <div class="catalog__inner">
+          <section class="companions-filter"></section>
+          <div class="catalog__companions">
+            <section class="companions companions--catalog">
+              <h2 class="visually-hidden">Попутчики для путешествий</h2>
+              <div class="companions__list">
+                <figure class="companions__item user">
+                  <h3 class="user__name"><a href="#" class="user__name-link">Таня Фирсова</a></h3>
+                  <p class="user__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                  <a href="#" class="user__image-link">
+                    <img src="https://via.placeholder.com/70x70" alt="Фотография Тани Фирсовой" class="user__image" width="70" height="70">
+                  </a>
+                  <button class="user__like user__like--checked" type="button" title="Мне нравится"><span class="user__like-stat">1,5 М</span></button>
+                  <p class="user__destination-text">хочет посетить:</p>
+                  <ul class="user__country-icon-list country-icon">
+                    <li class="country-icon__item">
+                      <img src="https://via.placeholder.com/26x18" alt="Флаш Шри Ланки" class="country-icon__image" width="26" height="18">
+                      <p class="country-icon__tooltip">Шри Ланка</p>
+                    </li>
+                    <li class="country-icon__item">
+                      <img src="https://via.placeholder.com/26x18" alt="Флаг Таиланда" class="country-icon__image" width="26" height="18">
+                      <p class="country-icon__tooltip">Таиланд</p>
+                    </li>
+                    <li class="country-icon__item">
+                      <img src="https://via.placeholder.com/26x18" alt="Флаг Сейшел" class="country-icon__image" width="26" height="18">
+                      <p class="country-icon__tooltip">Сейшелы</p>
+                    </li>
+                  </ul>
+                  <p class="user__travel-text">транспорт:</p>
+                  <ul class="user__travel-type travel-type">
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Авиаперелет" class="travel-type__image travel-type__image--checked" width="19" height="21">
+                      <p class="travel-type__tooltip">Авиаперелет</p>
+                    </li>
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Автотранспорт" class="travel-type__image" width="19" height="21">
+                      <p class="travel-type__tooltip">Автотранспорт</p>
+                    </li>
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Велосипед" class="travel-type__image" width="19" height="21">
+                      <p class="travel-type__tooltip">Велосипед</p>
+                    </li>
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Пешком" class="travel-type__image" width="19" height="21">
+                      <p class="travel-type__tooltip">Пешком</p>
+                    </li>
+                  </ul>
+                  <div class="user__level">
+                    <p class="user__level-text">левел:</p>
+                    99
+                  </div>
+                  <a href="#" class="user__invite-button">Позвать!</a>
+                </figure>
+
+                <figure class="companions__item user">
+                  <h3 class="user__name"><a href="" class="user__name-link">Петя Демин</a></h3>
+                  <p class="user__tags">#бургер #бар #футбол #концерт #крафт</p>
+                  <a href="#" class="user__image-link">
+                    <img src="https://via.placeholder.com/70x70" alt="Фотография Пети Демина" class="user__image"></a>
+                  <button class="user__like"><span class="user__like-stat">150</span></button>
+                  <p class="user__destination-text">хочет посетить:</p>
+                  <ul class="user__country-icon-list country-icon">
+                    <li class="country-icon__item">
+                      <img src="https://via.placeholder.com/26x18" alt="Флаг Бельгии" class="country-icon__image">
+                      <p class="country-icon__tooltip">Бельгия</p>
+                    </li>
+                    <li class="country-icon__item">
+                      <img src="https://via.placeholder.com/26x18" alt="Флаг Чехии" class="country-icon__image">
+                      <p class="country-icon__tooltip">Чехия</p>
+                    </li>
+                  </ul>
+                  <p class="user__travel-text">транспорт:</p>
+                  <ul class="user__travel-type travel-type">
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Авиаперелет" class="travel-type__image travel-type__image--checked" width="19" height="21">
+                      <p class="travel-type__tooltip">Авиаперелет</p>
+                    </li>
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Автотранспорт" class="travel-type__image travel-type__image--checked" width="19" height="21">
+                      <p class="travel-type__tooltip">Автотранспорт</p>
+                    </li>
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Велосипед" class="travel-type__image" width="19" height="21">
+                      <p class="travel-type__tooltip">Велосипед</p>
+                    </li>
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Пешком" class="travel-type__image travel-type__image--checked" width="19" height="21">
+                      <p class="travel-type__tooltip">Пешком</p>
+                    </li>
+                  </ul>
+                  <div class="user__level">
+                    <p class="user__level-text">левел:</p>
+                    80
+                  </div>
+                  <a href="#" class="user__invite-button">Позвать!</a>
+                </figure>
+
+                <figure class="companions__item user">
+                  <h3 class="user__name"><a href="#" class="user__name-link">Марк Смолов</a></h3>
+                  <p class="user__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+                  <a href="" class="user__image-link">
+                    <img src="https://via.placeholder.com/70x70" alt="Фотография Марка Смолова" class="user__image"></a>
+                  <button class="user__like"><span class="user__like-stat">1700</span></button>
+                  <p class="user__destination-text">хочет посетить:</p>
+                  <ul class="user__country-icon-list country-icon">
+                    <li class="country-icon__item">
+                      <img src="https://via.placeholder.com/26x18" alt="Флаг США" class="country-icon__image">
+                      <p class="country-icon__tooltip">США</p>
+                    </li>
+                    <li class="country-icon__item">
+                      <img src="https://via.placeholder.com/26x18" alt="Флаг Австралии" class="country-icon__image">
+                      <p class="country-icon__tooltip">Австралия</p>
+                    </li>
+                    <li class="country-icon__item">
+                      <img src="https://via.placeholder.com/26x18" alt="Флаг Доминикан" class="country-icon__image">
+                      <p class="country-icon__tooltip">Доминикана</p>
+                    </li>
+                  </ul>
+                  <p class="user__travel-text">транспорт:</p>
+                  <ul class="user__travel-type travel-type">
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Авиаперелет" class="travel-type__image travel-type__image--checked" width="19" height="21">
+                      <p class="travel-type__tooltip">Авиаперелет</p>
+                    </li>
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Автотранспорт" class="travel-type__image" width="19" height="21">
+                      <p class="travel-type__tooltip">Автотранспорт</p>
+                    </li>
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Велосипед" class="travel-type__image travel-type__image--checked" width="19" height="21">
+                      <p class="travel-type__tooltip">Велосипед</p>
+                    </li>
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Пешком" class="travel-type__image" width="19" height="21">
+                      <p class="travel-type__tooltip">Пешком</p>
+                    </li>
+                  </ul>
+                  <div class="user__level">
+                    <p class="user__level-text">левел:</p>
+                    25
+                  </div>
+                  <a href="#" class="user__invite-button">Позвать!</a>
+                </figure>
+
+                <figure class="companions__item user">
+                  <h3 class="user__name"><a href="#" class="user__name-link">Лариса Роговая</a></h3>
+                  <p class="user__tags">#образование #карьера #учеба #линкедин</p>
+                  <a href="#" class="user__image-link">
+                    <img src="https://via.placeholder.com/70x70" alt="" class="user__image"></a>
+                  <button class="user__like"><span class="user__like-stat">23</span></button>
+                  <p class="user__destination-text">хочет посетить:</p>
+                  <ul class="user__country-icon-list country-icon">
+                    <li class="country-icon__item">
+                      <img src="https://via.placeholder.com/26x18" alt="Флаг Великобритании" class="country-icon__image">
+                      <p class="country-icon__tooltip">Великобритания</p>
+                    </li>
+                    <li class="country-icon__item">
+                      <img src="https://via.placeholder.com/26x18" alt="Флаг Германии" class="country-icon__image">
+                      <p class="country-icon__tooltip">Германия</p>
+                    </li>
+                  </ul>
+                  <p class="user__travel-text">транспорт:</p>
+                  <ul class="user__travel-type travel-type">
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Авиаперелет" class="travel-type__image travel-type__image--checked" width="19" height="21">
+                      <p class="travel-type__tooltip">Авиаперелет</p>
+                    </li>
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Автотранспорт" class="travel-type__image travel-type__image--checked" width="19" height="21">
+                      <p class="travel-type__tooltip">Автотранспорт</p>
+                    </li>
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Велосипед" class="travel-type__image" width="19" height="21">
+                      <p class="travel-type__tooltip">Велосипед</p>
+                    </li>
+                    <li class="travel-type__item">
+                      <img src="https://via.placeholder.com/19x21" alt="Пешком" class="travel-type__image" width="19" height="21">
+                      <p class="travel-type__tooltip">Пешком</p>
+                    </li>
+                  </ul>
+                  <div class="user__level">
+                    <p class="user__level-text">левел:</p>
+                    50
+                  </div>
+                  <a href="#" class="user__invite-button">Позвать!</a>
+                </figure>
+              </div>
+
+              <a href="#" class="companions__load-more">Показать еще</a>
+
+              <div class="pagination">
+                <ul class="pagination__arrows">
+                  <li class="pagination__item"><a href="#" class="pagination__prev">Показать предыдущую страницу</a></li>
+                  <li class="pagination__item"><a href="#" class="pagination__next">Показать следующую страницу</a></li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
-      <div class="main-nav__nav-wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html" class="site-list__link"><span class="site-list__text" data-hover="О сервисе">О сервисе</span></a></li>
-          <li class="site-list__item">
-            <a href="form.html" class="site-list__link"><span class="site-list__text" data-hover="Направления">Направления</span></a></li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--current"><span class="site-list__text" data-hover="Попутчики">Попутчики</span></a></li>
-        </ul>
+    </main>
 
-        <a href="#" class="main-nav__button button">Авторизация</a>
 
-        <ul class="main-nav__contact-list contact-list">
-          <li class="contact-list__item"><a href="tel:+78005558628" class="contact-list__tel">8 800 555-86-28</a></li>
-          <li class="contact-list__item"><a href="mailto:mail@htmlacademy.ru" class="contact-list__email">mail@htmlacademy.ru</a></li>
-        </ul>
-
-        <ul class="main-nav__social-list social-list">
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img src="https://via.placeholder.com/100x19" alt="Логотип Погнали" class="page-footer__logo-image">
+        </a>
+        <ul class="page-footer__social-list social-list">
           <li class="social-list__item"><a href="#" class="social-list__link social-list__link--fb">"Погнали" в фейсбуке</a></li>
           <li class="social-list__item"><a href="#" class="social-list__link social-list__link--vk">"Погнали" в вконтакте</a></li>
           <li class="social-list__item"><a href="#" class="social-list__link social-list__link--in">"Погнали" в инстаграме</a></li>
         </ul>
+
+        <div class="page-footer__developer">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">Разработано
+            <img src="https://via.placeholder.com/27x34" alt="Значок HTML Academy" class="page-footer__developer-image" width="27" height="34"></a>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
+    </footer>
 
-<main class="page-main catalog">
-  <h1 class="visually-hidden">"Погнали?" - сервис для поиска попутчиков для путешествий</h1>
-
-  <div class="catalog__wrapper">
-    <div class="catalog__inner">
-      <section class="companions-filter"></section>
-      <div class="catalog__companions">
-        <section class="companions companions--catalog">
-          <h2 class="visually-hidden">Попутчики для путешествий</h2>
-          <div class="companions__list">
-            <figure class="companions__item user">
-              <h3 class="user__name"><a href="#" class="user__name-link">Таня Фирсова</a></h3>
-              <p class="user__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-              <a href="#" class="user__image-link">
-                <img src="https://via.placeholder.com/70x70" alt="Фотография Тани Фирсовой" class="user__image" width="70" height="70">
-              </a>
-              <button class="user__like user__like--checked" type="button" title="Мне нравится"><span class="user__like-stat">1,5 М</span></button>
-              <p class="user__destination-text">хочет посетить:</p>
-              <ul class="user__country-icon-list country-icon">
-                <li class="country-icon__item">
-                  <img src="https://via.placeholder.com/26x18" alt="Флаш Шри Ланки" class="country-icon__image" width="26" height="18">
-                  <p class="country-icon__tooltip">Шри Ланка</p>
-                </li>
-                <li class="country-icon__item">
-                  <img src="https://via.placeholder.com/26x18" alt="Флаг Таиланда" class="country-icon__image" width="26" height="18">
-                  <p class="country-icon__tooltip">Таиланд</p>
-                </li>
-                <li class="country-icon__item">
-                  <img src="https://via.placeholder.com/26x18" alt="Флаг Сейшел" class="country-icon__image" width="26" height="18">
-                  <p class="country-icon__tooltip">Сейшелы</p>
-                </li>
-              </ul>
-              <p class="user__travel-text">транспорт:</p>
-              <ul class="user__travel-type travel-type">
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Авиаперелет" class="travel-type__image travel-type__image--checked" width="19" height="21">
-                  <p class="travel-type__tooltip">Авиаперелет</p>
-                </li>
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Автотранспорт" class="travel-type__image" width="19" height="21">
-                  <p class="travel-type__tooltip">Автотранспорт</p>
-                </li>
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Велосипед" class="travel-type__image" width="19" height="21">
-                  <p class="travel-type__tooltip">Велосипед</p>
-                </li>
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Пешком" class="travel-type__image" width="19" height="21">
-                  <p class="travel-type__tooltip">Пешком</p>
-                </li>
-              </ul>
-              <div class="user__level">
-                <p class="user__level-text">левел:</p>
-                99
-              </div>
-              <a href="#" class="user__invite-button">Позвать!</a>
-            </figure>
-
-            <figure class="companions__item user">
-              <h3 class="user__name"><a href="" class="user__name-link">Петя Демин</a></h3>
-              <p class="user__tags">#бургер #бар #футбол #концерт #крафт</p>
-              <a href="#" class="user__image-link">
-                <img src="https://via.placeholder.com/70x70" alt="Фотография Пети Демина" class="user__image"></a>
-              <button class="user__like"><span class="user__like-stat">150</span></button>
-              <p class="user__destination-text">хочет посетить:</p>
-              <ul class="user__country-icon-list country-icon">
-                <li class="country-icon__item">
-                  <img src="https://via.placeholder.com/26x18" alt="Флаг Бельгии" class="country-icon__image">
-                  <p class="country-icon__tooltip">Бельгия</p>
-                </li>
-                <li class="country-icon__item">
-                  <img src="https://via.placeholder.com/26x18" alt="Флаг Чехии" class="country-icon__image">
-                  <p class="country-icon__tooltip">Чехия</p>
-                </li>
-              </ul>
-              <p class="user__travel-text">транспорт:</p>
-              <ul class="user__travel-type travel-type">
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Авиаперелет" class="travel-type__image travel-type__image--checked" width="19" height="21">
-                  <p class="travel-type__tooltip">Авиаперелет</p>
-                </li>
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Автотранспорт" class="travel-type__image travel-type__image--checked" width="19" height="21">
-                  <p class="travel-type__tooltip">Автотранспорт</p>
-                </li>
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Велосипед" class="travel-type__image" width="19" height="21">
-                  <p class="travel-type__tooltip">Велосипед</p>
-                </li>
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Пешком" class="travel-type__image travel-type__image--checked" width="19" height="21">
-                  <p class="travel-type__tooltip">Пешком</p>
-                </li>
-              </ul>
-              <div class="user__level">
-                <p class="user__level-text">левел:</p>
-                80
-              </div>
-              <a href="#" class="user__invite-button">Позвать!</a>
-            </figure>
-
-            <figure class="companions__item user">
-              <h3 class="user__name"><a href="#" class="user__name-link">Марк Смолов</a></h3>
-              <p class="user__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
-              <a href="" class="user__image-link">
-                <img src="https://via.placeholder.com/70x70" alt="Фотография Марка Смолова" class="user__image"></a>
-              <button class="user__like"><span class="user__like-stat">1700</span></button>
-              <p class="user__destination-text">хочет посетить:</p>
-              <ul class="user__country-icon-list country-icon">
-                <li class="country-icon__item">
-                  <img src="https://via.placeholder.com/26x18" alt="Флаг США" class="country-icon__image">
-                  <p class="country-icon__tooltip">США</p>
-                </li>
-                <li class="country-icon__item">
-                  <img src="https://via.placeholder.com/26x18" alt="Флаг Австралии" class="country-icon__image">
-                  <p class="country-icon__tooltip">Австралия</p>
-                </li>
-                <li class="country-icon__item">
-                  <img src="https://via.placeholder.com/26x18" alt="Флаг Доминикан" class="country-icon__image">
-                  <p class="country-icon__tooltip">Доминикана</p>
-                </li>
-              </ul>
-              <p class="user__travel-text">транспорт:</p>
-              <ul class="user__travel-type travel-type">
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Авиаперелет" class="travel-type__image travel-type__image--checked" width="19" height="21">
-                  <p class="travel-type__tooltip">Авиаперелет</p>
-                </li>
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Автотранспорт" class="travel-type__image" width="19" height="21">
-                  <p class="travel-type__tooltip">Автотранспорт</p>
-                </li>
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Велосипед" class="travel-type__image travel-type__image--checked" width="19" height="21">
-                  <p class="travel-type__tooltip">Велосипед</p>
-                </li>
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Пешком" class="travel-type__image" width="19" height="21">
-                  <p class="travel-type__tooltip">Пешком</p>
-                </li>
-              </ul>
-              <div class="user__level">
-                <p class="user__level-text">левел:</p>
-                25
-              </div>
-              <a href="#" class="user__invite-button">Позвать!</a>
-            </figure>
-
-            <figure class="companions__item user">
-              <h3 class="user__name"><a href="#" class="user__name-link">Лариса Роговая</a></h3>
-              <p class="user__tags">#образование #карьера #учеба #линкедин</p>
-              <a href="#" class="user__image-link">
-                <img src="https://via.placeholder.com/70x70" alt="" class="user__image"></a>
-              <button class="user__like"><span class="user__like-stat">23</span></button>
-              <p class="user__destination-text">хочет посетить:</p>
-              <ul class="user__country-icon-list country-icon">
-                <li class="country-icon__item">
-                  <img src="https://via.placeholder.com/26x18" alt="Флаг Великобритании" class="country-icon__image">
-                  <p class="country-icon__tooltip">Великобритания</p>
-                </li>
-                <li class="country-icon__item">
-                  <img src="https://via.placeholder.com/26x18" alt="Флаг Германии" class="country-icon__image">
-                  <p class="country-icon__tooltip">Германия</p>
-                </li>
-              </ul>
-              <p class="user__travel-text">транспорт:</p>
-              <ul class="user__travel-type travel-type">
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Авиаперелет" class="travel-type__image travel-type__image--checked" width="19" height="21">
-                  <p class="travel-type__tooltip">Авиаперелет</p>
-                </li>
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Автотранспорт" class="travel-type__image travel-type__image--checked" width="19" height="21">
-                  <p class="travel-type__tooltip">Автотранспорт</p>
-                </li>
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Велосипед" class="travel-type__image" width="19" height="21">
-                  <p class="travel-type__tooltip">Велосипед</p>
-                </li>
-                <li class="travel-type__item">
-                  <img src="https://via.placeholder.com/19x21" alt="Пешком" class="travel-type__image" width="19" height="21">
-                  <p class="travel-type__tooltip">Пешком</p>
-                </li>
-              </ul>
-              <div class="user__level">
-                <p class="user__level-text">левел:</p>
-                50
-              </div>
-              <a href="#" class="user__invite-button">Позвать!</a>
-            </figure>
-          </div>
-
-          <a href="#" class="companions__load-more">Показать еще</a>
-
-          <div class="pagination">
-            <ul class="pagination__arrows">
-              <li class="pagination__item"><a href="#" class="pagination__prev">Показать предыдущую страницу</a></li>
-              <li class="pagination__item"><a href="#" class="pagination__next">Показать следующую страницу</a></li>
-            </ul>
-          </div>
-        </section>
-      </div>
-    </div>
-  </div>
-</main>
-
-
-<footer class="page-footer">
-  <div class="page-footer__wrapper">
-    <a class="page-footer__logo">
-      <img src="https://via.placeholder.com/100x19" alt="Логотип Погнали" class="page-footer__logo-image">
-    </a>
-    <ul class="page-footer__social-list social-list">
-      <li class="social-list__item"><a href="#" class="social-list__link social-list__link--fb">"Погнали" в фейсбуке</a></li>
-      <li class="social-list__item"><a href="#" class="social-list__link social-list__link--vk">"Погнали" в вконтакте</a></li>
-      <li class="social-list__item"><a href="#" class="social-list__link social-list__link--in">"Погнали" в инстаграме</a></li>
-    </ul>
-
-    <div class="page-footer__developer">
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">Разработано
-        <img src="https://via.placeholder.com/27x34" alt="Значок HTML Academy" class="page-footer__developer-image" width="27" height="34"></a>
-    </div>
-  </div>
-</footer>
-
-</body>
+  </body>
 </html>
