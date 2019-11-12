@@ -53,7 +53,7 @@
         <div class="introduce__wrapper">
           <b class="introduce__lead">В путешествие с крутыми попутчиками!</b>
           <div class="introduce__inner">
-            <ul class="contact-list">
+            <ul class="introduce__contact-list contact-list">
               <li class="contact-list__item"><a href="tel:+78005558628" class="contact-list__tel"></a></li>
               <li class="contact-list__item"><a href="mailto:mail@htmlacademy.ru" class="contact-list__email"></a></li>
             </ul>
@@ -256,10 +256,49 @@
           <a href="#" class="price-list__button">Показать тарифы для бизнеса</a>
         </div>
       </section>
+
+      <section class="registration">
+        <div class="registration__wrapper">
+          <h2 class="visually-hidden">Регистрация и авторизация</h2>
+          <b class="registration__lead">Заинтересовались?</b>
+          <p class="registration__description">Зарегистрируйтесь,
+            это быстро и бесплатно!
+            Уже зарегистрированы? Тогда скорее <a href="#" class="registration__login">авторизуйтесь.</a>
+          </p>
+          <form action="https://echo.htmlacademy.ru" class="registration__form" method="post">
+            <label for="registration__email" class="visually-hidden">Регистрация</label>
+            <input type="email" class="registration__email" id="registration__email" placeholder="E-mail" required>
+            <button class="registration__button" type="submit">Зарегистрироваться</button>
+          </form>
+
+          <div class="registration__contacts">
+            <p class="registration_contacts-description">
+              Остались вопросы?
+              Мы с радостью на них ответим!
+            </p>
+            <ul class="registration__contact-list contact-list">
+              <li class="contact-list__item"><a href="tel:+78005558628" class="contact-list__tel">8 800 555-86-28</a></li>
+              <li class="contact-list__item"><a href="mailto:mail@htmlacademy.ru" class="contact-list__email">mail@htmlacademy.ru</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="office">
+        <div class="office__wrapper">
+          <h2 class="visually-hidden">Наш адрес</h2>
+          <address class="office__address">ул. Большая Конюшенная, 19/8</address>
+          <a class="office__pathfinder-button button" href="https://vk.cc/9EjRwa">Проложить маршрут</a>
+        </div>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Мы на карте</h2>
+        <div class="map__wrapper">
+          <img class="map__image" src="https://via.placeholder.com/320x546" width="320" height="546" alt="ул. Большая Конюшенная, 19/8">
+        </div>
+      </section>
     </main>
-
-
-
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
