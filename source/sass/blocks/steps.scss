@@ -2,6 +2,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  counter-reset: list;
 }
 
 .steps__item {
@@ -34,4 +35,5 @@
   background-color: $color-background-gold;
   min-height: 80px;
   border-radius: 10px;
+  margin-bottom: 0;
 }
