@@ -1,0 +1,16 @@
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list__item {
+  color: $color-text-dark-blue;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact-list__link {
+  text-decoration: none;
+  color: $color-text-grey-blue;
+}
