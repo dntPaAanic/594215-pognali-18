@@ -1,0 +1,52 @@
+.registration {
+  position: relative;
+  z-index: 2;
+
+  overflow: hidden;
+
+  background-color: $color-background-main;
+  border-radius: 0 0 30px 30px;
+
+  @include container;
+}
+
+.registration--index {
+  margin-top: -30px;
+}
+
+.registration__wrapper {
+  padding-top: 100px;
+  padding-bottom: 30px;
+
+  text-align: center;
+}
+
+.registration__description {
+  font-weight: 300;
+}
+
+.registration__login {
+  color: $color-text-gold;
+  text-decoration: none;
+
+  border-bottom: 1px solid rgba($color-text-gold, 0.6);
+
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $color-background-vivid-orange;
+
+    border-bottom: 1px solid rgba($color-background-vivid-orange, 0.6);
+  }
+
+  &:active {
+    color: $color-background-vivid-orange;
+
+    border-bottom: 1px solid rgba($color-background-vivid-orange, 0.3);
+  }
+}
+
+.registration__contacts-description {
+  font-weight: 300;
+}

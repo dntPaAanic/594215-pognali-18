@@ -15,3 +15,12 @@
   color: $color-text-grey-blue;
   text-decoration: none;
 }
+
+.registration__contact-list .contact-list__link--tel,
+.registration__contact-list .contact-list__link--email {
+  color: $color-text-gold;
+
+  &:active {
+    color: rgba($color-text-gold, 0.3);
+  }
+}
