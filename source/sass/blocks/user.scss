@@ -1,0 +1,69 @@
+.user {
+  position: relative;
+
+  padding: 12px 20px 23px;
+
+  background-color: $color-background-white;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+
+    .user__image {
+      transform: scale(1.1);
+
+      transition: all 0.3s;
+    }
+  }
+}
+
+.user__name-link {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: $color-text-blue;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba($color-text-blue, 0.6);
+  }
+
+  &:active {
+    color: rgba($color-text-blue, 0.3);
+  }
+}
+
+.user__image-link {
+  overflow: hidden;
+}
+
+.user__image {
+  transform: scale(1);
+
+  transition: all 0.3s;
+}
+
+.user--index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+
+  border-radius: 10px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 21px rgba(0, 0, 0, 0.08);
+  }
+
+  .user__image-link {
+    position: static;
+
+    order: -1;
+    width: 270px;
+    height: 270px;
+
+    border-radius: 10px 10px 0 0;
+  }
+}
