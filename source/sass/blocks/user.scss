@@ -8,13 +8,18 @@
   &:hover,
   &:focus {
     box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
-
-    .user__image {
-      transform: scale(1.1);
-
-      transition: all 0.3s;
-    }
   }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+
+.user__image {
+  transform: scale(1.1);
+
+  transition: all 0.3s;
 }
 
 .user__name-link {
@@ -65,5 +70,11 @@
     height: 270px;
 
     border-radius: 10px 10px 0 0;
+  }
+
+  .user__tags {
+    line-height: 18px;
+    text-align: center;
+    color: $color-text-grey;
   }
 }
