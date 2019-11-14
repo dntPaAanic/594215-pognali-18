@@ -2,6 +2,7 @@
   display: inline-block;
   padding: 10px 40px;
 
+  font-weight: 700;
   font-size: 17px;
   line-height: 30px;
   vertical-align: middle;
@@ -9,11 +10,11 @@
   color: $color-text-dark-blue;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 700;
-  transition: 0.3s;
 
   background-color: $color-background-gold;
   border-radius: 25px;
+
+  transition: 0.3s;
 
   &:hover,
   &:focus {
@@ -22,5 +23,45 @@
 
   &:active {
     color: rgba($color-text-dark-blue, 0.3);
+  }
+}
+
+.button__arrow {
+  position: relative;
+  display: block;
+  padding: 23px 24px 21px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+  color: $color-text-blue;
+  text-decoration: none;
+
+  background-color: $color-background-gold;
+  border-radius: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 23px;
+    border: 7px solid transparent;
+    border-left: 7px solid $color-text-blue;
+
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-background-mango-light;
+  }
+
+  &:active {
+    background-color: $color-background-mango-light;
+    color: rgba($color-text-blue, 0.3);
+
+    &::before {
+      border-left-color: rgba($color-text-blue, 0.3);
+    }
   }
 }

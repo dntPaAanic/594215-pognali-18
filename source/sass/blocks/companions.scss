@@ -1,0 +1,26 @@
+.companions--index {
+  background-color: $color-background-main;
+  border-radius: 0 0 30px 30px;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+
+  @include container;
+}
+
+.companions--index-margin {
+  margin-top: -30px;
+}
+
+.companions__wrapper {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.companions__description {
+  font-weight: 300;
+}
+
+.companions__lead {
+  font-weight: 700;
+}

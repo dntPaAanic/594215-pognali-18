@@ -6,18 +6,20 @@
 }
 
 .site-list__item {
-  text-align: center;
   overflow: hidden;
+
+  text-align: center;
 }
 
 .site-list__link {
   overflow: hidden;
-  color: $color-text-grey-blue;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 30px;
+
   font-weight: 500;
+  font-size: 30px;
   line-height: 36px;
+  color: $color-text-grey-blue;
+  text-transform: uppercase;
+  text-decoration: none;
 
   &:hover {
     color: $color-text-gold;
@@ -31,13 +33,16 @@
 
 .site-list__text {
   position: relative;
+
   display: inline-block;
+
   transition: transform 0.3s;
 
   &::before {
+    content: attr(data-hover);
     position: absolute;
     top: 100%;
-    content: attr(data-hover);
+
     transform: translate3d(0, 0, 0);
   }
 }

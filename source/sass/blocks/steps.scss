@@ -1,25 +1,31 @@
 .steps__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
+
   counter-reset: list;
 }
 
 .steps__item {
-  color: $color-text-dark-blue;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
   min-height: 90px;
-  border-radius: 10px 10px 0 0;
-  padding: 20px 24px;
   margin: -10px;
+  padding: 20px 24px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: $color-text-dark-blue;
+
   background-color: $color-background-vivid-orange;
+  border-radius: 10px 10px 0 0;
 
   &::after {
-    counter-increment: list;
     content: counter(list);
+
     color: $color-text-white;
+
+    counter-increment: list;
   }
 }
 
@@ -32,8 +38,9 @@
 }
 
 .steps__item:nth-child(4) {
-  background-color: $color-background-gold;
   min-height: 80px;
-  border-radius: 10px;
   margin-bottom: 0;
+
+  background-color: $color-background-gold;
+  border-radius: 10px;
 }

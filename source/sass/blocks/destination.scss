@@ -1,36 +1,41 @@
 .destination {
-  padding: 100px 30px;
+  background-color: $color-background-silver;
   border-radius: 0 0 30px 30px;
-  margin: -30px auto 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+
+  @include container;
+}
+
+.destination--index {
+  margin-top: -30px;
 }
 
 .destination__wrapper {
-  @include container;
-  background-color: $color-background-silver;
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 
 .destination__inner {
-  margin-left: 25px;
   margin-bottom: 61px;
+  margin-left: 25px;
 }
 
 .destination__title {
-  color: $color-background-vivid-orange;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 24px;
   margin: 0 0 20px;
 }
 
 .destination__text {
-  color: $color-text-grey;
-  font-weight: 300;
   margin: 0;
+
+  font-weight: 300;
+  color: $color-text-grey;
 }
 
 .destination__list {
+  margin: 0 0 25px;
   padding: 0;
-  margin: 0;
 }
 
 .destination__item {
@@ -45,17 +50,20 @@
 }
 
 .destination__image-link {
-  overflow: hidden;
   display: block;
   width: 270px;
   height: 110px;
+  overflow: hidden;
+
   border-radius: 10px 10px 0 0;
 }
 
 .destination__image {
   width: 270px;
   height: 110px;
+
   transform: scale(1);
+
   transition: all 0.3s;
 }
 
@@ -67,6 +75,7 @@
 .destination__caption {
   margin-top: -10px;
   padding: 25px 25px 23px;
+
   background-color: $color-background-white;
 }
 
@@ -77,10 +86,11 @@
 .destination__name {
   margin-top: 0;
   margin-bottom: 5px;
-  color: $color-text-dark-blue;
-  font-size: 21px;
+
   font-weight: 700;
+  font-size: 21px;
   line-height: 21px;
+  color: $color-text-dark-blue;
 
   &:hover,
   &:focus {
@@ -93,14 +103,16 @@
 }
 
 .destination__description {
-  color: $color-text-grey;
-  font-size: 16px;
   font-weight: 500;
+  font-size: 16px;
   line-height: 18px;
+  color: $color-text-grey;
+
   opacity: 0.3;
 }
 
 .destination__traveler {
   color: $color-text-grey;
+
   opacity: 0.3;
 }
