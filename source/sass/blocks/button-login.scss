@@ -1,0 +1,27 @@
+.button-login {
+  display: inline-block;
+  padding: 10px 40px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  color: $color-text-dark-blue;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-background-gold;
+  border-radius: 25px;
+
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    background-color: $color-background-vivid-orange;
+  }
+
+  &:active {
+    color: rgba($color-text-dark-blue, 0.3);
+  }
+}

@@ -1,0 +1,16 @@
+.pagination {
+  text-align: center;
+}
+
+.pagination__wrapper {
+  background-color: $color-background-white;
+  border-radius: 20px;
+}
+
+.pagination__arrows {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+
+  list-style: none;
+}

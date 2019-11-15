@@ -1,0 +1,8 @@
+.catalog__wrapper {
+  @include container;
+  background-color: $color-background-silver;
+}
+
+.catalog__wrapper--indent {
+  padding-bottom: 77px;
+}
