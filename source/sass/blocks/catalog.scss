@@ -1,6 +1,7 @@
 .catalog__wrapper {
-  @include container;
   background-color: $color-background-silver;
+
+  @include container;
 }
 
 .catalog__wrapper--indent {
