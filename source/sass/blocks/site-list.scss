@@ -1,0 +1,45 @@
+.site-list {
+  @include ul-reset;
+}
+
+.site-list__item {
+  overflow: hidden;
+
+  text-align: center;
+}
+
+.site-list__link {
+  overflow: hidden;
+
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: #192144;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color: #ffd74b;
+  }
+}
+
+.site-list__link:hover .site-list__text,
+.site-list__link:focus .site-list__text {
+  transform: translateY(-100%);
+}
+
+.site-list__text {
+  position: relative;
+
+  display: inline-block;
+
+  transition: transform 0.3s;
+
+  &::before {
+    content: attr(data-hover);
+    position: absolute;
+    top: 100%;
+
+    transform: translate3d(0, 0, 0);
+  }
+}

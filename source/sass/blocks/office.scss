@@ -1,0 +1,30 @@
+.office {
+  position: relative;
+  z-index: 1;
+
+  overflow: hidden;
+
+  background-color: #ffd74b;
+  border-radius: 0 0 30px 30px;
+  width: 100%;
+}
+
+.office--indent {
+  margin-top: -30px;
+}
+
+.office__wrapper {
+  padding: 60px 25px 35px;
+}
+
+.office__address {
+  margin-bottom: 35px;
+
+  font-weight: 700;
+  color: #192144;
+  text-transform: uppercase;
+}
+
+.office__pathfinder-button {
+  border: 3px solid #192144;
+}

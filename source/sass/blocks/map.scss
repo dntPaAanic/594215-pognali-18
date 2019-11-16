@@ -1,0 +1,14 @@
+.map {
+  position: relative;
+
+  width: 100%;
+  height: 330px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  background-color: $color-background-main;
+}
+
+.map--indent {
+  margin-top: -30px;
+}

@@ -3,14 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font">
   </head>
   <body>
     <header class="page-header">
       <nav class="page-header__nav main-nav">
-        <div class="page-header__wrapper">
+        <div class="page-header__wrapper container">
           <div class="main-nav__wrapper">
             <a class="page-header__logo">
-              <img class="page-header__logo-image" src="https://via.placeholder.com/100x19" alt="Погнали?" width="100" height="19">
+              <img class="page-header__logo-image" src="img/logo-mobile-blue@1x.png" alt="Погнали?" width="100" height="19">
             </a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -26,11 +33,11 @@
                 <a class="site-list__link site-list__link--current"><span class="site-list__text" data-hover="Попутчики">Попутчики</span></a></li>
             </ul>
 
-            <a href="#" class="main-nav__button button">Авторизация</a>
+            <a href="#" class="main-nav__button button-login">Авторизация</a>
 
             <ul class="main-nav__contact-list contact-list">
-              <li class="contact-list__item"><a href="tel:+78005558628" class="contact-list__tel">8 800 555-86-28</a></li>
-              <li class="contact-list__item"><a href="mailto:mail@htmlacademy.ru" class="contact-list__email">mail@htmlacademy.ru</a></li>
+              <li class="contact-list__item"><a href="tel:+78005558628" class="contact-list__link contact-list__link--tel">8 800 555-86-28</a></li>
+              <li class="contact-list__item"><a href="mailto:mail@htmlacademy.ru" class="contact-list__link contact-list__link--email">mail@htmlacademy.ru</a></li>
             </ul>
 
             <ul class="main-nav__social-list social-list">
@@ -46,9 +53,90 @@
     <main class="page-main catalog">
       <h1 class="visually-hidden">"Погнали?" - сервис для поиска попутчиков для путешествий</h1>
 
-      <div class="catalog__wrapper">
-        <div class="catalog__inner">
-          <section class="companions-filter"></section>
+      <div class="catalog__wrapper container catalog__wrapper--indent">
+        <div class="catalog__inner  container">
+          <section class="companions-filter">
+            <h2 class="companions-filter__lead">Подберите <br>идеального <br>попутчика</h2>
+            <form action="https://echo.htmlacademy.ru" class="companions-filter__form" method="get">
+              <fieldset class="companions-filter__set companions-filter__set--hobby">
+                <legend class="companions-filter__legend">
+                  <button class="companions-filter__toggle" type="button">
+                    <span class="visually-hidden">Переключатель выпадающего списка</span>
+                  </button>
+                  <span class="companions-filter__legend-text">
+                    <span class="companions-filter__legend-text-1">Хобби</span>
+                  </span>
+                </legend>
+                <ul class="companions-filter__list">
+                  <li class="companions-filter__item">
+                    <input type="checkbox" class="visually-hidden" id="hobby-1" checked>
+                    <label for="hobby-1" class="companions-filter__label">Спортзал</label>
+                  </li>
+                  <li class="companions-filter__item">
+                    <input type="checkbox" class="visually-hidden" id="hobby-2">
+                    <label for="hobby-2" class="companions-filter__label">Кальян</label>
+                  </li>
+                  <li class="companions-filter__item">
+                    <input type="checkbox" class="visually-hidden" id="hobby-3">
+                    <label for="hobby-3" class="companions-filter__label">Диван</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="companions-filter__set companions-filter__set--music">
+                <legend class="companions-filter__legend">
+                  <button class="companions-filter__toggle" type="button">
+                    <span class="visually-hidden">Переключатель выпадающего списка</span>
+                  </button>
+                  <span class="companions-filter__legend-text">
+                    <span class="companions-filter__legend-text-1">Музыка</span>
+                  </span>
+                </legend>
+                <ul class="companions-filter__list">
+                  <li class="companions-filter__item">
+                    <input type="checkbox" class="visually-hidden" id="music-1" checked>
+                    <label for="music-1" class="companions-filter__label">Тяжелый рок</label>
+                  <li class="companions-filter__item">
+                    <input type="checkbox" class="visually-hidden" id="music-2">
+                    <label for="music-2" class="companions-filter__label">Русский рэп</label>
+                  </li>
+                  <li class="companions-filter__item">
+                    <input type="checkbox" class="visually-hidden" id="music-3">
+                    <label for="music-3" class="companions-filter__label">Евроденс</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="companions-filter__set companions-filter__set--food">
+                <legend class="companions-filter__legend">
+                  <button class="companions-filter__toggle" type="button">
+                    <span class="visually-hidden">Переключатель выпадающего списка</span>
+                  </button>
+                  <span class="companions-filter__legend-text">
+                    <span class="companions-filter__legend-text-1">Еда</span>
+                  </span>
+                </legend>
+                <ul class="companions-filter__list">
+                  <li class="companions-filter__item">
+                    <input type="checkbox" class="visually-hidden" id="food-1" checked>
+                    <label for="food-1" class="companions-filter__label">Мясоед</label>
+                  </li>
+                  <li class="companions-filter__item">
+                    <input type="checkbox" class="visually-hidden" id="food-2">
+                    <label for="food-2" class="companions-filter__label">Сидит на ПП</label>
+                  </li>
+                  <li class="companions-filter__item">
+                    <input type="checkbox" class="visually-hidden" id="food-3">
+                    <label for="food-3" class="companions-filter__label">Веган-сыроед</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+
+
+            </form>
+
+          </section>
           <div class="catalog__companions">
             <section class="companions companions--catalog">
               <h2 class="visually-hidden">Попутчики для путешествий</h2>
@@ -98,7 +186,7 @@
                     <p class="user__level-text">левел:</p>
                     99
                   </div>
-                  <a href="#" class="user__invite-button">Позвать!</a>
+                  <a href="#" class="button-login user__invite-button">Позвать!</a>
                 </div>
 
                 <div class="companions__item user">
@@ -141,7 +229,7 @@
                     <p class="user__level-text">левел:</p>
                     80
                   </div>
-                  <a href="#" class="user__invite-button">Позвать!</a>
+                  <a href="#" class="button-login user__invite-button">Позвать!</a>
                 </div>
 
                 <div class="companions__item user">
@@ -188,7 +276,7 @@
                     <p class="user__level-text">левел:</p>
                     25
                   </div>
-                  <a href="#" class="user__invite-button">Позвать!</a>
+                  <a href="#" class="button-login user__invite-button">Позвать!</a>
                 </div>
 
                 <div class="companions__item user">
@@ -231,17 +319,19 @@
                     <p class="user__level-text">левел:</p>
                     50
                   </div>
-                  <a href="#" class="user__invite-button">Позвать!</a>
+                  <a href="#" class="button-login user__invite-button">Позвать!</a>
                 </div>
               </div>
 
               <a href="#" class="companions__load-more">Показать еще</a>
 
               <div class="pagination">
-                <ul class="pagination__arrows">
-                  <li class="pagination__item"><a href="#" class="pagination__prev">Показать предыдущую страницу</a></li>
-                  <li class="pagination__item"><a href="#" class="pagination__next">Показать следующую страницу</a></li>
-                </ul>
+                <div class="pagination__wrapper">
+                  <ul class="pagination__arrows">
+                    <li class="pagination__item"><a href="#" class="pagination__button pagination__button--prev">Показать предыдущую страницу</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__button pagination__button--next">Показать следующую страницу</a></li>
+                  </ul>
+                </div>
               </div>
             </section>
           </div>
@@ -250,10 +340,10 @@
     </main>
 
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
+    <footer class="page-footer page-footer--indent">
+      <div class="page-footer__wrapper container">
         <a class="page-footer__logo">
-          <img src="https://via.placeholder.com/100x19" alt="Логотип Погнали" class="page-footer__logo-image">
+          <img src="img/logo-mobile-blue@1x.png" alt="Логотип Погнали" class="page-footer__logo-image" width="100" height="19">
         </a>
         <ul class="page-footer__social-list social-list">
           <li class="social-list__item"><a href="#" class="social-list__link social-list__link--fb">"Погнали" в фейсбуке</a></li>

@@ -1,0 +1,116 @@
+.destination {
+  background-color: $color-background-main;
+  border-radius: 0 0 30px 30px;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+  width: auto;
+}
+
+.destination--indent {
+  margin-top: -30px;
+}
+
+.destination__wrapper {
+  padding: 100px 25px 30px;
+}
+
+.destination__inner {
+  margin-bottom: 61px;
+  margin-left: 25px;
+}
+
+.destination__title {
+  margin: 0 0 20px;
+}
+
+.destination__text {
+  margin: 0;
+
+  font-weight: 300;
+  color: $color-text-main;
+}
+
+.destination__list {
+  margin: 0 0 25px;
+  padding: 0;
+}
+
+.destination__item {
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 21px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.destination__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.destination__image-link {
+  display: block;
+  width: 270px;
+  height: 110px;
+  overflow: hidden;
+
+  border-radius: 10px 10px 0 0;
+}
+
+.destination__image {
+  width: 270px;
+  height: 110px;
+
+  transform: scale(1);
+
+  transition: all 0.3s;
+}
+
+.destination__item:hover .destination__image,
+.destination__item:focus .destination__image {
+  transform: scale(1.1);
+}
+
+.destination__caption {
+  margin-top: -10px;
+  padding: 25px 25px 23px;
+
+  background-color: $color-background-additional;
+}
+
+.destination__link {
+  text-decoration: none;
+}
+
+.destination__name {
+  margin-top: 0;
+  margin-bottom: 5px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: #161c35;
+
+  &:hover,
+  &:focus {
+    color: rgba(#161c35, 0.7);
+  }
+
+  &:active {
+    color: rgba(#161c35, 0.3);
+  }
+}
+
+.destination__description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-text-main;
+
+  opacity: 0.3;
+}
+
+.destination__traveler {
+  color: $color-text-main;
+
+  opacity: 0.3;
+}

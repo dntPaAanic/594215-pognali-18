@@ -1,0 +1,27 @@
+.button-login {
+  display: inline-block;
+  padding: 6px 39px 4px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  color: #161c35;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #ffd74b;
+  border-radius: 25px;
+
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    background-color: #ff8d30;
+  }
+
+  &:active {
+    color: rgba(#161c35, 0.3);
+  }
+}

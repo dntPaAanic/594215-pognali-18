@@ -1,0 +1,49 @@
+.price-list {
+  position: relative;
+  z-index: 3;
+
+  overflow: hidden;
+
+  background-color: $color-background-main;
+  border-radius: 0 0 30px 30px;
+  width: 100%;
+}
+
+.price-list--indent {
+  margin-top: -30px;
+}
+
+.price-list__wrapper {
+  padding: 80px 25px 40px;
+}
+
+.price-list__list,
+.price-list__service,
+.price-list__offer {
+  margin: 0;
+  padding: 0;
+}
+
+.price-list__list {
+  margin-bottom: 20px;
+
+  font-weight: 300;
+  color: $color-text-main;
+}
+
+.price-list__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #192144;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba(#192144, 0.6);
+  }
+
+  &:active {
+    color: rgba(#192144, 0.3);
+  }
+}

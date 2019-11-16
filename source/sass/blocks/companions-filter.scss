@@ -1,0 +1,104 @@
+.companions-filter {
+  margin-bottom: 30px;
+  padding: 25px 25px 25px;
+
+  background-color: #ffd74b;
+  border-radius: 20px;
+}
+
+.companions-filter__lead {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22.49px;
+  color: $color-text-additional;
+}
+
+.companions-filter__set {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.companions-filter__legend {
+  position: relative;
+
+  width: 100%;
+}
+
+.companions-filter__toggle {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  padding: 18px;
+
+  background-color: transparent;
+  border: 0;
+
+  &::after {
+    @include pseudo;
+    top: 11px;
+    right: 0;
+
+    width: 8px;
+    height: 4px;
+
+    background-image: url("../img/dropdown.svg");
+  }
+}
+
+.companions-filter__legend-text {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-text-additional;
+  text-transform: uppercase;
+}
+
+.companions-filter__list {
+  @include ul-reset;
+}
+
+.companions-filter__item {
+  margin-bottom: 7px;
+}
+
+.companions-filter__label {
+  position: relative;
+
+  padding-left: 25px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: $color-text-main;
+
+  &::before {
+    @include pseudo;
+    top: -2px;
+    left: 0;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: $color-background-additional;
+    border-radius: 4px;
+  }
+}
+
+input[type="checkbox"]:checked ~ .companions-filter__label::after {
+  @include pseudo;
+  top: 5px;
+  left: 5px;
+
+  width: 9px;
+  height: 9px;
+
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+}

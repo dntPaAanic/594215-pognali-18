@@ -1,0 +1,23 @@
+.main-nav {
+  background-color: $color-background-additional;
+  width: auto;
+}
+
+.main-nav__wrapper {
+  position: relative;
+}
+
+.main-nav__nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 10px;
+  right: 5px;
+  border: 0;
+}
