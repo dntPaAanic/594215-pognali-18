@@ -37,8 +37,7 @@
   border: 0;
 
   &::after {
-    content: "";
-    position: absolute;
+    @include pseudo;
     top: 11px;
     right: 0;
 
@@ -62,10 +61,7 @@
 }
 
 .companions-filter__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include ul-reset;
 }
 
 .companions-filter__item {
@@ -83,8 +79,7 @@
   color: $color-text-main;
 
   &::before {
-    content: "";
-    position: absolute;
+    @include pseudo;
     top: -2px;
     left: 0;
 
@@ -97,8 +92,7 @@
 }
 
 input[type="checkbox"]:checked ~ .companions-filter__label::after {
-  content: "";
-  position: absolute;
+  @include pseudo;
   top: 5px;
   left: 5px;
 

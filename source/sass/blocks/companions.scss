@@ -57,8 +57,7 @@
   text-decoration: none;
 
   &::before {
-    position: absolute;
-    content: "";
+    @include pseudo;
     top: 4px;
     left: -31px;
 
