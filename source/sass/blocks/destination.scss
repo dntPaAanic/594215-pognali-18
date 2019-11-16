@@ -4,17 +4,15 @@
   overflow: hidden;
   position: relative;
   z-index: 5;
-
-  @include container;
+  width: auto;
 }
 
-.destination--index {
+.destination--indent {
   margin-top: -30px;
 }
 
 .destination__wrapper {
-  padding-top: 100px;
-  padding-bottom: 30px;
+  padding: 100px 25px 30px;
 }
 
 .destination__inner {

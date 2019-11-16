@@ -1,15 +1,10 @@
 .main-nav {
   background-color: $color-background-additional;
-}
-
-.main-nav__wrapper {
-  @include container;
+  width: auto;
 }
 
 .main-nav__nav-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  @include container;
 }

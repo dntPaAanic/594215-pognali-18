@@ -1,18 +1,14 @@
 .introduce {
   background-color: #161c35;
-  background-image: url("../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 -75px;
-
-  @include container;
+  width: auto;
 }
 
 .introduce__wrapper {
-  padding-bottom: 38px;
+  padding: 0 25px 38px;
 
-  background-image: url("../img/traveller-illustration-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 54px 130px;
+  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 54px 130px, 0 -75px;
 }
 
 .introduce__lead {
