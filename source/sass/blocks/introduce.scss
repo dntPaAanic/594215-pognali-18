@@ -1,6 +1,7 @@
 .introduce {
   background-color: #161c35;
   width: auto;
+  position: relative;
 }
 
 .introduce__wrapper {
@@ -20,4 +21,16 @@
   line-height: 40px;
   text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__wrapper {
+    padding: 0 40px 0;
+  }
+
+  .introduce__lead {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+  }
 }
