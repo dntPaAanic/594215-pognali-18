@@ -7,21 +7,21 @@
   line-height: 30px;
   vertical-align: middle;
   text-align: center;
-  color: $color-text-dark-blue;
+  color: #161c35;
   text-transform: uppercase;
   text-decoration: none;
 
-  background-color: $color-background-gold;
+  background-color: #ffd74b;
   border-radius: 25px;
 
   transition: 0.3s;
 
   &:hover,
   &:focus {
-    background-color: $color-background-vivid-orange;
+    background-color: #ff8d30;
   }
 
   &:active {
-    color: rgba($color-text-dark-blue, 0.3);
+    color: rgba(#161c35, 0.3);
   }
 }

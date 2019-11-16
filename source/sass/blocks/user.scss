@@ -3,7 +3,7 @@
 
   padding: 12px 20px 23px;
 
-  background-color: $color-background-white;
+  background-color: $color-background-additional;
   border-radius: 20px;
 
   &:hover,
@@ -20,16 +20,16 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
-  color: $color-text-blue;
+  color: $color-text-additional;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: rgba($color-text-blue, 0.6);
+    color: rgba($color-text-additional, 0.6);
   }
 
   &:active {
-    color: rgba($color-text-blue, 0.3);
+    color: rgba($color-text-additional, 0.3);
   }
 }
 
@@ -37,7 +37,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
-  color: $color-text-grey;
+  color: $color-text-main;
 }
 
 .user__image-link {
@@ -53,7 +53,7 @@
 .user__destination-text {
   font-size: 15px;
   line-height: 18px;
-  color: $color-text-grey;
+  color: $color-text-main;
 }
 
 .user--index {
@@ -82,6 +82,6 @@
   .user__tags {
     line-height: 18px;
     text-align: center;
-    color: $color-text-grey;
+    color: $color-text-main;
   }
 }

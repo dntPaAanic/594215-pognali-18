@@ -1,5 +1,5 @@
 .destination {
-  background-color: $color-background-silver;
+  background-color: $color-background-main;
   border-radius: 0 0 30px 30px;
   overflow: hidden;
   position: relative;
@@ -30,7 +30,7 @@
   margin: 0;
 
   font-weight: 300;
-  color: $color-text-grey;
+  color: $color-text-main;
 }
 
 .destination__list {
@@ -76,7 +76,7 @@
   margin-top: -10px;
   padding: 25px 25px 23px;
 
-  background-color: $color-background-white;
+  background-color: $color-background-additional;
 }
 
 .destination__link {
@@ -90,15 +90,15 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
-  color: $color-text-dark-blue;
+  color: #161c35;
 
   &:hover,
   &:focus {
-    color: rgba($color-text-dark-blue, 0.7);
+    color: rgba(#161c35, 0.7);
   }
 
   &:active {
-    color: rgba($color-text-dark-blue, 0.3);
+    color: rgba(#161c35, 0.3);
   }
 }
 
@@ -106,13 +106,13 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  color: $color-text-grey;
+  color: $color-text-main;
 
   opacity: 0.3;
 }
 
 .destination__traveler {
-  color: $color-text-grey;
+  color: $color-text-main;
 
   opacity: 0.3;
 }

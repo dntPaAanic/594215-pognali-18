@@ -4,7 +4,7 @@
 
   overflow: hidden;
 
-  background-color: $color-background-silver;
+  background-color: $color-background-main;
   border-radius: 0 0 30px 30px;
 
   @include container;
@@ -29,22 +29,22 @@
   margin-bottom: 20px;
 
   font-weight: 300;
-  color: $color-text-grey;
+  color: $color-text-main;
 }
 
 .price-list__button {
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  color: $color-text-grey-blue;
+  color: ##192144;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: rgba($color-text-grey-blue, 0.6);
+    color: rgba(##192144, 0.6);
   }
 
   &:active {
-    color: rgba($color-text-grey-blue, 0.3);
+    color: rgba(##192144, 0.3);
   }
 }

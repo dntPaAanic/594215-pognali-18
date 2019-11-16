@@ -15,32 +15,32 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
-  color: $color-text-dark-blue;
+  color: #161c35;
 
-  background-color: $color-background-vivid-orange;
+  background-color: #ff8d30;
   border-radius: 10px 10px 0 0;
 
   &::after {
     content: counter(list);
 
-    color: $color-text-white;
+    color: #ffffff;
 
     counter-increment: list;
   }
 }
 
 .steps__item:nth-child(2) {
-  background-color: $color-background-mango;
+  background-color: #ffbd30;
 }
 
 .steps__item:nth-child(3) {
-  background-color: $color-background-mango-light;
+  background-color: #ffbd30;
 }
 
 .steps__item:nth-child(4) {
   min-height: 80px;
   margin-bottom: 0;
 
-  background-color: $color-background-gold;
+  background-color: #ffd74b;
   border-radius: 10px;
 }

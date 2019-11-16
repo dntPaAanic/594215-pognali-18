@@ -2,7 +2,7 @@
   margin-bottom: 30px;
   padding: 25px 25px 25px;
 
-  background-color: $color-background-gold;
+  background-color: #ffd74b;
   border-radius: 20px;
 }
 
@@ -10,7 +10,7 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 22.49px;
-  color: $color-text-blue;
+  color: $color-text-additional;
 }
 
 .companions-filter__set {
@@ -57,7 +57,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-  color: $color-text-blue;
+  color: $color-text-additional;
   text-transform: uppercase;
 }
 
@@ -80,7 +80,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 15px;
-  color: $color-text-grey;
+  color: $color-text-main;
 
   &::before {
     content: "";
@@ -91,7 +91,7 @@
     width: 18px;
     height: 18px;
 
-    background-color: $color-background-white;
+    background-color: $color-background-additional;
     border-radius: 4px;
   }
 }

@@ -3,3 +3,16 @@
   margin: 0 auto;
   padding: 0 25px;
 }
+
+@mixin pseudo($display: block, $position: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $position;
+}
+
+@mixin ul-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

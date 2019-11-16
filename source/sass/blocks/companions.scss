@@ -4,7 +4,7 @@
 
   overflow: hidden;
 
-  background-color: $color-background-main;
+  background-color: #192144;
   border-radius: 0 0 30px 30px;
 
   @include container;
@@ -26,12 +26,12 @@
 
 .companions__description {
   font-weight: 300;
-  color: $color-text-white;
+  color: #ffffff;
 }
 
 .companions__lead {
   font-weight: 700;
-  color: $color-text-white;
+  color: #ffffff;
 }
 
 .companions__list {
@@ -49,7 +49,7 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
-  color: $color-text-blue;
+  color: $color-text-additional;
   text-transform: uppercase;
   text-decoration: none;
 

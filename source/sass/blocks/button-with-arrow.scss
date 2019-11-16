@@ -8,10 +8,10 @@
   font-size: 18px;
   line-height: 18px;
   text-align: left;
-  color: $color-text-blue;
+  color: $color-text-additional;
   text-decoration: none;
 
-  background-color: $color-background-gold;
+  background-color: #ffd74b;
   border-radius: 10px;
 
   &::before {
@@ -20,20 +20,20 @@
     top: 25px;
     right: 23px;
     border: 7px solid transparent;
-    border-left: 7px solid $color-text-blue;
+    border-left: 7px solid $color-text-additional;
   }
 
   &:hover,
   &:focus {
-    background-color: $color-background-mango-light;
+    background-color: #ffbd30;
   }
 
   &:active {
-    background-color: $color-background-mango-light;
-    color: rgba($color-text-blue, 0.3);
+    background-color: #ffbd30;
+    color: rgba($color-text-additional, 0.3);
 
     &::before {
-      border-left-color: rgba($color-text-blue, 0.3);
+      border-left-color: rgba($color-text-additional, 0.3);
     }
   }
 }
