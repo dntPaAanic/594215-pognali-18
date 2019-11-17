@@ -1,6 +1,7 @@
 
 .button-with-arrow {
   position: relative;
+
   display: block;
   padding: 23px 24px 21px;
 
@@ -15,11 +16,13 @@
   border-radius: 10px;
 
   &::before {
-    @include pseudo;
     top: 25px;
     right: 23px;
+
     border: 7px solid transparent;
     border-left: 7px solid $color-text-additional;
+
+    @include pseudo;
   }
 
   &:hover,
@@ -28,8 +31,9 @@
   }
 
   &:active {
-    background-color: #ffbd30;
     color: rgba($color-text-additional, 0.3);
+
+    background-color: #ffbd30;
 
     &::before {
       border-left-color: rgba($color-text-additional, 0.3);

@@ -2,11 +2,11 @@
   position: relative;
   z-index: 4;
 
+  width: 100%;
   overflow: hidden;
 
   background-color: #192144;
   border-radius: 0 0 30px 30px;
-  width: 100%;
 }
 
 .companions__wrapper--index {
@@ -45,9 +45,10 @@
 }
 
 .companions__load-more {
-  align-self: center;
   position: relative;
+
   display: inline-block;
+  align-self: center;
 
   font-weight: 700;
   font-size: 17px;
@@ -57,7 +58,6 @@
   text-decoration: none;
 
   &::before {
-    @include pseudo;
     top: 4px;
     left: -31px;
 
@@ -66,6 +66,8 @@
 
     background-image: url("../img/show-more-plus.svg");
     background-repeat: no-repeat;
+
+    @include pseudo;
   }
 
   &:hover,

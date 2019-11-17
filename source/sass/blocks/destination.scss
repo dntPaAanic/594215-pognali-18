@@ -1,10 +1,12 @@
 .destination {
-  background-color: $color-background-main;
-  border-radius: 0 0 30px 30px;
-  overflow: hidden;
   position: relative;
   z-index: 5;
+
   width: auto;
+  overflow: hidden;
+
+  background-color: $color-background-main;
+  border-radius: 0 0 30px 30px;
 }
 
 .destination--indent {

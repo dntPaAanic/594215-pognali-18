@@ -1,8 +1,8 @@
 .about-app {
-  width: auto;
   position: relative;
   z-index: 6;
 
+  width: auto;
   overflow: hidden;
 
   background-color: #192144;
@@ -11,10 +11,10 @@
 
 .about-app__wrapper {
   position: relative;
+
   padding: 0 25px;
 
   &::before {
-    @include pseudo;
     z-index: -1;
 
     width: 292px;
@@ -22,6 +22,8 @@
 
     background-image: url("../img/about-mobile@1x.png");
     background-repeat: no-repeat;
+
+    @include pseudo;
   }
 }
 

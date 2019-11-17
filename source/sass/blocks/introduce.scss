@@ -1,11 +1,13 @@
 .introduce {
-  background-color: #161c35;
-  width: auto;
   position: relative;
+  z-index: 7;
+
+  width: auto;
+
+  background-color: #161c35;
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% -51%;
-  z-index: 7;
 }
 
 .introduce__wrapper {
@@ -29,25 +31,28 @@
 
 @media (min-width: $tablet-width) {
   .introduce {
+    background-color: #182044;
     background-image: url("../img/globe-back-tablet@1x.jpg");
     background-position: 50% 100%;
-    background-color: #182044;
   }
 
   .introduce__wrapper {
     position: relative;
+
     padding: 0 40px 252px;
+
     background-image: url("../img/traveller-illustration-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 280px 240px;
   }
 
   .introduce__lead {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 70px;
     margin-bottom: 90px;
     margin-left: 110px;
+
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
   }
 
   .introduce__contact-list-wrapper {

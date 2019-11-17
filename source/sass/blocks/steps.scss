@@ -1,11 +1,12 @@
 .steps__list {
-  @include ul-reset;
-
   counter-reset: list;
+
+  @include ul-reset;
 }
 
 .steps__item {
   position: relative;
+
   min-height: 90px;
   margin-bottom: -10px;
   padding: 20px 24px;
@@ -81,6 +82,7 @@
 
     &:nth-child(3) {
       width: 364px;
+
       border-radius: 0 0 0 20px;
     }
 

@@ -37,7 +37,6 @@
   border: 0;
 
   &::after {
-    @include pseudo;
     top: 11px;
     right: 0;
 
@@ -45,6 +44,8 @@
     height: 4px;
 
     background-image: url("../img/dropdown.svg");
+
+    @include pseudo;
   }
 }
 
@@ -79,7 +80,6 @@
   color: $color-text-main;
 
   &::before {
-    @include pseudo;
     top: -2px;
     left: 0;
 
@@ -88,11 +88,12 @@
 
     background-color: $color-background-additional;
     border-radius: 4px;
+
+    @include pseudo;
   }
 }
 
 input[type="checkbox"]:checked ~ .companions-filter__label::after {
-  @include pseudo;
   top: 5px;
   left: 5px;
 
@@ -101,4 +102,6 @@ input[type="checkbox"]:checked ~ .companions-filter__label::after {
 
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
+
+  @include pseudo;
 }
