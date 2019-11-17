@@ -85,3 +85,16 @@
     color: $color-text-main;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .user--index:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user--index:not(:last-child) {
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+}
