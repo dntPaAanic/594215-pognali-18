@@ -50,3 +50,13 @@
     padding: 270px 40px 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about-app {
+    padding: 183px 0 63px;
+  }
+
+  .about-app__wrapper {
+    padding: 0 130px;
+  }
+}

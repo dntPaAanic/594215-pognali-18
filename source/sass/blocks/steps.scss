@@ -94,3 +94,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .steps {
+    bottom: 115px;
+  }
+}
