@@ -1,5 +1,6 @@
 .page-header {
   background-color: $color-background-additional;
+  padding: 27px 0;
 }
 
 .page-header__wrapper {
@@ -17,6 +18,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    padding: 45px 0;
+  }
+
   .page-header__wrapper {
     padding: 0 40px;
   }
@@ -24,7 +29,8 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    background-color: #161c35 ;
+    padding: 47px 0 20px;
+    background-color: #161c35;
   }
 
   .page-header__wrapper {

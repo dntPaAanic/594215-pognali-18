@@ -1,5 +1,7 @@
 .review {
   background-color: #161c35;
+  margin: 0;
+  padding: 0;
 }
 
 .review__text,
@@ -19,14 +21,19 @@
 
 @media (min-width: $tablet-width) {
   .review {
-    width: 300px;
+    width: 298px;
 
     background-color: transparent;
   }
 
-  .review__text,
-  .review__author {
+  .review__text {
     font-size: 28px;
     line-height: 33px;
   }
+
+  .review__author {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
+
