@@ -21,3 +21,16 @@
     padding: 0 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    background-color: #161c35 ;
+  }
+
+  .page-header__wrapper {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

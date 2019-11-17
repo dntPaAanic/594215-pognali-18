@@ -34,3 +34,9 @@
     bottom: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .button-login {
+    position: static;
+  }
+}

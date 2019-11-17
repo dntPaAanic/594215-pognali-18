@@ -2,6 +2,7 @@
   background-color: $color-background-additional;
   width: auto;
   min-height: 73px;
+  padding-top: 27px;
 }
 
 .main-nav__wrapper {
@@ -26,10 +27,23 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    padding-top: 45px;
     min-height: 132px;
   }
 
   .main-nav__toggle {
     right: 370px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    padding-top: 45px;
+    min-height: 132px;
+    background-color: transparent;
+  }
+
+  .main-nav__nav-wrapper {
+    flex-direction: row;
   }
 }
