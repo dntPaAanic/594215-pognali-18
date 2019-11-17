@@ -15,6 +15,7 @@
 
 .destination__wrapper {
   padding: 100px 25px 30px;
+  position: relative;
 }
 
 .destination__inner {
@@ -75,8 +76,13 @@
 .destination__caption {
   margin-top: -10px;
   padding: 25px 25px 23px;
+  border-radius: 10px;
+  z-index: 1;
+  position: relative;
 
   background-color: $color-background-additional;
+  display: flex;
+  justify-content: space-between;
 }
 
 .destination__link {
@@ -107,12 +113,142 @@
   font-size: 16px;
   line-height: 18px;
   color: $color-text-main;
+  margin: 0;
 
   opacity: 0.3;
 }
 
 .destination__traveler {
+  margin: 0;
   color: $color-text-main;
 
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .destination {
+    padding: 120px 0 79px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .destination--indent {
+    margin-top: -55px;
+  }
+
+  .destination__wrapper {
+    padding: 0 75px;
+  }
+
+  .destination__inner {
+    margin-left: 0;
+    margin-bottom: 105px;
+    position: relative;
+
+    &::after {
+      top: 11px;
+      right: -35px;
+      z-index: -1;
+      width: 289px;
+      height: 575px;
+      background: url(../img/flags-back@1x.png) no-repeat;
+      border-radius: 20px;
+
+      @include pseudo;
+    }
+  }
+
+  .destination__title {
+    margin-bottom: 60px;
+  }
+
+  .destination__text {
+    width: 340px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .destination__list {
+    margin-bottom: 48px;
+    position: relative;
+  }
+
+  .destination__item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .destination__image-link {
+    display: block;
+    width: 186px;
+    height: 140px;
+    overflow: hidden;
+    order: 1;
+
+    border-radius: 0 20px 20px 0;
+  }
+
+  .destination__image {
+    width: 186px;
+    height: 140px;
+  }
+
+  .destination__caption {
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 29px 30px 18px;
+    margin: 0;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .destination__name {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .destination__description {
+    font-size: 20px;
+    line-height: 17.68px;
+  }
+
+  .destination__traveler {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .destination {
+    padding: 215px 0 150px;
+  }
+
+  .destination__wrapper {
+    padding: 0 132px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .destination__inner {
+    order: 1;
+    margin-right: 105px;
+
+    &::after {
+      top: -75px;
+      right: -179px;
+    }
+  }
+
+  .destination__caption {
+    width: 375px;
+    padding-top: 21px;
+  }
+
+  .destination__button {
+    position: absolute;
+    right: 303px;
+    bottom: -10px;
+    width: 274px;
+  }
 }
