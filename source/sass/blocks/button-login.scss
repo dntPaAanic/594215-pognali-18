@@ -25,3 +25,12 @@
     color: rgba(#161c35, 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button-login {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    bottom: auto;
+  }
+}

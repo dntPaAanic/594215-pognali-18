@@ -16,3 +16,16 @@
 .review__author {
   font-weight: 700;
 }
+
+@media (min-width: $tablet-width) {
+  .review {
+    background-color: transparent;
+    width: 300px;
+  }
+
+  .review__text,
+  .review__author {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}

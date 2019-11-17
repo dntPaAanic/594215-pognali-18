@@ -24,3 +24,10 @@
     color: rgba(#ffd74b, 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contact-list__item {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}

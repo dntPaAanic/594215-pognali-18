@@ -42,3 +42,9 @@
   font-weight: 700;
   color: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .about-app__wrapper {
+    padding: 270px 40px 0;
+  }
+}
