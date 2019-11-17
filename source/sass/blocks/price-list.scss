@@ -14,7 +14,27 @@
 }
 
 .price-list__wrapper {
-  padding: 80px 25px 40px;
+  padding: 80px 25px 40px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-list__lead {
+  position: relative;
+  width: 115px;
+  margin-bottom: 55px;
+
+  &::before {
+    @include pseudo;
+    top: -13px;
+    right: -129px;
+    width: 99px;
+    height: 99px;
+    background-image: url(../img/rates@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
 }
 
 .price-list__list,
@@ -29,6 +49,44 @@
 
   font-weight: 300;
   color: $color-text-main;
+}
+
+.price-list__service {
+  position: relative;
+
+  &::after {
+    top: -7px;
+    right: -24px;
+
+    width: 34px;
+    height: 34px;
+    padding-top: 10px;
+
+    text-align: center;
+    color: #ffffff;
+
+    background-color: #ffa530;
+    border-radius: 50%;
+
+    @include pseudo("");
+  }
+
+  &:nth-of-type(1)::after {
+    @include pseudo("1");
+  }
+
+  &:nth-of-type(2)::after {
+    @include pseudo("2");
+  }
+
+  &:nth-of-type(3)::after {
+    @include pseudo("3");
+  }
+}
+
+.price-list__offer {
+  position: relative;
+  margin-bottom: 22px;
 }
 
 .price-list__button {
