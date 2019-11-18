@@ -57,7 +57,6 @@
 .companions__list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin-bottom: 20px;
 }
 
@@ -130,7 +129,7 @@
     line-height: 25px;
   }
 
-  .companions__list {
+  .companions--index .companions__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

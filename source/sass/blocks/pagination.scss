@@ -7,10 +7,50 @@
   border-radius: 20px;
 }
 
+.pagination__list {
+  display: none;
+}
+
 .pagination__arrows {
   display: flex;
   justify-content: space-between;
   padding: 0;
 
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .pagination__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 35px 25px 28px;
+  }
+
+
+  .pagination__list {
+    display: flex;
+    align-items: flex-start;
+
+    @include ul-reset;
+  }
+
+  .pagination__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #161c35;
+    text-decoration: none;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+ 
 }

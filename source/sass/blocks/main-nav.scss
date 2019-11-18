@@ -32,6 +32,13 @@
   .main-nav__toggle {
     right: 370px;
   }
+
+  .main-nav__button {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    bottom: auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -45,6 +52,12 @@
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__button {
+    position: static;
+
+    order: 1;
   }
 
   .main-nav__social-list {

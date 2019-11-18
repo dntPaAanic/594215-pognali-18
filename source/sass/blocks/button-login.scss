@@ -26,19 +26,3 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .button-login {
-    position: absolute;
-    top: 0;
-    right: 40px;
-    bottom: auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .button-login {
-    position: static;
-
-    order: 1;
-  }
-}
