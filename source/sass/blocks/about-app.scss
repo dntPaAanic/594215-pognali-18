@@ -36,15 +36,17 @@
 }
 
 .about-app__description {
+  margin: 0 0 18px;
+
   font-weight: 300;
   color: #ffffff;
-  margin: 0 0 18px;
 }
 
 .about-app__lead {
+  display: block;
+
   font-weight: 700;
   color: #ffffff;
-  display: block;
 }
 
 .about-app__button {
@@ -62,8 +64,10 @@
     &::before {
       right: 8px;
       bottom: 1px;
+
       width: 376px;
       height: 548px;
+
       background-image: url(../img/about-tablet@1x.png);
       background-repeat: no-repeat;
     }
@@ -78,29 +82,31 @@
   }
 
   .about-app__description {
-    font-size: 28px;
-    line-height: 33px;
     width: 300px;
     margin-bottom: 35px;
+
+    font-size: 28px;
+    line-height: 33px;
   }
 
   .about-app__lead {
-    font-size: 21px;
-    line-height: 25px;
     width: 295px;
     margin-bottom: 55px;
+
+    font-size: 21px;
+    line-height: 25px;
   }
 
   .about-app__button {
-    width: 275px;
     display: block;
+    width: 275px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-app {
-    padding: 183px 0 163px;
     margin-top: -55px;
+    padding: 183px 0 163px;
   }
 
   .about-app__wrapper {
@@ -109,8 +115,10 @@
     &::before {
       right: 60px;
       bottom: -163px;
+
       width: 630px;
       height: 665px;
+
       background-image: url(../img/about-desktop@1x.png);
       background-repeat: no-repeat;
     }

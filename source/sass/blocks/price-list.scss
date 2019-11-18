@@ -14,27 +14,30 @@
 }
 
 .price-list__wrapper {
-  padding: 80px 25px 40px 50px;
   display: flex;
   flex-direction: column;
+  padding: 80px 25px 40px 50px;
 }
 
 .price-list__lead {
   position: relative;
+
   width: 115px;
   margin-bottom: 55px;
 
   &::before {
-    @include pseudo;
     top: -13px;
     right: -129px;
+
     width: 99px;
     height: 99px;
+
     background-image: url(../img/rates@1x.png);
     background-repeat: no-repeat;
     background-size: contain;
-  }
 
+    @include pseudo;
+  }
 }
 
 .price-list__list,
@@ -76,16 +79,21 @@
   }
 
   &:nth-of-type(2)::after {
+    background-color: #ffbd30;
+
     @include pseudo("2");
   }
 
   &:nth-of-type(3)::after {
+    background-color: #ffd74b;
+
     @include pseudo("3");
   }
 }
 
 .price-list__offer {
   position: relative;
+
   margin-bottom: 22px;
 }
 
@@ -98,10 +106,121 @@
 
   &:hover,
   &:focus {
-    color: rgba(#192144, 0.6);
+    opacity: 0.6;
   }
 
   &:active {
-    color: rgba(#192144, 0.3);
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price-list {
+    padding: 125px 0 88px;
+
+    border-radius: 0 0 60px 60px;
+  }
+
+  .price-list--indent {
+    margin-top: -55px;
+  }
+
+  .price-list__wrapper {
+    padding: 0 40px;
+  }
+
+  .price-list__lead {
+    width: auto;
+
+    text-align: center;
+
+    &::before {
+      top: 300px;
+      right: 46px;
+    }
+  }
+
+  .price-list__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+
+  .price-list__service,
+  .price-list__offer {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .price-list__service {
+    width: 60%;
+    margin-bottom: 33px;
+    padding-left: 90px;
+
+    &::after {
+      top: -16px;
+      left: 0;
+
+      width: 67px;
+      height: 67px;
+      padding-top: 20px;
+
+      font-size: 28px;
+      line-height: 28px;
+    }
+  }
+
+  .price-list__button {
+    position: relative;
+
+    align-self: flex-start;
+    padding-left: 90px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      top: -24px;
+      left: 0;
+
+      width: 67px;
+      height: 67px;
+
+      background-color: #e2e5f2;
+      background-image: url(../img/business.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 17px;
+      border-radius: 50%;
+
+      @include pseudo;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price-list {
+    padding: 158px 0 190px;
+  }
+
+  .price-list__wrapper {
+    padding: 0 132px;
+  }
+
+  .price-list__lead {
+    margin-bottom: 150px;
+
+    &::before {
+      top: 183px;
+      right: 2px;
+
+      width: 198px;
+      height: 198px;
+    }
+  }
+
+  .price-list__offer {
+    padding-right: 270px;
   }
 }

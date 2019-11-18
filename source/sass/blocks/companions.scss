@@ -23,9 +23,10 @@
 }
 
 .companions__wrapper {
+  position: relative;
+
   padding-top: 100px;
   padding-bottom: 30px;
-  position: relative;
 }
 
 .companions__inner-description {
@@ -33,22 +34,24 @@
 }
 
 .companions__title {
-  margin-bottom: 20px;
   margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .companions__description {
-  font-weight: 300;
-  color: #ffffff;
   margin-top: 0;
   margin-bottom: 20px;
+
+  font-weight: 300;
+  color: #ffffff;
 }
 
 .companions__lead {
+  display: block;
+  margin-bottom: 58px;
+
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 58px;
-  display: block;
 }
 
 .companions__list {
@@ -97,6 +100,7 @@
 @media (min-width: $tablet-width) {
   .companions--index {
     padding: 192px 0 88px;
+
     border-radius: 0 0 60px 60px;
   }
 
@@ -113,15 +117,17 @@
   }
 
   .companions__description {
+    width: 425px;
+
     font-size: 28px;
     line-height: 33px;
-    width: 425px;
   }
 
   .companions__lead {
+    width: 260px;
+
     font-size: 21px;
     line-height: 25px;
-    width: 260px;
   }
 
   .companions__list {
@@ -137,11 +143,11 @@
   }
 
   .companions--index .companions__wrapper {
-    padding-left: 132px;
-    padding-right: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 132px;
   }
 
   .companions--index .companions__inner-description {
@@ -152,6 +158,7 @@
     position: absolute;
     bottom: 0;
     left: 132px;
+
     width: 280px;
   }
 }
