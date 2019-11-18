@@ -3,6 +3,7 @@
   z-index: 1;
 
   width: 100%;
+  padding: 62px 0 37px;
   overflow: hidden;
 
   background-color: #ffd74b;
@@ -14,10 +15,11 @@
 }
 
 .office__wrapper {
-  padding: 60px 25px 35px;
+  padding: 0 25px;
 }
 
 .office__address {
+  width: 205px;
   margin-bottom: 35px;
 
   font-weight: 700;
@@ -27,4 +29,47 @@
 
 .office__pathfinder-button {
   border: 3px solid #192144;
+}
+
+@media (min-width: $tablet-width) {
+  .office {
+    padding: 118px 0 88px;
+
+    border-radius: 0 0 60px 60px;
+  }
+
+  .office--indent {
+    margin-top: -55px;
+  }
+
+  .office__wrapper {
+    padding: 0 75px;
+  }
+
+  .office__address {
+    width: auto;
+    margin-bottom: 60px;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .office {
+    padding: 114px 0 64px;
+  }
+
+  .office__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 132px;
+    padding-left: 284px;
+  }
+
+  .office__address {
+    align-self: center;
+    margin-bottom: 0;
+  }
 }
