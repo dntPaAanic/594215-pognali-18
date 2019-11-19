@@ -4,7 +4,12 @@
 
   background-color: #ffd74b;
   border-radius: 20px;
-  display: none;
+
+  /*ВРЕМЕННО*/
+  width: 270px;
+  height: 624px;
+  /*ВРЕМЕННО*/
+
 }
 
 .companions-filter__lead {
@@ -12,6 +17,17 @@
   font-size: 22px;
   line-height: 22.49px;
   color: $color-text-additional;
+  /*ВРЕМЕННО*/
+  display: none;
+  /*ВРЕМЕННО*/
+}
+
+.companions-filter__form {
+  /*ВРЕМЕННО*/
+  display: none;
+  width: 270px;
+  height: 624px;
+  /*ВРЕМЕННО*/
 }
 
 .companions-filter__set {
@@ -105,4 +121,26 @@ input[type="checkbox"]:checked ~ .companions-filter__label::after {
   background-repeat: no-repeat;
 
   @include pseudo;
+}
+
+@media (min-width: $tablet-width) {
+  .companions-filter {
+    margin-bottom: 40px;
+    /*ВРЕМЕННО*/
+    width: 688px;
+    height: 550px;
+    /*ВРЕМЕННО*/
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .companions-filter {
+    order: 1;
+    margin-bottom: 0;
+    padding: 46px;
+    /*ВРЕМЕННО*/
+    width: 285px;
+    height: 815px;
+    /*ВРЕМЕННО*/
+  }
 }

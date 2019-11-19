@@ -15,3 +15,19 @@
 .catalog__inner {
   padding: 0 25px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .catalog__inner {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__inner {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

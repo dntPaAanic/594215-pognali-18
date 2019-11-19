@@ -42,12 +42,16 @@
 
 .user__image-link {
   overflow: hidden;
+  width: 70px;
+  height: 70px;
 }
 
 .user__image {
   transform: scale(1);
 
   transition: all 0.3s;
+  width: 70px;
+  height: 70px;
 }
 
 .user__destination-text {
@@ -68,27 +72,36 @@
   &:focus {
     box-shadow: 0 6px 21px rgba(0, 0, 0, 0.08);
   }
+}
 
-  .user__image-link {
-    position: static;
+.user--index .user__image-link {
+  position: static;
 
-    order: -1;
-    width: 270px;
-    height: 270px;
+  order: -1;
+  width: 270px;
+  height: 270px;
 
-    border-radius: 10px 10px 0 0;
-  }
+  border-radius: 10px 10px 0 0;
+}
 
-  .user__tags {
-    line-height: 18px;
-    text-align: center;
-    color: $color-text-main;
-  }
+.user--index .user__image {
+  width: 270px;
+  height: 270px;
+}
+
+.user--index .user__tags {
+  line-height: 18px;
+  text-align: center;
+  color: $color-text-main;
 }
 
 @media (min-width: $tablet-width) {
   .user--index:not(:last-child) {
     margin-bottom: 0;
+  }
+
+  .user__image-link {
+
   }
 }
 

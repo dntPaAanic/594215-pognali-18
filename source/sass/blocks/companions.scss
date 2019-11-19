@@ -134,6 +134,13 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  /*ВРЕМЕННО*/
+  .companions--catalog .companions__item {
+    height: 332px;
+    overflow: hidden;
+  }
+  /*ВРЕМЕННО*/
 }
 
 @media (min-width: $desktop-width) {
@@ -151,6 +158,13 @@
 
   .companions--index .companions__inner-description {
     margin-right: auto;
+  }
+
+  .companions__item {
+    /*ВРЕМЕННО*/
+    width: 950px;
+    height: 285px;
+    /*ВРЕМЕННО*/
   }
 
   .companions__button {
