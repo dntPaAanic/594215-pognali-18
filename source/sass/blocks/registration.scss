@@ -98,6 +98,15 @@
   margin-bottom: 18px;
 }
 
+.registration__contact-list .contact-list__link--tel,
+.registration__contact-list .contact-list__link--email {
+  color: #ffd74b;
+
+  &:active {
+    color: rgba(#ffd74b, 0.3);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .registration {
     padding: 127px 0 61px;

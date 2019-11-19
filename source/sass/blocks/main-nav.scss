@@ -1,5 +1,6 @@
 .main-nav {
   width: auto;
+  padding: 27px 0;
 
   background-color: $color-background-additional;
 }
@@ -15,18 +16,93 @@
   flex-grow: 1;
   flex-direction: column;
   justify-content: space-between;
+  padding: 70px 0 28px;
 }
 
-.main-nav__toggle {
-  position: absolute;
-  top: 10px;
-  right: 5px;
+.main-nav__button-login {
+  padding-top: 10px;
+  padding-bottom: 11px;
+  margin-top: 52px;
 
-  width: 19px;
-  height: 19px;
+  text-align: center;
 
-  border: 0;
+  border-radius: 25px;
 }
+
+.main-nav__contact-list {
+  margin-top: 50px;
+}
+
+.main-nav__contact-list .contact-list__link--email,
+.main-nav__contact-list .contact-list__link--tel {
+  color: #161c35;
+}
+
+@media (max-width: $exclude-desktop-width) {
+  .main-nav__toggle {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .main-nav--closed .main-nav__toggle {
+    top: auto;
+    bottom: -71.7%;
+    right: 0;
+
+    width: 25px;
+    height: 11px;
+
+    background-color: transparent;
+
+    &::before {
+      top: 0;
+      left: 0;
+
+      width: 25px;
+      height: 3px;
+
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 8px 0 0 #ffffff;
+
+      @include pseudo;
+    }
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: 0;
+    right: 5px;
+    width: 19px;
+    height: 19px;
+
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      top: 9px;
+      left: -4px;
+
+      width: 25px;
+      height: 2px;
+
+      background-color: #cccccc;
+
+      @include pseudo;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+
 
 @media (min-width: $tablet-width) {
   .main-nav__toggle {

@@ -18,8 +18,13 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  &:hover {
+  &:hover[href],
+  &:focus[href]{
     color: #ffd74b;
+  }
+
+  &:active[href] {
+    color: rgba(#ffd74b, 0.3);
   }
 }
 
@@ -39,8 +44,8 @@
   }
 }
 
-.site-list__link:hover .site-list__text,
-.site-list__link:focus .site-list__text {
+.site-list__link:hover[href] .site-list__text,
+.site-list__link:focus[href] .site-list__text {
   transform: translateY(-100%);
 }
 

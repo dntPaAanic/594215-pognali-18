@@ -7,22 +7,64 @@
 
 .contact-list__item {
   font-weight: 700;
-  color: #161c35;
   text-transform: uppercase;
+  align-self: center;
 }
 
 .contact-list__link {
-  color: #192144;
   text-decoration: none;
-}
+  position: relative;
+  display: flex;
+  align-items: center;
 
-.registration__contact-list .contact-list__link--tel,
-.registration__contact-list .contact-list__link--email {
-  color: #ffd74b;
+  &::before {
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+    margin-right: 16px;
+
+    background-color: #121936;
+    border-radius: 50%;
+
+    @include pseudo("", relative);
+  }
+
+  &:hover,
+  &:focus {
+    color: #ffbd30;
+
+    .contact-list__link-image--tel,
+    .contact-list__link-image--email {
+      fill: rgba(#ffbd30, 0.3);
+    }
+  }
 
   &:active {
-    color: rgba(#ffd74b, 0.3);
+    color: rgba(#ffbd30, 0.3);
+
+    .contact-list__link-image--tel,
+    .contact-list__link-image--email {
+      fill: rgba(#ffbd30, 0.3);
+    }
   }
+}
+
+.contact-list__link-image--tel,
+.contact-list__link-image--email {
+  position: absolute;
+  left: 14px;
+
+  fill: #ffd74b;
+}
+
+.contact-list__link-image--tel {
+  top: 14px;
+}
+
+.contact-list__link-image--email {
+  top: 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,7 +73,6 @@
     line-height: 28px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .contact-list {

@@ -1,7 +1,7 @@
-@mixin pseudo($content: "", $display: block, $position: absolute) {
+@mixin pseudo($content: "", $position: absolute, $display: block) {
   content: $content;
-  display: $display;
   position: $position;
+  display: $display;
 }
 
 @mixin ul-reset {
