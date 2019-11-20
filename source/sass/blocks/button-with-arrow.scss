@@ -18,10 +18,10 @@
 
   &::before {
     top: 25px;
-    right: 23px;
+    right: 16px;
 
     border: 7px solid transparent;
-    border-left: 7px solid $color-text-additional;
+    border-left: 10px solid $color-text-additional;
 
     @include pseudo;
   }

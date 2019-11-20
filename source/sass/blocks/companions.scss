@@ -47,6 +47,18 @@
 
     @include pseudo;
   }
+
+  &::after {
+    top: 241px;
+    left: -35px;
+    z-index: -1;
+    width: 71px;
+    height: 71px;
+    background-image: url(../img/rogovaya-back-mobile@1x.png);
+    background-repeat: no-repeat;
+
+    @include pseudo;
+  }
 }
 
 .companions__title {

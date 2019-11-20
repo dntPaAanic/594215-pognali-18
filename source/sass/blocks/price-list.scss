@@ -59,7 +59,7 @@
 
   &::after {
     top: -7px;
-    right: -24px;
+    right: 0;
 
     width: 34px;
     height: 34px;
@@ -95,6 +95,54 @@
   position: relative;
 
   margin-bottom: 22px;
+
+  &:nth-of-type(1)::after {
+    top: -33px;
+    right: 20px;
+
+    width: 200px;
+    height: 1px;
+
+    background-color: rgba(0, 0, 0, 0.05);
+
+    @include pseudo;
+  }
+
+  &:nth-of-type(2)::after {
+    top: -33px;
+    right: 20px;
+
+    width: 200px;
+    height: 1px;
+
+    background-color: rgba(0, 0, 0, 0.05);
+
+    @include pseudo;
+  }
+
+  &:nth-of-type(3)::after {
+    top: -33px;
+    right: 20px;
+
+    width: 200px;
+    height: 1px;
+
+    background-color: rgba(0, 0, 0, 0.05);
+
+    @include pseudo;
+  }
+
+  &:nth-of-type(3)::before {
+    top: 33px;
+    right: 20px;
+
+    width: 200px;
+    height: 1px;
+
+    background-color: rgba(0, 0, 0, 0.05);
+
+    @include pseudo;
+  }
 }
 
 .price-list__button {

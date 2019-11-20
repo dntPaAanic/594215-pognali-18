@@ -1,0 +1,45 @@
+.status {
+  &::before {
+    top: 10px;
+    right: -64px;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    @include pseudo;
+  }
+}
+
+.status--online {
+  &::before {
+    background-color: #81e31e;
+  }
+}
+
+.status--offline {
+  &::before {
+    background-color: #f97676;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .status {
+    &::before {
+      top: 13px;
+      right: -30px;
+
+      width: 7px;
+      height: 7px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .status {
+    &::before {
+      left: -24px;
+    }
+  }
+}

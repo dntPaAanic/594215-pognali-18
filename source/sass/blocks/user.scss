@@ -21,6 +21,10 @@
   transform: scale(1.1);
 }
 
+.user__name {
+  position: relative;
+}
+
 .user__name-link {
   font-weight: 700;
   font-size: 21px;
@@ -43,6 +47,8 @@
   font-size: 15px;
   line-height: 18px;
   color: $color-text-main;
+  width: 180px;
+  margin: 0 0 0 5px;
 }
 
 .user__image-link {
@@ -63,6 +69,26 @@
   font-size: 15px;
   line-height: 18px;
   color: $color-text-main;
+}
+
+.user__travel-mode {
+  margin: 0 0 20px 5px;
+}
+
+.user__level {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  right: 20px;
+  bottom: 77px;
+  padding-top: 14px;
+  text-align: center;
+  color: #1d2e5b;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: #ffffff;
 }
 
 .user--index {
@@ -111,6 +137,10 @@
   flex-direction: column;
   align-items: center;
   margin: 0 18px 0 0;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .user--index .country-icon__item:hover,
@@ -121,42 +151,66 @@
 }
 
 .user--index .country-icon__tooltip {
-  position: absolute;
-  top: 35px;
-  left: 50%;
-  transform: translateX(-50%);
 
-  display: none;
-  margin: 0;
-  padding: 17px 21px 16px;
+}
 
-  color: #ffffff;
-  text-transform: none;
-  white-space: nowrap;
-
-  background-color: #101d41;
-  border-radius: 4px;
-
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-
+.user--index .status {
   &::before {
-    top: -8px;
-    left: calc(50% - 8px);
-
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid #101d41;
-    border-left: 8px solid transparent;
-
-    @include pseudo;
+    top: 9px;
+    left: -16px;
   }
 }
 
+.user--index .user__name {
+  margin-top: 26px;
+  margin-bottom: 14px;
+}
+
 .user--index .user__tags {
-  line-height: 18px;
   text-align: center;
   color: $color-text-main;
+  margin-left: 0;
+  margin-bottom: 9px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.user--index .user__travel-type {
+  margin-bottom: 17px;
+  margin-left: 0;
+}
+
+.user--index .travel-type__image--plane {
+  width: 19px;
+  height: 21px;
+}
+
+.user--index .travel-type__image--auto {
+  width: 17px;
+  height: 21px;
+}
+
+.user--index .travel-type__image--bicycle {
+  width: 24px;
+  height: 21px;
+}
+
+.user--index .travel-type__image--walk {
+  width: 20px;
+  height: 21px;
+}
+
+.user--index .user__level {
+  top: 16px;
+  left: 17px;
+  width: 60px;
+  height: 60px;
+  padding-top: 11px;
+  color: #ffffff;
+  background-color: rgba(#1d2e5b, 0.6);
+  font-size: 24px;
+  line-height: 1;
 }
 
 @media (min-width: $tablet-width) {
