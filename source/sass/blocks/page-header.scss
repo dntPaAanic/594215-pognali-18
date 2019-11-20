@@ -1,8 +1,12 @@
 .page-header {
   background-color: #161c35;
-  min-height: 74px;
+  min-height: 73px;
   position: relative;
   width: auto;
+}
+
+.page-header__main-wrapper {
+  margin: 0 auto;
 }
 
 .page-header__wrapper {
@@ -19,10 +23,23 @@
   height: 19px;
 }
 
+.page-header--scrolled .page-header__main-wrapper {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+
+.page-header--scrolled .main-nav {
+  background-color: #ffffff;
+}
+
+
 @media (min-width: $tablet-width) {
   .page-header {
     min-height: 132px;
   }
+
   .page-header__wrapper {
     padding: 0 40px;
   }

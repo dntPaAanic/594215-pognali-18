@@ -7,20 +7,21 @@
   background-color: #161c35;
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% -51%;
+  background-position: 50% -22%;
 }
 
 .introduce__wrapper {
-  padding: 0 25px 38px;
+  position: relative;
+  padding: 20px 25px 38px;
 
   background-image: url("../img/traveller-illustration-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 54px 130px;
+  background-position: 78px 151px;
 }
 
 .introduce__lead {
   display: block;
-  margin-bottom: 250px;
+  margin-bottom: 246px;
 
   font-weight: 700;
   font-size: 36px;
@@ -28,6 +29,107 @@
   text-align: center;
   color: #ffffff;
 }
+
+.introduce__contact-list-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.introduce__contact-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.introduce__contact-list .contact-list__link--tel {
+
+  &::before {
+    width: 40px;
+    height: 40px;
+    background-color: #ff8d30;
+    margin: 0;
+  }
+
+  &:hover,
+  &:focus {
+
+    &::before {
+      background-color: #f26926;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.introduce__contact-list .contact-list__link--tel {
+
+  &::after {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/topmenu-phone.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 18px 18px;
+    content: "";
+    position: absolute;
+  }
+}
+
+.introduce__contact-list .contact-list__link--email {
+
+  &::before {
+    width: 40px;
+    height: 40px;
+    background-color: #ffbd30;
+    margin: 0;
+  }
+
+  &:hover,
+  &:focus {
+
+    &::before {
+      background-color: #ff8d30;
+    }
+  }
+
+  &:active {
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+
+.introduce__contact-list .contact-list__link--email {
+
+  &::after {
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/topmenu-mail.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 18px 14px;
+    content: "";
+    position: absolute;
+  }
+}
+
+.introduce__review {
+  padding: 26px 25px 31px;
+}
+
+.introduce__steps {
+  position: absolute;
+  width: 270px;
+}
+
+
 
 @media (min-width: $tablet-width) {
   .introduce {
