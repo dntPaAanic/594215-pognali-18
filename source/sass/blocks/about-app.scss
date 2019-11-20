@@ -16,6 +16,8 @@
 
   &::before {
     z-index: -1;
+    left: 18px;
+    bottom: 0;
 
     width: 292px;
     height: 352px;
@@ -28,11 +30,23 @@
 }
 
 .about-app__inner {
-  padding: 312px 50px 82px;
+  padding: 312px 25px 66px;
 }
 
 .about-app__title {
-  margin: 0 0 20px;
+  margin: 0 0 18px;
+  position: relative;
+
+  &::before {
+    top: -33px;
+    left: -50px;
+    z-index: -2;
+    width: 113px;
+    height: 132px;
+    background-color: #141b3b;
+    border-radius: 20px;
+    @include pseudo;
+  }
 }
 
 .about-app__description {

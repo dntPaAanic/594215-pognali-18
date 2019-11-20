@@ -31,11 +31,39 @@
 
 .companions__inner-description {
   padding: 0 25px;
+  position: relative;
+}
+
+.companions--index .companions__inner-description {
+  &::before {
+    top: -31px;
+    right: 0;
+    z-index: -1;
+    width: 143px;
+    height: 143px;
+    background-image: url(../img/smolov-back-desktop@1x.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    @include pseudo;
+  }
 }
 
 .companions__title {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    top: -31px;
+    left: -69px;
+    z-index: -1;
+    width: 132px;
+    height: 132px;
+    background-color: #141b3b;
+    border-radius: 20px;
+  }
 }
 
 .companions__description {
@@ -48,7 +76,7 @@
 
 .companions__lead {
   display: block;
-  margin-bottom: 58px;
+  margin-bottom: 57px;
 
   font-weight: 700;
   color: #ffffff;

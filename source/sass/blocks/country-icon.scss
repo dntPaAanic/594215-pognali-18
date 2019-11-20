@@ -6,9 +6,13 @@
   list-style: none;
 }
 
-.country-icon--main .country-icon__image {
+.country-icon--index .country-icon__image {
   width: 35px;
   height: 24px;
+  background-image: url("https://via.placeholder.com/35x35");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  display: block;
 }
 
 .country-icon__tooltip {
