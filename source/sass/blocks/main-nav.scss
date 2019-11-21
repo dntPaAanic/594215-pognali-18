@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+.main-nav--nojs {
+  position: static;
+}
+
 .main-nav--opened .page-header__wrapper {
   position: relative;
   z-index: 16;

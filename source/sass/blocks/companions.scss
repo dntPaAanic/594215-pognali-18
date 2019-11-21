@@ -147,7 +147,7 @@
 
 @media (min-width: $tablet-width) {
   .companions--index {
-    padding: 192px 0 88px;
+    padding: 196px 0 88px;
 
     border-radius: 0 0 60px 60px;
   }
@@ -164,11 +164,41 @@
     padding: 0;
   }
 
+  .companions--index .companions__inner-description {
+    &::before {
+      top: 260px;
+      left: 40px;
+    }
+
+    &::after {
+      top: -57px;
+      right: 75px;
+      left: auto;
+      width: 285px;
+      height: 285px;
+      background-image: url(../img/rogovaya-back-desktop@1x.png);
+      background-repeat: no-repeat;
+      border-radius: 10px;
+    }
+  }
+
+  .companions__title {
+    margin-bottom: 59px;
+
+    &::before {
+      top: -57px;
+      left: -35px;
+      width: 213px;
+      height: 213px;
+    }
+  }
+
   .companions__description {
     width: 425px;
 
     font-size: 28px;
     line-height: 33px;
+    margin-bottom: 37px;
   }
 
   .companions__lead {
