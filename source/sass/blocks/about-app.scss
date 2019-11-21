@@ -80,6 +80,7 @@
     padding: 0 75px;
 
     &::before {
+      left: auto;
       right: 8px;
       bottom: 1px;
 
@@ -109,7 +110,7 @@
 
   .about-app__lead {
     width: 295px;
-    margin-bottom: 55px;
+    margin-bottom: 51px;
 
     font-size: 21px;
     line-height: 25px;
