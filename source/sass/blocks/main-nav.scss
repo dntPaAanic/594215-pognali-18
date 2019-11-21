@@ -7,6 +7,9 @@
 
 .main-nav--opened {
   background-color: $color-background-additional;
+  position: absolute;
+  z-index: 16;
+  width: 100%;
 }
 
 .main-nav--opened .page-header__wrapper {
