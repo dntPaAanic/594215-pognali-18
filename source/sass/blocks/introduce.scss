@@ -108,21 +108,22 @@
   .introduce {
     background-color: #182044;
     background-image: url("../img/globe-back-tablet@1x.jpg");
-    background-position: 50% 100%;
+    background-position: 50% 98%;
+    padding: 30px 0 0;
   }
 
   .introduce__wrapper {
     position: relative;
 
-    padding: 30px 75px 315px;
+    padding: 0 75px 355px;
 
     background-image: url("../img/traveller-illustration-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: 280px 240px;
+    background-position: 284px 241px;
   }
 
   .introduce__lead {
-    margin-bottom: 61px;
+    margin-bottom: 87px;
     margin-left: 0;
 
     font-weight: 700;
@@ -137,6 +138,10 @@
   .introduce__review {
     padding: 0;
     margin: 0;
+  }
+
+  .introduce__steps {
+    width: 708px;
   }
 }
 

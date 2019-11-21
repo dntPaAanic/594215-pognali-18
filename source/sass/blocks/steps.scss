@@ -50,7 +50,8 @@
 @media (min-width: $tablet-width) {
   .steps {
     position: absolute;
-    bottom: -143px;
+    bottom: -135px;
+    left: 40px;
   }
 
   .steps__list {
@@ -61,10 +62,11 @@
   }
 
   .steps__item {
-    padding: 31px 30px 62px 33px;
+    padding: 31px 140px 62px 33px;
 
     font-size: 24px;
     line-height: 24px;
+    margin: 0;
 
     &::after {
       top: auto;
