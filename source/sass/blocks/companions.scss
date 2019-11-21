@@ -166,13 +166,13 @@
 
   .companions--index .companions__inner-description {
     &::before {
-      top: 260px;
-      left: 40px;
+      top: 285px;
+      left: -34px;
     }
 
     &::after {
-      top: -57px;
-      right: 75px;
+      top: -61px;
+      right: 0;
       left: auto;
       width: 285px;
       height: 285px;
@@ -186,7 +186,7 @@
     margin-bottom: 59px;
 
     &::before {
-      top: -57px;
+      top: -61px;
       left: -35px;
       width: 213px;
       height: 213px;

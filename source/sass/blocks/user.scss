@@ -34,12 +34,21 @@
 
   &:hover,
   &:focus {
-    color: rgba($color-text-additional, 0.6);
+    color: rgba($color-text-additional, 0.7);
   }
 
   &:active {
     color: rgba($color-text-additional, 0.3);
   }
+}
+
+.user__name:hover .status,
+.user__name:focus .status {
+  opacity: 0.7;
+}
+
+.user__name:active .status {
+  opacity: 0.3;
 }
 
 .user__tags {
@@ -180,7 +189,7 @@
 
 .user--index .status {
   &::before {
-    top: 9px;
+    top: 7px;
     left: -16px;
   }
 }
@@ -259,8 +268,24 @@
 }
 
 @media (min-width: $tablet-width) {
-  .user--index:not(:last-child) {
-    margin-bottom: 0;
+  .user--index {
+    border-radius: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .user--index .user__name {
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 29px;
+    margin-bottom: 22px;
+  }
+
+  .user--index .user__name-link {
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 
