@@ -30,8 +30,9 @@
 }
 
 .companions__inner-description {
-  padding: 0 25px;
   position: relative;
+
+  padding: 0 25px;
 }
 
 .companions--index .companions__inner-description {
@@ -39,8 +40,10 @@
     top: -31px;
     right: 0;
     z-index: -1;
+
     width: 143px;
     height: 143px;
+
     background-image: url(../img/smolov-back-desktop@1x.png);
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -52,8 +55,10 @@
     top: 241px;
     left: -35px;
     z-index: -1;
+
     width: 71px;
     height: 71px;
+
     background-image: url(../img/rogovaya-back-mobile@1x.png);
     background-repeat: no-repeat;
 
@@ -62,19 +67,23 @@
 }
 
 .companions__title {
-  margin-top: 0;
-  margin-bottom: 22px;
   position: relative;
 
+  margin-top: 0;
+  margin-bottom: 22px;
+
   &::before {
-    @include pseudo;
     top: -31px;
     left: -69px;
     z-index: -1;
+
     width: 132px;
     height: 132px;
+
     background-color: #141b3b;
     border-radius: 20px;
+
+    @include pseudo;
   }
 }
 

@@ -1,8 +1,9 @@
 .travel-type {
-  @include ul-reset;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
+
+  @include ul-reset;
 }
 
 .travel-type__item {
@@ -19,18 +20,21 @@
 
 .travel-type__item:hover .travel-type__tooltip,
 .travel-type__item:focus .travel-type__tooltip {
-  display: block;
   z-index: 10;
+
+  display: block;
 }
 
 .travel-type__image {
   display: block;
+
   background-repeat: no-repeat;
 }
 
 .travel-type__image--plane {
   width: 14px;
   height: 16px;
+
   background-image: url("../img/plane.svg");
   opacity: 0.15;
 }

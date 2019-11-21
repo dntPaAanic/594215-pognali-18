@@ -6,16 +6,19 @@
 }
 
 .contact-list__item {
+  align-self: center;
+
   font-weight: 700;
   text-transform: uppercase;
-  align-self: center;
 }
 
 .contact-list__link {
-  text-decoration: none;
   position: relative;
+
   display: flex;
   align-items: center;
+
+  text-decoration: none;
 
   &::before {
     top: 0;

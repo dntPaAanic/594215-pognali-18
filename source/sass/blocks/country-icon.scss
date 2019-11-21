@@ -7,11 +7,12 @@
 }
 
 .country-icon--index .country-icon__image {
+  display: block;
   width: 35px;
   height: 24px;
+
   background-color: #ffffff;
   background-repeat: no-repeat;
-  display: block;
 }
 
 .country-icon__image--srilanka {

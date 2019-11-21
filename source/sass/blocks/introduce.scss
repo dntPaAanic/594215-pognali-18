@@ -12,6 +12,7 @@
 
 .introduce__wrapper {
   position: relative;
+
   padding: 20px 25px 80px;
 
   background-image: url("../img/traveller-illustration-mobile@1x.png");
@@ -41,17 +42,16 @@
 }
 
 .introduce__contact-list .contact-list__link--tel {
-
   &::before {
     width: 40px;
     height: 40px;
-    background-color: #ff8d30;
     margin: 0;
+
+    background-color: #ff8d30;
   }
 
   &:hover,
   &:focus {
-
     &::before {
       background-color: #f26926;
     }
@@ -65,38 +65,37 @@
 }
 
 .introduce__contact-list .contact-list__link--tel {
-
   &::after {
+    content: "";
+    position: absolute;
+
     width: 40px;
     height: 40px;
+
     background-image: url(../img/topmenu-phone.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 18px 18px;
-    content: "";
-    position: absolute;
   }
 }
 
 .introduce__contact-list .contact-list__link--email {
-
   &::before {
     width: 40px;
     height: 40px;
-    background-color: #ffbd30;
     margin: 0;
+
+    background-color: #ffbd30;
   }
 
   &:hover,
   &:focus {
-
     &::before {
       background-color: #ff8d30;
     }
   }
 
   &:active {
-
     &::after {
       opacity: 0.3;
     }
@@ -105,18 +104,19 @@
 
 
 .introduce__contact-list .contact-list__link--email {
-
   &::after {
+    content: "";
+    position: absolute;
     top: 0;
     left: 0;
+
     width: 40px;
     height: 40px;
+
     background-image: url(../img/topmenu-mail.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 18px 14px;
-    content: "";
-    position: absolute;
   }
 }
 
@@ -126,6 +126,7 @@
 
 .introduce__steps {
   position: absolute;
+
   width: 270px;
 }
 
@@ -171,10 +172,11 @@
   }
 
   .introduce__wrapper {
+    padding: 95px 0 240px;
+
     background-image: url("../img/traveller-illustration-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 600px 0;
-    padding: 95px 0 240px;
   }
 
   .introduce__inner {
