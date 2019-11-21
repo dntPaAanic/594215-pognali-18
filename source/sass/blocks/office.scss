@@ -19,16 +19,66 @@
 }
 
 .office__address {
+  position: relative;
+
   width: 205px;
   margin-bottom: 35px;
+  padding-left: 61px;
 
+  font-style: normal;
   font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
   color: #192144;
   text-transform: uppercase;
+
+  &::before {
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+
+    background-color: #121936;
+    background-image: url("../img/contacts-location.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 14px 22px;
+    border-radius: 50%;
+
+    @include pseudo;
+  }
 }
 
 .office__pathfinder-button {
-  border: 3px solid #192144;
+  margin: 0 3px;
+  padding: 19px 21px;
+  border-radius: 6px;
+
+  box-shadow: 0 0 0 3px #192144;
+
+  &::before {
+    top: 21px;
+    right: 13px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #192144;
+    color: #ffffff;
+
+    &::before {
+      border-left-color: #ffffff;
+    }
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+
+    &::before {
+      border-left-color: rgba(#ffffff, 0.3);
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
