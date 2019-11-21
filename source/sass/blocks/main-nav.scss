@@ -150,11 +150,13 @@
   }
 
   .main-nav--closed .main-nav__toggle {
-    right: 370px;
+    right: 331px;
+    top: 16px;
   }
 
   .main-nav--opened .main-nav__toggle {
-    right: 370px;
+    right: 331px;
+    top: 16px;
   }
 
   .main-nav--closed .main-nav__button-login {
@@ -164,9 +166,8 @@
   .main-nav--closed .main-nav__button-login,
   .main-nav__button-login {
     position: absolute;
-    top: -34px;
+    top: -47px;
     right: 0;
-    bottom: auto;
 
     margin: 0;
   }

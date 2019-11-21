@@ -26,3 +26,13 @@
     color: rgba(#161c35, 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button-login {
+    padding: 10px 29px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

@@ -114,7 +114,7 @@
   .introduce__wrapper {
     position: relative;
 
-    padding: 0 75px 315px;
+    padding: 30px 75px 315px;
 
     background-image: url("../img/traveller-illustration-tablet@1x.png");
     background-repeat: no-repeat;
@@ -122,8 +122,8 @@
   }
 
   .introduce__lead {
-    margin-bottom: 90px;
-    margin-left: 110px;
+    margin-bottom: 61px;
+    margin-left: 0;
 
     font-weight: 700;
     font-size: 60px;
@@ -132,6 +132,11 @@
 
   .introduce__contact-list-wrapper {
     display: none;
+  }
+
+  .introduce__review {
+    padding: 0;
+    margin: 0;
   }
 }
 
