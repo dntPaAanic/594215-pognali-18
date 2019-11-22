@@ -177,11 +177,14 @@
   }
 
   .introduce__wrapper {
-    padding: 95px 0 240px;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 99px 87px 331px 129px;
 
     background-image: url("../img/traveller-illustration-desktop@1x.png");
+    background-position: 604px 0;
     background-repeat: no-repeat;
-    background-position: 600px 0;
   }
 
   .introduce__inner {
@@ -192,5 +195,11 @@
 
   .introduce__lead {
     width: 400px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .introduce__steps {
+    width: 1380px;
   }
 }

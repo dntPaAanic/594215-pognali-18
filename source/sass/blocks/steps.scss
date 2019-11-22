@@ -62,11 +62,11 @@
   }
 
   .steps__item {
+    margin: 0;
     padding: 31px 140px 62px 33px;
 
     font-size: 24px;
     line-height: 24px;
-    margin: 0;
 
     &::after {
       top: auto;
@@ -108,21 +108,19 @@
 
 @media (min-width: $desktop-width) {
   .steps {
-    bottom: 115px;
+    bottom: 122px;
+    left: 60px;
   }
 
   .steps__item {
-    width: 335px;
-    padding: 27px 31px 33px;
+    padding: 27px 110px 33px 31px;
 
-    border-radius: 20px 0 0 20px;
+    &::before {
+      font-size: 24px;
+      line-height: 24px;
+    }
 
     &::after {
-      top: 24px;
-      right: 24px;
-      bottom: auto;
-      left: auto;
-
       font-size: 24px;
       line-height: 24px;
     }
@@ -132,29 +130,50 @@
       padding-left: 33px;
 
       border-radius: 20px 0 0 20px;
+
+      &::after {
+        bottom: 55px;
+        left: 268px;
+      }
     }
 
     &:nth-child(2) {
       width: 365px;
 
       border-radius: 20px 0 0 20px;
+
+      &::after {
+        bottom: 55px;
+        left: 300px;
+      }
     }
 
     &:nth-child(3) {
-      left: -40px;
+      margin-left: -20px;
 
       width: 365px;
+      padding-right: 144px;
 
       border-radius: 20px 0 0 20px;
+
+      &::after {
+        bottom: 55px;
+        left: 300px;
+      }
     }
 
     &:nth-child(4) {
-      left: -60px;
+      margin-left: -20px;
 
       width: 315px;
       padding-left: 30px;
 
       border-radius: 20px;
+
+      &::after {
+        bottom: 55px;
+        left: 270px;
+      }
     }
   }
 }
