@@ -311,6 +311,7 @@
   .destination__inner {
     order: 1;
     margin-right: 105px;
+    margin-top: 5px;
 
     &::after {
       top: -75px;
@@ -319,8 +320,10 @@
   }
 
   .destination__caption {
-    width: 375px;
-    padding-top: 21px;
+    width: 372px;
+    padding-top: 24px;
+
+   
   }
 
   .destination__button {
