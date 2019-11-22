@@ -127,10 +127,11 @@
 
 @media (min-width: $tablet-width) {
   .introduce {
+    padding: 30px 0 0;
+
     background-color: #182044;
     background-image: url("../img/globe-back-tablet@1x.jpg");
     background-position: 50% 98%;
-    padding: 30px 0 0;
   }
 
   .introduce__wrapper {
@@ -157,8 +158,8 @@
   }
 
   .introduce__review {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   .introduce__steps {
@@ -172,6 +173,7 @@
     background-image: url("../img/globe-back-desktop@1x.jpg");
     background-position: 50% 100%;
     border-radius: 0 0 60px 60px;
+    padding: 0;
   }
 
   .introduce__wrapper {
