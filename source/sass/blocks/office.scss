@@ -53,8 +53,8 @@
 .office__pathfinder-button {
   margin: 0 3px;
   padding: 19px 21px;
-  border-radius: 6px;
 
+  border-radius: 6px;
   box-shadow: 0 0 0 3px #192144;
 
   &::before {
@@ -64,8 +64,9 @@
 
   &:hover,
   &:focus {
-    background-color: #192144;
     color: #ffffff;
+
+    background-color: #192144;
 
     &::before {
       border-left-color: #ffffff;
@@ -83,7 +84,7 @@
 
 @media (min-width: $tablet-width) {
   .office {
-    padding: 118px 0 88px;
+    padding: 125px 0 88px;
 
     border-radius: 0 0 60px 60px;
   }
@@ -98,10 +99,30 @@
 
   .office__address {
     width: auto;
-    margin-bottom: 60px;
+    margin-bottom: 64px;
+    padding-left: 93px;
 
     font-size: 28px;
     line-height: 28px;
+
+    &::before {
+      top: -22px;
+      width: 67px;
+      height: 67px;
+      background-size: 21px 31px;
+    }
+  }
+
+  .office__pathfinder-button {
+    padding: 25px 34px 26px;
+    border-radius: 18px;
+  }
+
+  .office .button-with-arrow {
+    &::before {
+      top: 32px;
+      right: 26px;
+    }
   }
 }
 

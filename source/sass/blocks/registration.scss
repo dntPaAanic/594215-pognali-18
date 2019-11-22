@@ -83,6 +83,7 @@
   font-size: 18px;
   line-height: 18px;
 
+  background-color: #ffffff;
   border: none;
   border-radius: 10px;
 
@@ -163,7 +164,7 @@
 
 @media (min-width: $tablet-width) {
   .registration {
-    padding: 127px 0 61px;
+    padding: 131px 0 59px;
 
     border-radius: 0 0 60px 60px;
   }
@@ -177,7 +178,7 @@
   }
 
   .registration__lead {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
 
   .registration__description {
@@ -188,16 +189,18 @@
   }
 
   .registration__description--2 {
-    margin-bottom: 66px;
+    margin-bottom: 63px;
   }
 
   .registration__form {
     align-self: flex-start;
+    width: 536px;
   }
 
   .registration__email {
     width: 536px;
-    margin-bottom: 56px;
+    height: 81px;
+    margin-bottom: 60px;
     padding: 30px 35px 31px 34px;
 
     font-size: 24px;
@@ -209,6 +212,7 @@
   .registration__button {
     width: 82px;
     height: 81px;
+    right: -82px;
 
     border-radius: 0 20px 20px 0;
   }
@@ -221,6 +225,11 @@
   .registration__contacts-inner {
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .registration__contacts-description--2 {
+    margin-bottom: 40px;
   }
 }
 

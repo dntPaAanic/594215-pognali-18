@@ -83,17 +83,30 @@
     margin: 0;
   }
 
+  .page-footer__logo-image {
+    width: 164px;
+    height: 42px;
+  }
+
   .page-footer__social-list {
     margin-bottom: 0;
   }
 
   .page-footer__developer {
     width: 160px;
+    padding-left: 4px;
   }
 
   .page-footer__copyright-link {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo-image {
+    width: 198px;
+    height: 52px;
   }
 }

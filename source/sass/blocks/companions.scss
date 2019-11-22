@@ -106,7 +106,6 @@
 .companions__list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
 }
 
 .companions__load-more {
@@ -143,6 +142,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.companions--index .companions__list {
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -212,6 +215,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 80px;
   }
 
   /*ВРЕМЕННО*/

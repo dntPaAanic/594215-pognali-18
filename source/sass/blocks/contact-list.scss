@@ -75,6 +75,30 @@
     font-size: 28px;
     line-height: 28px;
   }
+
+  .contact-list__link {
+    &::before {
+      width: 67px;
+      height: 67px;
+      margin-right: 24px;
+    }
+  }
+
+  .contact-list__link-image--tel {
+    top: 21px;
+    left: 21px;
+
+    width: 27px;
+    height: 27px;
+  }
+
+  .contact-list__link-image--email {
+    top: 25px;
+    left: 20px;
+
+    width: 27px;
+    height: 19px;
+  }
 }
 
 @media (min-width: $desktop-width) {

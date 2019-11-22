@@ -164,7 +164,7 @@
 
 @media (min-width: $tablet-width) {
   .price-list {
-    padding: 125px 0 88px;
+    padding: 129px 0 83px;
 
     border-radius: 0 0 60px 60px;
   }
@@ -179,12 +179,28 @@
 
   .price-list__lead {
     width: auto;
+    margin-bottom: 91px;
 
     text-align: center;
 
     &::before {
-      top: 300px;
+      top: 335px;
       right: 46px;
+      z-index: 2;
+    }
+
+    &::after {
+      top: 80px;
+      right: 0;
+      z-index: 1;
+
+      width: 198px;
+      height: 285px;
+
+      background-color: #e2e5f2;
+      border-radius: 20px;
+
+      @include pseudo;
     }
   }
 
@@ -207,7 +223,7 @@
     padding-left: 90px;
 
     &::after {
-      top: -16px;
+      top: -18px;
       left: 0;
 
       width: 67px;
@@ -216,6 +232,40 @@
 
       font-size: 28px;
       line-height: 28px;
+    }
+  }
+
+  .price-list__offer {
+    z-index: 3;
+
+    padding-right: 34px;
+
+    &:nth-of-type(1)::after {
+      top: -15px;
+      right: 35px;
+
+      width: 562px;
+    }
+
+    &:nth-of-type(2)::after {
+      top: -15px;
+      right: 35px;
+
+      width: 562px;
+    }
+
+    &:nth-of-type(3)::after {
+      top: -15px;
+      right: 35px;
+
+      width: 562px;
+    }
+
+    &:nth-of-type(3)::before {
+      top: 45px;
+      right: 35px;
+
+      width: 562px;
     }
   }
 
