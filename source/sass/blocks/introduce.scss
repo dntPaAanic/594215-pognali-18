@@ -191,12 +191,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
   }
 
   .introduce__lead {
     width: 400px;
     margin: 0;
     text-align: left;
+  }
+
+  .introduce__review {
+    width: 260px;
+    margin-top: 12px;
   }
 
   .introduce__steps {

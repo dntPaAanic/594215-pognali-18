@@ -196,17 +196,13 @@
     flex-grow: 1;
   }
 
-  .main-nav__nav-inner {
-    flex-direction: row;
-    padding: 0;
-  }
-
   .main-nav__toggle {
     display: none;
   }
 
   .main-nav__nav-inner {
-    padding-left: 149px;
+    flex-direction: row;
+    padding: 0 0 0 145px;
 
     &::before {
       top: 27px;
@@ -223,7 +219,7 @@
   }
 
   .main-nav__list {
-    margin-top: 5px;
+    margin-top: 6px;
   }
 
   .main-nav__button-login {
