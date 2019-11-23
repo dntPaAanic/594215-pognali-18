@@ -204,11 +204,19 @@
     margin-bottom: 37px;
   }
 
+  .companions__description .nowrap {
+    white-space: nowrap;
+  }
+
   .companions__lead {
     width: 260px;
 
     font-size: 21px;
     line-height: 25px;
+  }
+
+  .companions__lead .nowrap {
+    white-space: nowrap;
   }
 
   .companions--index .companions__list {
@@ -217,18 +225,11 @@
     justify-content: space-between;
     margin-bottom: 80px;
   }
-
-  /*ВРЕМЕННО*/
-  .companions--catalog .companions__item {
-    height: 332px;
-    overflow: hidden;
-  }
-  /*ВРЕМЕННО*/
 }
 
 @media (min-width: $desktop-width) {
   .companions--index {
-    padding: 180px 0 131px;
+    padding: 184px 0 134px;
   }
 
   .companions--index .companions__wrapper {
@@ -236,17 +237,43 @@
     flex-direction: row;
     justify-content: space-between;
     padding-right: 60px;
-    padding-left: 132px;
+    padding-left: 131px;
   }
 
   .companions--index .companions__inner-description {
     margin-right: auto;
+
+    &::before {
+      top: 4px;
+      left: 416px;
+    }
+
+    &::after {
+      top: 256px;
+      left: 60px;
+    }
   }
-  
+
+
+  .companions__title {
+    &::before {
+      left: -71px;
+    }
+  }
+
+  .companions__lead {
+    margin-bottom: 0;
+  }
+
+  .companions--index .companions__list {
+    margin-bottom: 0;
+    margin-top: 4px;
+  }
+
   .companions__button {
     position: absolute;
-    bottom: 0;
-    left: 132px;
+    bottom: -1px;
+    left: 130px;
 
     width: 280px;
   }

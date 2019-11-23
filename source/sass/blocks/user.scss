@@ -342,12 +342,25 @@
     top: 20px;
     left: 20px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .user--index:not(:last-child) {
     margin-right: 60px;
     margin-bottom: 0;
+  }
+
+  .user--index .user__name {
+    margin-top: 32px;
+    margin-bottom: 19px;
+  }
+
+  .user--index .user__travel-type {
+    margin-bottom: 22px;
+  }
+
+  .user--index .user__level {
+    top: 23px;
+    left: 23px;
   }
 }
