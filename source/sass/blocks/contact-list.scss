@@ -109,6 +109,28 @@
   }
 
   .contact-list__link {
-    font-size: 0;
+    &::before {
+      width: 90px;
+      height: 90px;
+      margin-right: 30px;
+    }
+  }
+
+  .contact-list__link--tel {
+    margin-right: 112px;
+  }
+
+  .contact-list__link-image--tel {
+    top: 26px;
+    left: 25px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .contact-list__link-image--email {
+    top: 31px;
+    left: 25px;
+    width: 36px;
+    height: 26px;
   }
 }

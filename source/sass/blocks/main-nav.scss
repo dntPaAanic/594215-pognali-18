@@ -235,6 +235,10 @@
     margin: 0 0 0 auto;
   }
 
+  .main-nav__contact-list .contact-list__link {
+    font-size: 0;
+  }
+
   .main-nav__contact-list .contact-list__link-image--email,
   .main-nav__contact-list .contact-list__link-image--tel {
     display: none;
