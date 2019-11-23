@@ -105,6 +105,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    padding: 0 60px;
+  }
+
+  .page-footer__social-list {
+    margin-right: 38px;
+  }
+
   .page-footer__logo-image {
     width: 198px;
     height: 52px;

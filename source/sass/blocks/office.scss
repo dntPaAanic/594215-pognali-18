@@ -128,19 +128,31 @@
 
 @media (min-width: $desktop-width) {
   .office {
-    padding: 114px 0 64px;
+    padding: 117px 0 63px;
   }
 
   .office__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-right: 132px;
+    padding-right: 134px;
     padding-left: 284px;
   }
 
   .office__address {
     align-self: center;
     margin-bottom: 0;
+    padding-left: 120px;
+
+    &::before {
+      top: -32px;
+      width: 90px;
+      height: 90px;
+      background-size: 28px 43px;
+    }
+  }
+
+  .office__pathfinder-button {
+    padding-right: 63px;
   }
 }
