@@ -88,87 +88,110 @@
 
       <div class="catalog__wrapper catalog__wrapper--indent">
         <div class="catalog__inner container">
-          <form class="companions-filter" action="https://echo.htmlacademy.ru" method="">
+          <form class="companions-filter" action="https://echo.htmlacademy.ru" method="post">
             <h2 class="companions-filter__lead">Подберите идеального попутчика</h2>
-            <form  class="companions-filter__form" >
-              <fieldset class="companions-filter__set companions-filter__set--hobby">
-                <legend class="companions-filter__legend">
-                  <button class="companions-filter__toggle" type="button">
-                    <span class="visually-hidden">Переключатель выпадающего списка</span>
-                  </button>
-                  <span class="companions-filter__legend-text">
-                    <span class="companions-filter__legend-text-1">Хобби</span>
-                  </span>
-                </legend>
-                <ul class="companions-filter__list">
-                  <li class="companions-filter__item">
-                    <input type="checkbox" class="visually-hidden" id="hobby-1" checked>
-                    <label for="hobby-1" class="companions-filter__label">Спортзал</label>
-                  </li>
-                  <li class="companions-filter__item">
-                    <input type="checkbox" class="visually-hidden" id="hobby-2">
-                    <label for="hobby-2" class="companions-filter__label">Кальян</label>
-                  </li>
-                  <li class="companions-filter__item">
-                    <input type="checkbox" class="visually-hidden" id="hobby-3">
-                    <label for="hobby-3" class="companions-filter__label">Диван</label>
-                  </li>
-                </ul>
-              </fieldset>
+            <fieldset class="companions-filter__set companions-filter__set--hobby companions-filter__set--active">
+              <legend class="companions-filter__legend">
+                <button class="companions-filter__toggle" type="button">
+                  <span class="visually-hidden">Переключатель выпадающего списка</span>
+                </button>
+                <span class="companions-filter__legend-text">
+                  <span class="companions-filter__legend-text-1">Хобби</span>
+                </span>
+              </legend>
+              <ul class="companions-filter__list">
+                <li class="companions-filter__item">
+                  <input type="checkbox" class="visually-hidden" id="hobby-1" checked>
+                  <label for="hobby-1" class="companions-filter__label">Спортзал</label>
+                </li>
+                <li class="companions-filter__item">
+                  <input type="checkbox" class="visually-hidden" id="hobby-2">
+                  <label for="hobby-2" class="companions-filter__label">Кальян</label>
+                </li>
+                <li class="companions-filter__item">
+                  <input type="checkbox" class="visually-hidden" id="hobby-3">
+                  <label for="hobby-3" class="companions-filter__label">Диван</label>
+                </li>
+              </ul>
+            </fieldset>
 
-              <fieldset class="companions-filter__set companions-filter__set--music">
-                <legend class="companions-filter__legend">
-                  <button class="companions-filter__toggle" type="button">
-                    <span class="visually-hidden">Переключатель выпадающего списка</span>
-                  </button>
-                  <span class="companions-filter__legend-text">
-                    <span class="companions-filter__legend-text-1">Музыка</span>
-                  </span>
-                </legend>
-                <ul class="companions-filter__list">
-                  <li class="companions-filter__item">
-                    <input type="checkbox" class="visually-hidden" id="music-1" checked>
-                    <label for="music-1" class="companions-filter__label">Тяжелый рок</label>
-                  <li class="companions-filter__item">
-                    <input type="checkbox" class="visually-hidden" id="music-2">
-                    <label for="music-2" class="companions-filter__label">Русский рэп</label>
-                  </li>
-                  <li class="companions-filter__item">
-                    <input type="checkbox" class="visually-hidden" id="music-3">
-                    <label for="music-3" class="companions-filter__label">Евроденс</label>
-                  </li>
-                </ul>
-              </fieldset>
+            <fieldset class="companions-filter__set companions-filter__set--music companions-filter__set--active">
+              <legend class="companions-filter__legend">
+                <button class="companions-filter__toggle" type="button">
+                  <span class="visually-hidden">Переключатель выпадающего списка</span>
+                </button>
+                <span class="companions-filter__legend-text">
+                  <span class="companions-filter__legend-text-1">Музыка</span>
+                </span>
+              </legend>
+              <ul class="companions-filter__list">
+                <li class="companions-filter__item">
+                  <input type="checkbox" class="visually-hidden" id="music-1" checked>
+                  <label for="music-1" class="companions-filter__label">Тяжелый рок</label>
+                <li class="companions-filter__item">
+                  <input type="checkbox" class="visually-hidden" id="music-2">
+                  <label for="music-2" class="companions-filter__label">Русский рэп</label>
+                </li>
+                <li class="companions-filter__item">
+                  <input type="checkbox" class="visually-hidden" id="music-3">
+                  <label for="music-3" class="companions-filter__label">Евроденс</label>
+                </li>
+              </ul>
+            </fieldset>
 
-              <fieldset class="companions-filter__set companions-filter__set--food">
-                <legend class="companions-filter__legend">
-                  <button class="companions-filter__toggle" type="button">
-                    <span class="visually-hidden">Переключатель выпадающего списка</span>
-                  </button>
-                  <span class="companions-filter__legend-text">
+            <fieldset class="companions-filter__set companions-filter__set--food companions-filter__set--active">
+              <legend class="companions-filter__legend">
+                <button class="companions-filter__toggle" type="button">
+                  <span class="visually-hidden">Переключатель выпадающего списка</span>
+                </button>
+                <span class="companions-filter__legend-text">
                     <span class="companions-filter__legend-text-1">Еда</span>
                   </span>
-                </legend>
-                <ul class="companions-filter__list">
-                  <li class="companions-filter__item">
-                    <input type="checkbox" class="visually-hidden" id="food-1" checked>
-                    <label for="food-1" class="companions-filter__label">Мясоед</label>
-                  </li>
-                  <li class="companions-filter__item">
-                    <input type="checkbox" class="visually-hidden" id="food-2">
-                    <label for="food-2" class="companions-filter__label">Сидит на ПП</label>
-                  </li>
-                  <li class="companions-filter__item">
-                    <input type="checkbox" class="visually-hidden" id="food-3">
-                    <label for="food-3" class="companions-filter__label">Веган-сыроед</label>
-                  </li>
-                </ul>
-              </fieldset>
+              </legend>
+              <ul class="companions-filter__list">
+                <li class="companions-filter__item">
+                  <input type="checkbox" class="visually-hidden" id="food-1" checked>
+                  <label for="food-1" class="companions-filter__label">Мясоед</label>
+                </li>
+                <li class="companions-filter__item">
+                  <input type="checkbox" class="visually-hidden" id="food-2">
+                  <label for="food-2" class="companions-filter__label">Сидит на ПП</label>
+                </li>
+                <li class="companions-filter__item">
+                  <input type="checkbox" class="visually-hidden" id="food-3">
+                  <label for="food-3" class="companions-filter__label">Веган-сыроед</label>
+                </li>
+              </ul>
+            </fieldset>
 
-
-
-            </form>
-
+            <fieldset class="companions-filter__set companions-filter__set--food companions-filter__set--active">
+              <legend class="companions-filter__legend">
+                <button class="companions-filter__toggle" type="button">
+                  <span class="visually-hidden">Переключатель выпадающего списка</span>
+                </button>
+                <span class="companions-filter__legend-text">
+                    <span class="companions-filter__legend-text-1">Транспорт</span>
+                  </span>
+              </legend>
+              <ul class="companions-filter__list travel-type">
+                <li class="travel-type__item">
+                  <span class="travel-type__image travel-type__image--plane travel-type__image--checked"></span>
+                  <span class="tooltip travel-type__tooltip">Авиаперелет</span>
+                </li>
+                <li class="travel-type__item">
+                  <span class="travel-type__image travel-type__image--auto"></span>
+                  <span class="tooltip travel-type__tooltip">Автотранспорт</span>
+                </li>
+                <li class="travel-type__item">
+                  <span class="travel-type__image travel-type__image--bicycle"></span>
+                  <span class="tooltip travel-type__tooltip">Велосипед</span>
+                </li>
+                <li class="travel-type__item">
+                  <span class="travel-type__image travel-type__image--walk"></span>
+                  <span class="tooltip travel-type__tooltip">Пешком</span>
+                </li>
+              </ul>
+            </fieldset>
           </form>
           <div class="catalog__companions">
             <section class="companions companions--catalog">
