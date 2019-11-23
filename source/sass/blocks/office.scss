@@ -2,11 +2,12 @@
   position: relative;
   z-index: 1;
 
+  width: 100%;
+  padding: 62px 0 37px;
   overflow: hidden;
 
   background-color: #ffd74b;
   border-radius: 0 0 30px 30px;
-  width: 100%;
 }
 
 .office--indent {
@@ -14,17 +15,144 @@
 }
 
 .office__wrapper {
-  padding: 60px 25px 35px;
+  padding: 0 25px;
 }
 
 .office__address {
-  margin-bottom: 35px;
+  position: relative;
 
+  width: 205px;
+  margin-bottom: 35px;
+  padding-left: 61px;
+
+  font-style: normal;
   font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
   color: #192144;
   text-transform: uppercase;
+
+  &::before {
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+
+    background-color: #121936;
+    background-image: url("../img/contacts-location.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 14px 22px;
+    border-radius: 50%;
+
+    @include pseudo;
+  }
 }
 
 .office__pathfinder-button {
-  border: 3px solid #192144;
+  margin: 0 3px;
+  padding: 19px 21px;
+
+  border-radius: 6px;
+  box-shadow: 0 0 0 3px #192144;
+
+  &::before {
+    top: 21px;
+    right: 13px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+
+    background-color: #192144;
+
+    &::before {
+      border-left-color: #ffffff;
+    }
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+
+    &::before {
+      border-left-color: rgba(#ffffff, 0.3);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .office {
+    padding: 125px 0 88px;
+
+    border-radius: 0 0 60px 60px;
+  }
+
+  .office--indent {
+    margin-top: -55px;
+  }
+
+  .office__wrapper {
+    padding: 0 75px;
+  }
+
+  .office__address {
+    width: auto;
+    margin-bottom: 64px;
+    padding-left: 93px;
+
+    font-size: 28px;
+    line-height: 28px;
+
+    &::before {
+      top: -22px;
+      width: 67px;
+      height: 67px;
+      background-size: 21px 31px;
+    }
+  }
+
+  .office__pathfinder-button {
+    padding: 25px 34px 26px;
+    border-radius: 18px;
+  }
+
+  .office .button-with-arrow {
+    &::before {
+      top: 32px;
+      right: 26px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .office {
+    padding: 117px 0 63px;
+  }
+
+  .office__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 134px;
+    padding-left: 284px;
+  }
+
+  .office__address {
+    align-self: center;
+    margin-bottom: 0;
+    padding-left: 120px;
+
+    &::before {
+      top: -32px;
+      width: 90px;
+      height: 90px;
+      background-size: 28px 43px;
+    }
+  }
+
+  .office__pathfinder-button {
+    padding-right: 63px;
+  }
 }

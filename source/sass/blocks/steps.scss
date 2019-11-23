@@ -1,14 +1,15 @@
 .steps__list {
-  @include ul-reset;
-
   counter-reset: list;
+
+  @include ul-reset;
 }
 
 .steps__item {
   position: relative;
+
   min-height: 90px;
   margin-bottom: -10px;
-  padding: 20px 24px;
+  padding: 23px 105px 23px 24px;
 
   font-weight: 700;
   font-size: 18px;
@@ -20,6 +21,9 @@
 
   &::after {
     content: counter(list);
+    position: absolute;
+    top: 21px;
+    right: 21px;
 
     color: #ffffff;
 
@@ -44,6 +48,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .steps {
+    position: absolute;
+    bottom: -135px;
+    left: 40px;
+  }
+
   .steps__list {
     display: flex;
     flex-wrap: wrap;
@@ -52,13 +62,20 @@
   }
 
   .steps__item {
-    padding: 31px 30px 62px 33px;
+    margin: 0;
+    padding: 31px 140px 62px 33px;
 
     font-size: 24px;
     line-height: 24px;
 
     &::after {
+      top: auto;
+      right: auto;
+      bottom: 22px;
+      left: 33px;
+
       font-size: 30px;
+      line-height: 30px;
     }
 
     &:nth-child(1) {
@@ -76,6 +93,7 @@
 
     &:nth-child(3) {
       width: 364px;
+
       border-radius: 0 0 0 20px;
     }
 
@@ -84,6 +102,78 @@
       margin-left: -20px;
 
       border-radius: 0 0 20px 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .steps {
+    bottom: 122px;
+    left: 60px;
+  }
+
+  .steps__item {
+    padding: 27px 110px 33px 31px;
+
+    &::before {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &::after {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &:nth-child(1) {
+      width: 335px;
+      padding-left: 33px;
+
+      border-radius: 20px 0 0 20px;
+
+      &::after {
+        bottom: 55px;
+        left: 268px;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 365px;
+
+      border-radius: 20px 0 0 20px;
+
+      &::after {
+        bottom: 55px;
+        left: 300px;
+      }
+    }
+
+    &:nth-child(3) {
+      margin-left: -20px;
+
+      width: 365px;
+      padding-right: 144px;
+
+      border-radius: 20px 0 0 20px;
+
+      &::after {
+        bottom: 55px;
+        left: 300px;
+      }
+    }
+
+    &:nth-child(4) {
+      margin-left: -20px;
+
+      width: 315px;
+      padding-left: 30px;
+
+      border-radius: 20px;
+
+      &::after {
+        bottom: 55px;
+        left: 270px;
+      }
     }
   }
 }

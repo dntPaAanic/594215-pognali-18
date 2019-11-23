@@ -12,3 +12,19 @@
 .map--indent {
   margin-top: -30px;
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 570px;
+  }
+
+  .map--indent {
+    margin-top: -55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    height: 505px;
+  }
+}

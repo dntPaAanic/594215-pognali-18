@@ -1,3 +1,68 @@
 .travel-type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   @include ul-reset;
+}
+
+.travel-type__item {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+
+  border-radius: 50%;
+}
+
+.travel-type__item:hover .travel-type__tooltip,
+.travel-type__item:focus .travel-type__tooltip {
+  z-index: 10;
+
+  display: block;
+}
+
+.travel-type__image {
+  display: block;
+
+  background-repeat: no-repeat;
+}
+
+.travel-type__image--plane {
+  width: 14px;
+  height: 16px;
+
+  background-image: url("../img/plane.svg");
+  opacity: 0.15;
+}
+
+.travel-type__image--auto {
+  width: 13px;
+  height: 16px;
+
+  background-image: url("../img/bus.svg");
+  opacity: 0.15;
+}
+
+.travel-type__image--bicycle {
+  width: 19px;
+  height: 17px;
+
+  background: url("../img/bike.svg");
+  opacity: 0.15;
+}
+
+.travel-type__image--walk {
+  width: 15px;
+  height: 17px;
+
+  background: url("../img/run.svg");
+  opacity: 0.15;
+}
+
+.travel-type__image--checked {
+  opacity: 1;
 }

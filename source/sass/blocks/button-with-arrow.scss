@@ -1,6 +1,7 @@
 
 .button-with-arrow {
   position: relative;
+
   display: block;
   padding: 23px 24px 21px;
 
@@ -12,14 +13,17 @@
   text-decoration: none;
 
   background-color: #ffd74b;
+  border: 0;
   border-radius: 10px;
 
   &::before {
-    @include pseudo;
     top: 25px;
-    right: 23px;
+    right: 16px;
+
     border: 7px solid transparent;
-    border-left: 7px solid $color-text-additional;
+    border-left: 10px solid $color-text-additional;
+
+    @include pseudo;
   }
 
   &:hover,
@@ -28,11 +32,28 @@
   }
 
   &:active {
-    background-color: #ffbd30;
     color: rgba($color-text-additional, 0.3);
+
+    background-color: #ffbd30;
 
     &::before {
       border-left-color: rgba($color-text-additional, 0.3);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button-with-arrow {
+    padding: 27px 34px 30px;
+
+    border-radius: 20px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    &::before {
+      top: 33px;
+      right: 30px;
     }
   }
 }

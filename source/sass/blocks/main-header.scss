@@ -1,0 +1,139 @@
+.main-header {
+  position: relative;
+  z-index: 2;
+
+  width: auto;
+  padding: 26px 0 13px;
+
+  background-color: #161c35;
+  border-radius: 0 0 20px 20px;
+}
+
+.main-header__wrapper {
+  position: relative;
+  padding: 0 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__current-page {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+
+  &::before {
+    bottom: -14.5px;
+
+    width: 173px;
+    height: 5px;
+
+    background-color: #ff8d30;
+    border-radius: 2px;
+
+    @include pseudo;
+  }
+}
+
+.main-header__index-link {
+  display: none;
+  text-decoration: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    width: auto;
+    padding: 82px 0 68px;
+
+    border-radius: 0 0 60px 60px;
+  }
+
+
+  .main-header__wrapper {
+    padding: 0 75px;
+  }
+
+  .main-header__current-page {
+    font-size: 60px;
+    line-height: 70px;
+
+    &::before {
+      bottom: -72px;
+
+      width: 287px;
+      height: 8px;
+
+      border-radius: 4px;
+    }
+  }
+
+  .main-header__index-link {
+    position: relative;
+    margin-top: 10px;
+
+    display: block;
+    padding-right: 60px;
+
+    color: #ffffff;
+    text-transform: uppercase;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+
+    &::before {
+      top: 3px;
+      right: 0;
+
+      width: 32px;
+      height: 16px;
+
+      background-image: url("../img/return.svg");
+      background-repeat: no-repeat;
+
+      @include pseudo;
+    }
+
+    &:hover,
+    &:focus {
+      color: rgba(#ffffff, 0.6);
+
+      &::before {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      color: rgba(#ffffff, 0.3);
+
+      &::before {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    padding: 95px 0 67px;
+  }
+
+  .main-header__wrapper {
+    padding-right: 125px;
+    padding-left: 130px;
+  }
+
+  .main-header__current-page {
+    &::before {
+      left: 126px;
+    }
+  }
+
+}

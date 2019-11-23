@@ -6,15 +6,39 @@
   list-style: none;
 }
 
-.country-icon--main .country-icon__image {
+.country-icon--index .country-icon__image {
+  display: block;
   width: 35px;
   height: 24px;
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+
+.country-icon__image--srilanka {
+  background-image: url("https://via.placeholder.com/35x35");
+}
+
+.country-icon__image--thailand {
+  background-image: url("https://via.placeholder.com/35x35");
+}
+
+.country-icon__image--seychelles {
+  background-image: url("https://via.placeholder.com/35x35");
+}
+
+.country-icon__image--belgium {
+  background-image: url("https://via.placeholder.com/35x35");
+}
+
+.country-icon__image--czech {
+  background-image: url("https://via.placeholder.com/35x35");
 }
 
 .country-icon__tooltip {
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
-  color: $color-text-additional;
+  color: #ffffff;
   text-transform: uppercase;
 }

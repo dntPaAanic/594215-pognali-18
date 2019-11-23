@@ -1,8 +1,8 @@
 .about-app {
-  width: auto;
   position: relative;
   z-index: 6;
 
+  width: auto;
   overflow: hidden;
 
   background-color: #192144;
@@ -11,10 +11,12 @@
 
 .about-app__wrapper {
   position: relative;
+
   padding: 0 25px;
 
   &::before {
-    @include pseudo;
+    bottom: 0;
+    left: 18px;
     z-index: -1;
 
     width: 292px;
@@ -22,23 +24,153 @@
 
     background-image: url("../img/about-mobile@1x.png");
     background-repeat: no-repeat;
+
+    @include pseudo;
   }
 }
 
 .about-app__inner {
-  padding: 50px 18px 52px;
+  padding: 312px 25px 82px;
 }
 
 .about-app__title {
-  margin: 0 0 20px;
+  position: relative;
+
+  margin: 0 0 18px;
+
+  &::before {
+    top: -33px;
+    left: -50px;
+    z-index: -2;
+
+    width: 113px;
+    height: 132px;
+
+    background-color: #141b3b;
+    border-radius: 20px;
+
+    @include pseudo;
+  }
 }
 
 .about-app__description {
+  margin: 0 0 18px;
+
   font-weight: 300;
   color: #ffffff;
 }
 
 .about-app__lead {
+  display: block;
+
   font-weight: 700;
   color: #ffffff;
+  margin: 0;
+}
+
+.about-app__button {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about-app {
+    padding: 270px 0 88px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .about-app__wrapper {
+    padding: 0 75px;
+
+    &::before {
+      left: auto;
+      right: 8px;
+      bottom: 1px;
+
+      width: 376px;
+      height: 548px;
+
+      background-image: url("../img/about-tablet@1x.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .about-app__inner {
+    padding: 0;
+  }
+
+  .about-app__title {
+    margin-bottom: 40px;
+  }
+
+  .about-app__description {
+    width: 300px;
+    margin-bottom: 35px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .about-app__description .nowrap {
+    white-space: nowrap;
+  }
+
+  .about-app__lead {
+    width: 295px;
+    margin-bottom: 51px;
+
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .about-app__button {
+    display: block;
+    width: 275px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-app {
+    padding: 187px 0 162px;
+  }
+
+  .about-app--indent {
+    margin-top: -55px;
+  }
+
+  .about-app__wrapper {
+    padding: 0 132px;
+
+    &::before {
+      right: 60px;
+      bottom: -162px;
+
+      width: 630px;
+      height: 665px;
+
+      background-image: url("../img/about-desktop@1x.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .about-app__title {
+    margin-bottom: 60px;
+
+    &::before {
+      top: -61px;
+      left: -72px;
+
+      width: 213px;
+      height: 213px;
+    }
+  }
+
+  .about-app__description {
+    width: 620px;
+    margin-bottom: 36px;
+  }
+
+  .about-app__lead {
+    width: 410px;
+    margin-bottom: 85px;
+  }
 }

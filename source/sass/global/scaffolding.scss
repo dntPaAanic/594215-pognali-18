@@ -5,9 +5,10 @@ body {
 
   font-weight: 400;
   font-size: $font-size;
-  line-height: 22px;
+  line-height: $line-height;
   font-family: $font-family;
   color: $color-text-main;
+  background-color: $color-background-main;
 }
 
 *,
