@@ -4,12 +4,13 @@
 
 .catalog__wrapper {
   width: auto;
+  padding: 43px 0 77px;
 
   background-color: $color-background-main;
 }
 
 .catalog__wrapper--indent {
-  padding-bottom: 77px;
+  margin-top: -20px;
 }
 
 .catalog__inner {

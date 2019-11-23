@@ -1,32 +1,18 @@
 .companions-filter {
-  /*ВРЕМЕННО*/
-  width: 270px;
-  height: 624px;
   margin-bottom: 30px;
-  padding: 25px 25px 25px;
+  padding: 25px 25px 24px;
 
   background-color: #ffd74b;
   border-radius: 20px;
-  /*ВРЕМЕННО*/
 }
 
 .companions-filter__lead {
-  /*ВРЕМЕННО*/
-  display: none;
-
   font-weight: 700;
   font-size: 22px;
-  line-height: 22.49px;
+  line-height: 22px;
   color: $color-text-additional;
-  /*ВРЕМЕННО*/
-}
-
-.companions-filter__form {
-  /*ВРЕМЕННО*/
-  display: none;
-  width: 270px;
-  height: 624px;
-  /*ВРЕМЕННО*/
+  width: 120px;
+  margin: 0 0 36px;
 }
 
 .companions-filter__set {
@@ -34,6 +20,8 @@
   padding: 0;
 
   border: none;
+
+
 }
 
 .companions-filter__legend {
@@ -124,22 +112,21 @@ input[type="checkbox"]:checked ~ .companions-filter__label::after {
 
 @media (min-width: $tablet-width) {
   .companions-filter {
-    /*ВРЕМЕННО*/
-    width: 688px;
-    height: 550px;
     margin-bottom: 40px;
-    /*ВРЕМЕННО*/
+  }
+
+  .companions-filter__lead {
+    width: auto;
+    margin-bottom: 71px;
+
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .companions-filter {
     order: 1;
-    /*ВРЕМЕННО*/
-    width: 285px;
-    height: 815px;
     margin-bottom: 0;
-    padding: 46px;
-    /*ВРЕМЕННО*/
   }
 }
