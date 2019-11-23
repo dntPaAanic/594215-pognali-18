@@ -1,7 +1,7 @@
 .user {
   position: relative;
 
-  padding: 12px 20px 23px;
+  padding: 13px 20px 23px;
 
   background-color: $color-background-additional;
   border-radius: 20px;
@@ -23,12 +23,20 @@
 
 .user__name {
   position: relative;
+
+  width: 80px;
+  margin-bottom: 45px;
+  margin-left: 84px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-top: 0;
 }
 
 .user__name-link {
   font-weight: 700;
-  font-size: 21px;
-  line-height: 21px;
+  font-size: 20px;
+  line-height: 20px;
   color: $color-text-additional;
   text-decoration: none;
 
@@ -53,12 +61,102 @@
 
 .user__tags {
   width: 180px;
-  margin: 0 0 0 5px;
+  margin: 0 0 13px 5px;
 
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
   color: $color-text-main;
+}
+
+.user__likes {
+  position: absolute;
+  top: 60px;
+  left: 66px;
+
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
+}
+
+.user__likes--checked .user__likes-count {
+  &::before {
+    background-color: #f9eaea;
+  }
+
+  &::after {
+    background: url("../img/heart-active.svg");
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      opacity: 1;
+    }
+
+    &::before {
+      background-color: #f9d8d8;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.user__likes-count {
+  padding-left: 38px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+
+  &::before {
+    top: -6px;
+    left: 0;
+
+    width: 31px;
+    height: 31px;
+
+    background-color: #edeff6;
+    border-radius: 50%;
+
+    @include pseudo;
+  }
+
+  &::after {
+    top: 4px;
+    left: 9px;
+
+    width: 13px;
+    height: 11px;
+
+    background: url("../img/heart.svg");
+    opacity: 0.3;
+
+    @include pseudo;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-color: #e2e5f2;
+    }
+
+    &::after {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.1;
+    }
+  }
 }
 
 .user__image-link {
@@ -84,11 +182,36 @@
   font-size: 15px;
   line-height: 18px;
   color: $color-text-main;
+  position: relative;
+  z-index: 1;
+  margin: 0 0 17px 5px;
+
+  &::before {
+    top: 10px;
+    left: -25px;
+    z-index: -1;
+
+    width: 270px;
+    height: 1px;
+
+    background: #edeff6 linear-gradient(90deg, #edeff6 0, #edeff6 14px, #ffffff 14px, #ffffff 132px, #edeff6 132px, #edeff6 100%);
+
+    @include pseudo;
+  }
+}
+
+.user__country-icon-list {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 11px 5px;
 }
 
 .user__travel-type {
-  margin: 0 0 20px 5px;
+  margin: 0 0 11px 5px;
+  position: relative;
+  z-index: 1;
 }
+
 
 .user__level {
   position: absolute;
@@ -142,6 +265,11 @@
   &:focus {
     box-shadow: 0 6px 21px rgba(0, 0, 0, 0.08);
   }
+}
+
+.user--index .user__name-link {
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .user--index .user__image-link {
@@ -201,10 +329,12 @@
 .user--index .user__name {
   margin-top: 26px;
   margin-bottom: 14px;
+  margin-left: 0;
+  width: auto;
 }
 
 .user--index .user__tags {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
   margin-left: 0;
 
   font-weight: 400;
