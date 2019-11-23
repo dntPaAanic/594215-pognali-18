@@ -299,7 +299,7 @@
 
 @media (min-width: $desktop-width) {
   .price-list {
-    padding: 158px 0 190px;
+    padding: 162px 0 185px;
   }
 
   .price-list__wrapper {
@@ -310,7 +310,7 @@
     margin-bottom: 150px;
 
     &::before {
-      top: 183px;
+      top: 179px;
       right: 2px;
 
       width: 198px;
@@ -319,6 +319,12 @@
   }
 
   .price-list__offer {
-    padding-right: 270px;
+    padding-right: 273px;
+  }
+
+  .price-list__button {
+    &::before {
+      top: -28px;
+    }
   }
 }
