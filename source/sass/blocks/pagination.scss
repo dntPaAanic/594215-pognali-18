@@ -1,5 +1,6 @@
 .pagination {
   text-align: center;
+  margin: 19px 0 0 0;
 }
 
 .pagination__wrapper {
@@ -30,7 +31,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 19px 0 0 0;
+  margin: 0;
 
   list-style: none;
 }
@@ -39,7 +40,7 @@
   position: relative;
   display: block;
   width: 135px;
-  height: 50px;
+  min-height: 50px;
 
   &:hover,
   &:focus {
@@ -79,11 +80,19 @@
 
 
 @media (min-width: $tablet-width) {
+  .pagination {
+    margin-top: 48px;
+  }
+
   .pagination__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 35px 25px 28px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .pagination__list {
@@ -97,11 +106,28 @@
     align-items: center;
     width: 50px;
     height: 50px;
+    border-radius: 50px;
 
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
     color: #161c35;
     text-decoration: none;
+
+    &:hover[href],
+    &:focus[href] {
+      color: rgba(#161c35, 0.6);
+    }
+
+    &:active[href],
+    &--current {
+      color: #161c35;
+
+      background-color: #ffd74b;
+    }
+  }
+
+  .pagination__arrows {
+    width: 53px;
   }
 }

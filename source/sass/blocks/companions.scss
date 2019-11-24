@@ -156,6 +156,25 @@
 }
 
 @media (min-width: $tablet-width) {
+  .companions__load-wrapper {
+    margin-top: 45px;
+  }
+
+  .companions__load-more {
+    padding-left: 42px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      top: 0;
+      left: -9px;
+
+      width: 27px;
+      height: 27px;
+    }
+  }
+
   .companions--index {
     padding: 196px 0 88px;
 
