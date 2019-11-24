@@ -204,14 +204,41 @@
   position: relative;
   z-index: 1;
   margin: 0 0 11px 5px;
+  min-height: 52px;
+}
+
+.user__travel-text {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  margin: 0 0 15px 5px;
+
+  color: $color-text-main;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+
+  &::before {
+    top: 10px;
+    left: -25px;
+    z-index: -1;
+
+    width: 270px;
+    height: 1px;
+
+    background: #edeff6 linear-gradient(90deg, #edeff6 0, #edeff6 14px, #ffffff 14px, #ffffff 105px, #edeff6 105px, #edeff6 196px, #ffffff 196px, #ffffff 259px, #edeff6 259px, #edeff6 100%);
+
+    @include pseudo;
+  }
 }
 
 .user__travel-type {
-  margin: 0 0 11px 5px;
+  margin: 0 0 20px 2px;
   position: relative;
   z-index: 1;
 }
-
 
 .user__level {
   position: absolute;
@@ -353,6 +380,10 @@
   margin-left: 0;
 }
 
+.user--index .travel-type__item {
+  background-color: transparent;
+}
+
 .user--index .travel-type__image--plane {
   width: 19px;
   height: 21px;
@@ -399,6 +430,33 @@
 
     @include pseudo;
   }
+}
+
+.user__invite-button {
+  padding: 6px 79px 2px;
+}
+
+.user--catalog {
+  .user__level {
+    bottom: 121px;
+    z-index: 1;
+  }
+
+  .user__level-text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $color-text-main;
+    margin: 0 0 19px 0;
+  }
+
+  .user__level-description {
+    display: none;
+  }
+}
+
+.user-id3 .user__country-icon-list {
+  margin-bottom: 15px;
 }
 
 @media (min-width: $tablet-width) {

@@ -108,11 +108,18 @@
   flex-direction: column;
 }
 
+.companions__load-wrapper {
+  margin-top: 21px;
+  text-align: center;
+}
+
 .companions__load-more {
   position: relative;
 
   display: inline-block;
   align-self: center;
+
+  padding-left: 31px;
 
   font-weight: 700;
   font-size: 17px;
@@ -123,7 +130,7 @@
 
   &::before {
     top: 4px;
-    left: -31px;
+    left: -2px;
 
     width: 18px;
     height: 18px;
