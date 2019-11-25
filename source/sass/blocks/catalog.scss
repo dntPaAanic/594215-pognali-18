@@ -19,6 +19,14 @@
 
 
 @media (min-width: $tablet-width) {
+  .catalog__wrapper {
+    padding: 101px 0 117px;
+  }
+
+  .catalog__wrapper--indent {
+    margin-top: -55px;
+  }
+  
   .catalog__inner {
     padding: 0 40px;
   }

@@ -25,12 +25,13 @@
   position: relative;
 
   width: 80px;
+  margin-top: 0;
   margin-bottom: 45px;
   margin-left: 84px;
+
+  font-weight: 700;
   font-size: 20px;
   line-height: 20px;
-  font-weight: 700;
-  margin-top: 0;
 }
 
 .user__name-link {
@@ -111,8 +112,8 @@
 .user__likes-count {
   padding-left: 38px;
 
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 21px;
 
   &::before {
@@ -171,10 +172,12 @@
   position: absolute;
   top: 14px;
   left: 18px;
-  border-radius: 50%;
+
   width: 70px;
   height: 70px;
   overflow: hidden;
+
+  border-radius: 50%;
 }
 
 .user__image {
@@ -187,12 +190,14 @@
 }
 
 .user__destination-text {
+  position: relative;
+  z-index: 1;
+
+  margin: 0 0 17px 5px;
+
   font-size: 15px;
   line-height: 18px;
   color: $color-text-main;
-  position: relative;
-  z-index: 1;
-  margin: 0 0 17px 5px;
 
   &::before {
     top: 10px;
@@ -211,8 +216,9 @@
 .user__country-icon-list {
   position: relative;
   z-index: 1;
-  margin: 0 0 11px 5px;
+
   min-height: 52px;
+  margin: 0 0 11px 5px;
 }
 
 .user__travel-text {
@@ -222,11 +228,10 @@
   width: 100%;
   margin: 0 0 15px 5px;
 
-  color: $color-text-main;
-
-  font-size: 15px;
   font-weight: 400;
+  font-size: 15px;
   line-height: 18px;
+  color: $color-text-main;
 
   &::before {
     top: 10px;
@@ -243,9 +248,10 @@
 }
 
 .user__travel-type {
-  margin: 0 0 20px 2px;
   position: relative;
   z-index: 1;
+
+  margin: 0 0 20px 2px;
 }
 
 .user__level {
@@ -362,10 +368,10 @@
 }
 
 .user--index .user__name {
+  width: auto;
   margin-top: 26px;
   margin-bottom: 14px;
   margin-left: 0;
-  width: auto;
 }
 
 .user--index .user__tags {
@@ -446,12 +452,13 @@
 
 .user--catalog {
   .user__level {
+    right: 22px;
     bottom: 85px;
     z-index: 1;
+
     width: auto;
     height: auto;
     padding: 0;
-    right: 22px;
   }
 
   .user__level-content {
@@ -459,11 +466,12 @@
   }
 
   .user__level-text {
-    font-size: 15px;
+    margin: 0 0 19px 0;
+
     font-weight: 400;
+    font-size: 15px;
     line-height: 18px;
     color: $color-text-main;
-    margin: 0 0 19px 0;
   }
 
   .user__level-description {
@@ -490,6 +498,7 @@
       position: absolute;
       top: 38px;
       right: 43px;
+
       margin: 0;
     }
 
@@ -498,10 +507,10 @@
     }
 
     .travel-type__item {
-      background-color: transparent;
-
       width: auto;
       height: auto;
+
+      background-color: transparent;
 
       &:nth-of-type(1) {
         margin-bottom: 12px;
@@ -517,8 +526,8 @@
     }
 
     .user__level {
-      bottom: 111px;
       right: 42px;
+      bottom: 111px;
     }
 
     .user__level-text {
@@ -550,10 +559,11 @@
 
   .user__tags {
     width: 225px;
-    font-size: 20px;
-    line-height: 24px;
     margin-bottom: 47px;
     margin-left: 225px;
+
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .user__image-link {
@@ -622,8 +632,8 @@
 
   .user__country-icon-list {
     order: 1;
-    margin: 0;
     min-height: 30px;
+    margin: 0;
   }
 
   .user__invite-button {
@@ -645,10 +655,11 @@
   }
 
   .user--index .user__name {
-    font-size: 24px;
-    line-height: 24px;
     margin-top: 29px;
     margin-bottom: 22px;
+
+    font-size: 24px;
+    line-height: 24px;
   }
 
   .user--index .status::before {
@@ -664,6 +675,7 @@
   .user--index .user__image-link {
     width: 285px;
     height: 285px;
+
     border-radius: 20px 20px 0 0;
   }
 
@@ -677,14 +689,15 @@
   }
 
   .user--index .user__tags {
+    margin-bottom: 20px;
+
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 20px;
   }
 
   .user--index .user__travel-type {
-    margin-bottom: 23px;
     flex-direction: row;
+    margin-bottom: 23px;
   }
 
   .user--index .user__level {

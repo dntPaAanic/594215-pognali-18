@@ -94,6 +94,7 @@
 
 .destination__name {
   position: relative;
+
   margin-top: 0;
   margin-bottom: 3px;
 
@@ -159,6 +160,7 @@
 
 .destination__traveler {
   position: relative;
+
   margin: 0;
   padding-left: 18px;
 
@@ -265,13 +267,15 @@
   }
 
   .destination__name {
+    margin-bottom: 7px;
+
     font-size: 24px;
     line-height: 24px;
-    margin-bottom: 7px;
 
     &::before {
       top: -13px;
       left: 368px;
+
       width: 70px;
       height: 47px;
     }
@@ -283,12 +287,14 @@
   }
 
   .destination__traveler {
+    padding-left: 30px;
+
     font-size: 20px;
     line-height: 30px;
-    padding-left: 30px;
 
     &::before {
       top: 4px;
+
       width: 20px;
       height: 20px;
     }
@@ -310,8 +316,8 @@
 
   .destination__inner {
     order: 1;
-    margin-right: 105px;
     margin-top: 5px;
+    margin-right: 105px;
     margin-bottom: 0;
 
     &::after {
