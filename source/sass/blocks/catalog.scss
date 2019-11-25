@@ -26,13 +26,21 @@
   .catalog__wrapper--indent {
     margin-top: -55px;
   }
-  
+
   .catalog__inner {
     padding: 0 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    padding: 130px 0 132px;
+  }
+
+  .catalog__inner {
+    padding: 0 60px;
+  }
+
   .catalog__inner {
     display: flex;
     flex-direction: row;
