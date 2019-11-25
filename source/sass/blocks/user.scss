@@ -528,6 +528,19 @@
     .user__level {
       right: 42px;
       bottom: 111px;
+
+      &::after {
+        top: 22px;
+        left: 0;
+
+        width: 31px;
+        height: 1px;
+
+        background-color: #444444;
+        opacity: 0.1;
+
+        @include pseudo;
+      }
     }
 
     .user__level-text {
@@ -536,6 +549,7 @@
 
     .user__level-description {
       display: block;
+      color: rgba(#444444, 0.6);
     }
   }
 
@@ -713,10 +727,93 @@
 @media (min-width: $desktop-width) {
   .user--catalog {
     padding: 47px 0;
+
+    .travel-type {
+      flex-direction: row;
+    }
+
+    .user__travel-type {
+      top: 204px;
+      right: 157px;
+    }
+
+    .travel-type__item {
+      &:nth-of-type(1) {
+        margin-right: 17px;
+        margin-bottom: 0;
+      }
+
+      &:nth-of-type(2) {
+        margin-right: 13px;
+        margin-bottom: 0;
+      }
+
+      &:nth-of-type(3) {
+        margin-right: 10px;
+        margin-bottom: 0;
+      }
+    }
+
+    .user__level {
+      right: 61px;
+      bottom: 51px;
+    }
   }
 
   .user:not(:last-child) {
     margin-bottom: 29px;
+  }
+
+  .user__name {
+    margin-bottom: 18px;
+    margin-left: 344px;
+  }
+
+  .user__tags {
+    margin-bottom: 46px;
+    margin-left: 347px;
+  }
+
+  .user__image-link {
+    width: 285px;
+    height: 286px;
+    top: 0;
+    left: 0;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .user__image {
+    width: 285px;
+    height: 286px;
+  }
+
+  .user__likes {
+    top: 200px;
+    left: 489px;
+  }
+
+  .user__likes-count--original {
+    display: block;
+  }
+
+  .user__likes-count--tablet {
+    display: none;
+  }
+
+  .user__destination-text {
+    display: none;
+  }
+
+  .user__country-icon-list {
+    position: absolute;
+    top: 48px;
+    left: 672px;
+  }
+
+  .user__invite-button {
+    margin-bottom: 0;
+    margin-left: 341px;
+    padding-left: 31px;
   }
 
   .user--index:not(:last-child) {

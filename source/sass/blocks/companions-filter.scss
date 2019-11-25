@@ -197,6 +197,9 @@ input[type="checkbox"]:checked ~ .companions-filter__label::after {
 
 @media (min-width: $desktop-width) {
   .companions-filter {
+    //ВРЕМЕННО
+    width: 285px;
+    //ВРЕМЕННО
     order: 1;
     margin-bottom: 0;
   }

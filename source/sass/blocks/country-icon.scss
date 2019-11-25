@@ -117,10 +117,25 @@
     font-size: 20px;
     line-height: 30px;
   }
-}
 
-@media (min-width: $tablet-width) {
   .country-icon--catalog .country-icon__item:last-child {
     margin-bottom: 0;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .country-icon {
+    flex-direction: column;
+  }
+  .country-icon__item:not(:last-child) {
+    margin-bottom: 7px;
+    margin-right: 0;
+  }
+
+  .country-icon--catalog .country-icon__image {
+    left: 0;
+    top: 0;
+    margin: 0 19px 0 0;
+  }
+
 }
