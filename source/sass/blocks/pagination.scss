@@ -156,3 +156,13 @@
     border-left: 10px solid #192144;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .pagination {
+    margin-top: 67px;
+  }
+
+  .pagination__wrapper {
+    padding-right: 45px;
+  }
+}
