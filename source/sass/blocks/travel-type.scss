@@ -15,6 +15,7 @@
   width: 33px;
   height: 33px;
 
+  background-color: #edeff6;
   border-radius: 50%;
 }
 
@@ -65,4 +66,26 @@
 
 .travel-type__image--checked {
   opacity: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .travel-type__image--plane {
+    width: 19px;
+    height: 21px;
+  }
+
+  .travel-type__image--auto {
+    width: 17px;
+    height: 21px;
+  }
+
+  .travel-type__image--bicycle {
+    width: 24px;
+    height: 21px;
+  }
+
+  .travel-type__image--walk {
+    width: 20px;
+    height: 21px;
+  }
 }

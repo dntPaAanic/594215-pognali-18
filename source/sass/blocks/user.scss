@@ -25,12 +25,13 @@
   position: relative;
 
   width: 80px;
+  margin-top: 0;
   margin-bottom: 45px;
   margin-left: 84px;
+
+  font-weight: 700;
   font-size: 20px;
   line-height: 20px;
-  font-weight: 700;
-  margin-top: 0;
 }
 
 .user__name-link {
@@ -111,8 +112,8 @@
 .user__likes-count {
   padding-left: 38px;
 
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 21px;
 
   &::before {
@@ -159,14 +160,24 @@
   }
 }
 
+.user__likes-count--original {
+  display: block;
+}
+
+.user__likes-count--tablet {
+  display: none;
+}
+
 .user__image-link {
   position: absolute;
   top: 14px;
   left: 18px;
-  border-radius: 50%;
+
   width: 70px;
   height: 70px;
   overflow: hidden;
+
+  border-radius: 50%;
 }
 
 .user__image {
@@ -179,12 +190,14 @@
 }
 
 .user__destination-text {
+  position: relative;
+  z-index: 1;
+
+  margin: 0 0 17px 5px;
+
   font-size: 15px;
   line-height: 18px;
   color: $color-text-main;
-  position: relative;
-  z-index: 1;
-  margin: 0 0 17px 5px;
 
   &::before {
     top: 10px;
@@ -203,15 +216,43 @@
 .user__country-icon-list {
   position: relative;
   z-index: 1;
+
+  min-height: 52px;
   margin: 0 0 11px 5px;
+}
+
+.user__travel-text {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  margin: 0 0 15px 5px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: $color-text-main;
+
+  &::before {
+    top: 10px;
+    left: -25px;
+    z-index: -1;
+
+    width: 270px;
+    height: 1px;
+
+    background: #edeff6 linear-gradient(90deg, #edeff6 0, #edeff6 14px, #ffffff 14px, #ffffff 105px, #edeff6 105px, #edeff6 196px, #ffffff 196px, #ffffff 259px, #edeff6 259px, #edeff6 100%);
+
+    @include pseudo;
+  }
 }
 
 .user__travel-type {
-  margin: 0 0 11px 5px;
   position: relative;
   z-index: 1;
-}
 
+  margin: 0 0 20px 2px;
+}
 
 .user__level {
   position: absolute;
@@ -327,10 +368,10 @@
 }
 
 .user--index .user__name {
+  width: auto;
   margin-top: 26px;
   margin-bottom: 14px;
   margin-left: 0;
-  width: auto;
 }
 
 .user--index .user__tags {
@@ -351,6 +392,10 @@
 .user--index .user__travel-type {
   margin-bottom: 17px;
   margin-left: 0;
+}
+
+.user--index .travel-type__item {
+  background-color: transparent;
 }
 
 .user--index .travel-type__image--plane {
@@ -401,17 +446,214 @@
   }
 }
 
+.user__invite-button {
+  padding: 6px 79px 2px;
+}
+
+.user--catalog {
+  .user__level {
+    right: 22px;
+    bottom: 85px;
+    z-index: 1;
+
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  .user__level-content {
+    padding: 0;
+  }
+
+  .user__level-text {
+    margin: 0 0 19px 0;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: $color-text-main;
+  }
+
+  .user__level-description {
+    display: none;
+  }
+}
+
+.user--id3 .user__country-icon-list {
+  margin-bottom: 15px;
+}
+
 @media (min-width: $tablet-width) {
-  .user__image-link {
-    top: 35px;
-    left: 35px;
-    border-radius: 20px;
+  .user--catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 31px 35px 22px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    .user__travel-type {
+      position: absolute;
+      top: 38px;
+      right: 43px;
+
+      margin: 0;
+    }
+
+    .travel-type {
+      flex-direction: column;
+    }
+
+    .travel-type__item {
+      width: auto;
+      height: auto;
+
+      background-color: transparent;
+
+      &:nth-of-type(1) {
+        margin-bottom: 12px;
+      }
+
+      &:nth-of-type(2) {
+        margin-bottom: 9px;
+      }
+
+      &:nth-of-type(3) {
+        margin-bottom: 13px;
+      }
+    }
+
+    .user__level {
+      right: 42px;
+      bottom: 111px;
+
+      &::after {
+        top: 22px;
+        left: 0;
+
+        width: 31px;
+        height: 1px;
+
+        background-color: #444444;
+        opacity: 0.1;
+
+        @include pseudo;
+      }
+    }
+
+    .user__level-text {
+      display: none;
+    }
+
+    .user__level-description {
+      display: block;
+      color: rgba(#444444, 0.6);
+    }
+  }
+
+  .user--id3 .user__country-icon-list {
+    margin-bottom: 0;
+  }
+
+  .user__name {
+    width: auto;
+    margin-bottom: 18px;
+    margin-left: 223px;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .user__name-link {
+    font-size: 30px;
+    line-height: 30px;
   }
 
   .user__tags {
     width: 225px;
+    margin-bottom: 47px;
+    margin-left: 225px;
+
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .user__image-link {
+    top: 35px;
+    left: 35px;
+
+    width: 190px;
+    height: 190px;
+
+    border-radius: 20px;
+  }
+
+  .user__image {
+    width: 190px;
+    height: 190px;
+  }
+
+  .user__likes {
+    top: 185px;
+    left: 405px;
+  }
+
+  .user__likes-count {
+    padding-left: 55px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      top: -11px;
+
+      width: 50px;
+      height: 50px;
+    }
+
+    &::after {
+      top: 6px;
+      left: 15px;
+
+      width: 20px;
+      height: 17px;
+    }
+  }
+
+  .user__likes-count--original {
+    display: none;
+  }
+
+  .user__likes-count--tablet {
+    display: block;
+  }
+
+  .user__destination-text {
+    order: 1;
+    width: 100%;
+    margin-left: 48px;
+
+    &::before {
+      left: -84px;
+
+      width: 688px;
+
+      background: linear-gradient(90deg, #edeff6 0, #edeff6 71px, #ffffff 71px, #ffffff 189px, #edeff6 189px, #edeff6 100%);
+    }
+  }
+
+  .user__country-icon-list {
+    order: 1;
+    min-height: 30px;
+    margin: 0;
+  }
+
+  .user__invite-button {
+    margin-bottom: 21px;
+    margin-left: 219px;
+    padding: 10px 33px;
   }
 
   .user--index {
@@ -427,10 +669,11 @@
   }
 
   .user--index .user__name {
-    font-size: 24px;
-    line-height: 24px;
     margin-top: 29px;
     margin-bottom: 22px;
+
+    font-size: 24px;
+    line-height: 24px;
   }
 
   .user--index .status::before {
@@ -446,6 +689,7 @@
   .user--index .user__image-link {
     width: 285px;
     height: 285px;
+
     border-radius: 20px 20px 0 0;
   }
 
@@ -459,12 +703,14 @@
   }
 
   .user--index .user__tags {
+    margin-bottom: 20px;
+
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 20px;
   }
 
   .user--index .user__travel-type {
+    flex-direction: row;
     margin-bottom: 23px;
   }
 
@@ -472,9 +718,104 @@
     top: 20px;
     left: 20px;
   }
+
+  .user__travel-text {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .user--catalog {
+    padding: 47px 0;
+
+    .travel-type {
+      flex-direction: row;
+    }
+
+    .user__travel-type {
+      top: 204px;
+      right: 157px;
+    }
+
+    .travel-type__item {
+      &:nth-of-type(1) {
+        margin-right: 17px;
+        margin-bottom: 0;
+      }
+
+      &:nth-of-type(2) {
+        margin-right: 13px;
+        margin-bottom: 0;
+      }
+
+      &:nth-of-type(3) {
+        margin-right: 10px;
+        margin-bottom: 0;
+      }
+    }
+
+    .user__level {
+      right: 61px;
+      bottom: 51px;
+    }
+  }
+
+  .user:not(:last-child) {
+    margin-bottom: 29px;
+  }
+
+  .user__name {
+    margin-bottom: 18px;
+    margin-left: 344px;
+  }
+
+  .user__tags {
+    margin-bottom: 46px;
+    margin-left: 347px;
+  }
+
+  .user__image-link {
+    width: 285px;
+    height: 286px;
+    top: 0;
+    left: 0;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .user__image {
+    width: 285px;
+    height: 286px;
+  }
+
+  .user__likes {
+    top: 200px;
+    left: 489px;
+  }
+
+  .user__likes-count--original {
+    display: block;
+  }
+
+  .user__likes-count--tablet {
+    display: none;
+  }
+
+  .user__destination-text {
+    display: none;
+  }
+
+  .user__country-icon-list {
+    position: absolute;
+    top: 48px;
+    left: 672px;
+  }
+
+  .user__invite-button {
+    margin-bottom: 0;
+    margin-left: 341px;
+    padding-left: 31px;
+  }
+
   .user--index:not(:last-child) {
     margin-right: 60px;
     margin-bottom: 0;

@@ -7,16 +7,18 @@
 }
 
 .companions-filter__lead {
+  width: 120px;
+  margin: 0 0 23px;
+
   font-weight: 700;
   font-size: 22px;
   line-height: 22px;
   color: $color-text-additional;
-  width: 120px;
-  margin: 0 0 23px;
 }
 
 .companions-filter__set {
   position: relative;
+
   margin: 0;
   padding: 0;
 
@@ -25,19 +27,38 @@
   &::before {
     top: 1px;
     left: 0;
+
     width: 220px;
     height: 1px;
+
     background-color: #f3c72b;
 
     @include pseudo;
   }
 }
 
+.companions-filter__set--hobby {
+  margin-bottom: 0;
+}
+
+.companions-filter__set--music {
+  margin-bottom: 8px;
+}
+
+.companions-filter__set--food {
+  margin-bottom: 0;
+}
+
+.companions-filter__travel-type {
+  margin-bottom: 31px;
+}
+
 .companions-filter__legend {
   position: relative;
-  min-height: 39px;
 
   width: 100%;
+  min-height: 33px;
+  margin-bottom: 15px;
 }
 
 .companions-filter__toggle {
@@ -45,7 +66,7 @@
 
   display: block;
   width: 100%;
-  min-height: 39px;
+  min-height: 33px;
   margin: 0;
   padding: 0;
 
@@ -104,13 +125,20 @@
 }
 
 .companions-filter__list {
+  display: none;
   margin: 0;
-  padding: 5px 0 5px;
+  padding: 0;
+
   list-style: none;
 }
 
 .companions-filter__item {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
+}
+
+.companions-filter__set--active .companions-filter__list {
+  display: flex;
+  flex-direction: column;
 }
 
 input[type="checkbox"]:checked ~ .companions-filter__label::after {
@@ -171,11 +199,6 @@ input[type="checkbox"]:checked ~ .companions-filter__label::after {
   }
 }
 
-
-.companions-filter__list .travel-type__item {
-  background-color: #ffffff;
-}
-
 @media (min-width: $tablet-width) {
   .companions-filter {
     margin-bottom: 40px;
@@ -192,6 +215,9 @@ input[type="checkbox"]:checked ~ .companions-filter__label::after {
 
 @media (min-width: $desktop-width) {
   .companions-filter {
+    //ВРЕМЕННО
+    width: 285px;
+    //ВРЕМЕННО
     order: 1;
     margin-bottom: 0;
   }

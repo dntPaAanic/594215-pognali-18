@@ -6,13 +6,41 @@
   list-style: none;
 }
 
-.country-icon--index .country-icon__image {
+.country-icon--index .country-icon__image,
+.country-icon--catalog .country-icon__image {
   display: block;
   width: 35px;
   height: 24px;
 
   background-color: #ffffff;
   background-repeat: no-repeat;
+}
+
+.country-icon--catalog .country-icon__image {
+  position: relative;
+  top: -3px;
+  left: 0;
+
+  display: block;
+  width: 26px;
+  height: 18px;
+  margin: 0 15px 0 0;
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+
+.country-icon--catalog .country-icon__tooltip {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #1d2e5b;
+  text-transform: uppercase;
+}
+
+.country-icon--catalog .country-icon__item {
+  display: flex;
+  margin: 0 0 10px;
 }
 
 .country-icon__image--srilanka {
@@ -35,10 +63,79 @@
   background-image: url("https://via.placeholder.com/35x35");
 }
 
+.country-icon__image--usa {
+  background-image: url("https://via.placeholder.com/35x35");
+}
+
+.country-icon__image--australia {
+  background-image: url("https://via.placeholder.com/35x35");
+}
+
+.country-icon__image--dominican {
+  background-image: url("https://via.placeholder.com/35x35");
+}
+
+.country-icon__image--britain {
+  background-image: url("https://via.placeholder.com/35x35");
+}
+
+.country-icon__image--german {
+  background-image: url("https://via.placeholder.com/35x35");
+}
+
 .country-icon__tooltip {
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .country-icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .country-icon__item:not(:last-child) {
+    margin-right: 28px;
+    margin-bottom: 0;
+  }
+
+  .country-icon--catalog .country-icon__image {
+    top: 0;
+    left: 0;
+
+    width: 35px;
+    height: 24px;
+    margin: 0 10px 0 0;
+  }
+
+  .country-icon--catalog .country-icon__tooltip {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .country-icon--catalog .country-icon__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .country-icon {
+    flex-direction: column;
+  }
+
+  .country-icon__item:not(:last-child) {
+    margin-bottom: 7px;
+    margin-right: 0;
+  }
+
+  .country-icon--catalog .country-icon__image {
+    left: 0;
+    top: 0;
+    margin: 0 19px 0 0;
+  }
 }

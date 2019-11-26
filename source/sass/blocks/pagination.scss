@@ -1,37 +1,113 @@
 .pagination {
+  margin: 19px 0 0 0;
+
   text-align: center;
 }
 
 .pagination__wrapper {
+  position: relative;
+
   background-color: $color-background-additional;
   border-radius: 20px;
+
+  &::before {
+    top: 0;
+    left: 135px;
+
+    width: 1px;
+    height: 50px;
+
+    background-color: #edeff6;
+
+    @include pseudo;
+  }
 }
 
 .pagination__list {
   display: none;
+
+  @include ul-reset;
 }
 
 .pagination__arrows {
   display: flex;
   justify-content: space-between;
+  margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
+.pagination__button[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .pagination__button--prev {
+    position: relative;
+
+    display: block;
+    width: 135px;
+    min-height: 50px;
+
+    &::before {
+      top: 15px;
+      left: 63px;
+
+      border-top: 10px solid transparent;
+      border-right: 10px solid #192144;
+      border-bottom: 10px solid transparent;
+
+      @include pseudo;
+    }
+  }
+
+  .pagination__button--next {
+    position: relative;
+
+    display: block;
+    width: 135px;
+    min-height: 50px;
+
+    &::before {
+      top: 15px;
+      right: 62px;
+
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid #192144;
+
+      @include pseudo;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .pagination {
+    margin-top: 48px;
+  }
+
   .pagination__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 35px 25px 28px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .pagination__list {
     display: flex;
     align-items: flex-start;
-
-    @include ul-reset;
   }
 
   .pagination__link {
@@ -46,5 +122,49 @@
     line-height: 30px;
     color: #161c35;
     text-decoration: none;
+
+    border-radius: 50px;
+
+    &:hover[href],
+    &:focus[href] {
+      color: rgba(#161c35, 0.6);
+    }
+
+    &:active[href],
+    &--current {
+      color: #161c35;
+
+      background-color: #ffd74b;
+    }
+  }
+
+  .pagination__arrows {
+    width: 53px;
+  }
+
+  .pagination__button--prev {
+    display: block;
+
+    border-top: 10px solid transparent;
+    border-right: 10px solid #192144;
+    border-bottom: 10px solid transparent;
+  }
+
+  .pagination__button--next {
+    display: block;
+
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #192144;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pagination {
+    margin-top: 67px;
+  }
+
+  .pagination__wrapper {
+    padding-right: 45px;
   }
 }
