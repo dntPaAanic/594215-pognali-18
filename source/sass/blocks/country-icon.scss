@@ -127,6 +127,7 @@
   .country-icon {
     flex-direction: column;
   }
+
   .country-icon__item:not(:last-child) {
     margin-bottom: 7px;
     margin-right: 0;
@@ -137,5 +138,4 @@
     top: 0;
     margin: 0 19px 0 0;
   }
-
 }
