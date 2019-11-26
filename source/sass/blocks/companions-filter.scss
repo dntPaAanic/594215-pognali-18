@@ -19,7 +19,7 @@
 .companions-filter__set {
   position: relative;
 
-  margin: 0;
+  margin: 0 0 10px 0;
   padding: 0;
 
   border: none;
@@ -42,6 +42,7 @@
 
   width: 100%;
   min-height: 39px;
+  margin-bottom: 9px;
 }
 
 .companions-filter__toggle {
@@ -108,14 +109,20 @@
 }
 
 .companions-filter__list {
+  display: none;
   margin: 0;
-  padding: 5px 0 5px;
+  padding: 0;
 
   list-style: none;
+
+  :not(:last-child) {
+    margin-bottom: 6px;
+  }
 }
 
-.companions-filter__item {
-  margin-bottom: 10px;
+.companions-filter__set--active .companions-filter__list {
+  display: flex;
+  flex-direction: column;
 }
 
 input[type="checkbox"]:checked ~ .companions-filter__label::after {
