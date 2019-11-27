@@ -237,6 +237,7 @@ input[type="checkbox"]:focus + .companions-filter__label::before {
 @media (min-width: $tablet-width) {
   .companions-filter {
     margin-bottom: 40px;
+    padding: 34px 35px 38px;
   }
 
   .companions-filter__lead {
@@ -251,9 +252,9 @@ input[type="checkbox"]:focus + .companions-filter__label::before {
 @media (min-width: $desktop-width) {
   .companions-filter {
     //ВРЕМЕННО
-    width: 285px;
-    //ВРЕМЕННО
     order: 1;
+    //ВРЕМЕННО
+    width: 285px;
     margin-bottom: 0;
   }
 }
