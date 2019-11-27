@@ -23,6 +23,10 @@
   padding: 0;
 
   border: none;
+}
+
+.companions-filter__set--hobby {
+  margin-bottom: 0;
 
   &::before {
     top: 1px;
@@ -37,20 +41,66 @@
   }
 }
 
-.companions-filter__set--hobby {
-  margin-bottom: 0;
-}
-
 .companions-filter__set--music {
   margin-bottom: 8px;
+
+  &::before {
+    top: 1px;
+    left: 0;
+
+    width: 220px;
+    height: 1px;
+
+    background-color: #f3c72b;
+
+    @include pseudo;
+  }
 }
 
 .companions-filter__set--food {
   margin-bottom: 0;
+
+  &::before {
+    top: 1px;
+    left: 0;
+
+    width: 220px;
+    height: 1px;
+
+    background-color: #f3c72b;
+
+    @include pseudo;
+  }
 }
 
 .companions-filter__set--travel-choosing {
   margin-bottom: 16px;
+
+  &::before {
+    top: 1px;
+    left: 0;
+
+    width: 220px;
+    height: 1px;
+
+    background-color: #f3c72b;
+
+    @include pseudo;
+  }
+}
+
+.companions-filter__set--level {
+  &::before {
+    top: 1px;
+    left: 0;
+
+    width: 220px;
+    height: 1px;
+
+    background-color: #f3c72b;
+
+    @include pseudo;
+  }
 }
 
 .companions-filter__legend {
@@ -247,6 +297,125 @@ input[type="checkbox"]:focus + .companions-filter__label::before {
     font-size: 30px;
     line-height: 30px;
   }
+
+  .companions-filter__set--hobby,
+  .companions-filter__set--level {
+    &::before {
+      top: -33px;
+
+      width: 618px;
+      height: 1px;
+
+      background-color: #f3c72b;
+    }
+  }
+
+  .companions-filter__set--level {
+    &::before {
+      top: auto;
+      bottom: -38px;
+    }
+  }
+
+  .companions-filter__legend-text {
+    font-size: 20px;
+    line-height: 30px;
+    top: 2px;
+  }
+
+  .companions-filter__label {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 36px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+      top: -7px;
+    }
+  }
+
+  input[type="checkbox"]:checked ~ .companions-filter__label::after {
+    top: -1px;
+    left: 6px;
+
+    width: 12px;
+    height: 12px;
+  }
+
+  .companions-filter__set--music {
+    margin-bottom: 3px;
+  }
+
+  .companions-filter__set--travel-choosing {
+    margin-bottom: 12px;
+  }
+
+  .companions-filter__submit {
+    width: 100%;
+    margin-top: 74px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  .companions-filter__set--food,
+  .companions-filter__set--travel-choosing,
+  .companions-filter__set--music {
+    &::before {
+      display: none;
+    }
+  }
+
+  .companions-filter__set-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .companions-filter__toggle {
+    display: none;
+  }
+
+  .companions-filter__legend {
+    width: 100px;
+    margin-right: 25px;
+    align-items: flex-start;
+  }
+
+  .companions-filter__list {
+    width: 511px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .companions-filter__item {
+    width: 151px;
+
+    &:not(:last-of-type) {
+      margin-right: 20px;
+    }
+  }
+
+  .companions-filter__legend--travel-choosing {
+    margin-right: 20px;
+  }
+
+  .companions-filter__legend-text--travel-choosing {
+    top: 13px;
+    left: -2px;
+  }
+
+  .companions-filter__legend-text--level {
+    top: 9px;
+  }
+
+  /*ВРЕМЕННО*/
+  .companions-filter__set--active .companions-filter__list {
+    flex-direction: row;
+  }
+  /*ВРЕМЕННО*/
 }
 
 @media (min-width: $desktop-width) {

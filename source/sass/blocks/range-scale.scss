@@ -56,3 +56,51 @@
     right: -4px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .range-scale {
+    margin-right: 65px;
+  }
+
+  .range-scale__between-toggle {
+    margin-left: 73px;
+  }
+
+  .range-scale__scale {
+    width: 277px;
+    height: 3px;
+    border-radius: 2px;
+  }
+
+  .range-scale__toggle {
+    top: -5px;
+    width: 13px;
+    height: 13px;
+
+    &--min {
+      right: 194px;
+
+      &:hover,
+      &:focus {
+        right: 192px;
+      }
+    }
+
+    &--max {
+      right: -6px;
+
+      &:hover,
+      &:focus {
+        right: -8px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      top: -8px;
+
+      width: 19px;
+      height: 19px;
+    }
+  }
+}
