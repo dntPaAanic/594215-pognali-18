@@ -205,6 +205,10 @@ input[type="checkbox"]:checked ~ .companions-filter__label::after {
   }
 }
 
+input[type="checkbox"]:focus + .companions-filter__label::before {
+  outline: thin dotted;
+}
+
 @media (min-width: $tablet-width) {
   .companions-filter {
     margin-bottom: 40px;
