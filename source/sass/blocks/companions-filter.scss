@@ -49,8 +49,8 @@
   margin-bottom: 0;
 }
 
-.companions-filter__travel-type {
-  margin-bottom: 31px;
+.companions-filter__set--travel-choosing {
+  margin-bottom: 16px;
 }
 
 .companions-filter__legend {
@@ -139,6 +139,12 @@
 .companions-filter__set--active .companions-filter__list {
   display: flex;
   flex-direction: column;
+}
+
+.companions-filter__set--active .travel-choosing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 input[type="checkbox"]:checked ~ .companions-filter__label::after {
