@@ -210,8 +210,8 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="companions-filter__set companions-filter__set--food companions-filter__set--active">
-                <legend class="companions-filter__legend">
+              <fieldset class="companions-filter__set companions-filter__set--level companions-filter__set--active">
+                <legend class="companions-filter__legend companions-filter__legend--level">
                   <button class="companions-filter__toggle" type="button">
                     <span class="visually-hidden">Переключатель выпадающего списка</span>
                   </button>
@@ -220,9 +220,26 @@
                   </span>
                 </legend>
 
+                <div class="companions-filter__level-wrapper level-choosing">
+                  <div class="level-choosing__wrapper">
+                    <label class="level-choosing__label level-choosing__label--from">
+                      <span class="visually-hidden">от</span>
+                      <input type="text" class="level-choosing__input" name="min-lvl" value="30">
+                    </label>
+                    <label  class="level-choosing__label level-choosing__label--to">
+                      <span class="visually-hidden">до</span>
+                      <input type="text" class="level-choosing__input" name="max-lvl" value="100">
+                    </label>
+                  </div>
+                  <div class="level-choosing__range-scale range-scale">
+                    <div class="range-scale__scale">
+                      <div class="range-scale__between-toggle"></div>
+                    </div>
+                    <div class="range-scale__toggle range-scale__toggle--min"></div>
+                    <div class="range-scale__toggle range-scale__toggle--max"></div>
+                  </div>
+                </div>
               </fieldset>
-
-
             </form>
           </section>
 

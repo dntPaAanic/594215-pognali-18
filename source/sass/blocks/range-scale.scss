@@ -1,0 +1,58 @@
+.range-scale {
+  position: relative;
+}
+
+.range-scale__scale {
+  width: 220px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: rgba(#1d2e5b, 0.2);
+}
+
+.range-scale__between-toggle {
+  height: 2px;
+  margin-right: 0;
+  margin-left: 67px;
+  background-color: rgba(#1d2e5b, 1);
+}
+
+.range-scale__toggle {
+  position: absolute;
+  top: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: #1d2e5b;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    top: -7px;
+
+    width: 16px;
+    height: 16px;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: 0 3px 7px rgba(29, 46, 91, 0.35);
+  }
+}
+
+.range-scale__toggle--min {
+  right: 143px;
+
+  &:hover,
+  &:focus {
+    right: 139px;
+  }
+}
+
+.range-scale__toggle--max {
+  right: 0;
+
+  &:hover,
+  &:focus {
+    right: -4px;
+  }
+}
