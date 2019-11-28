@@ -104,3 +104,25 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .range-scale {
+    margin-top: 35px;
+    margin-right: 0;
+  }
+  .range-scale__scale {
+    width: 191px;
+  }
+
+  .range-scale__between-toggle {
+    margin-left: 59px;
+  }
+
+  .range-scale__toggle--min {
+    right: 121px;
+  }
+
+  .range-scale__toggle--max {
+    right: 1px;
+  }
+}

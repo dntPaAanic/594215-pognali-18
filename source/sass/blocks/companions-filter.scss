@@ -318,20 +318,23 @@ input[type="checkbox"]:focus + .companions-filter__label::before {
   }
 
   .companions-filter__legend-text {
+    top: 2px;
+
     font-size: 20px;
     line-height: 30px;
-    top: 2px;
   }
 
   .companions-filter__label {
-    font-size: 20px;
-    line-height: 20px;
     padding-left: 36px;
 
+    font-size: 20px;
+    line-height: 20px;
+
     &::before {
+      top: -7px;
+
       width: 24px;
       height: 24px;
-      top: -7px;
     }
   }
 
@@ -370,8 +373,8 @@ input[type="checkbox"]:focus + .companions-filter__label::before {
   .companions-filter__set-wrapper {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
   }
 
   .companions-filter__toggle {
@@ -379,15 +382,15 @@ input[type="checkbox"]:focus + .companions-filter__label::before {
   }
 
   .companions-filter__legend {
+    align-items: flex-start;
     width: 100px;
     margin-right: 25px;
-    align-items: flex-start;
   }
 
   .companions-filter__list {
-    width: 511px;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 511px;
   }
 
   .companions-filter__item {
@@ -420,10 +423,80 @@ input[type="checkbox"]:focus + .companions-filter__label::before {
 
 @media (min-width: $desktop-width) {
   .companions-filter {
-    //ВРЕМЕННО
     order: 1;
-    //ВРЕМЕННО
     width: 285px;
     margin-bottom: 0;
+    padding: 46px;
+  }
+
+  .companions-filter__lead {
+    width: 160px;
+    margin-bottom: 30px;
+  }
+
+  .companions-filter__toggle {
+    &::after {
+      width: 10px;
+      height: 5px;
+      top: 9px;
+      right: 3px;
+    }
+  }
+
+  .companions-filter__set--food,
+  .companions-filter__set--travel-choosing,
+  .companions-filter__set--music,
+  .companions-filter__set--hobby,
+  .companions-filter__set--level {
+    &::before {
+      display: none;
+    }
+  }
+
+  .companions-filter__legend {
+    margin-bottom: 20px;
+  }
+
+  .companions-filter__label {
+    &::before {
+      top: -3px;
+    }
+  }
+
+  .companions-filter__set--hobby {
+    margin-bottom: 6px;
+  }
+
+  .companions-filter__set--music {
+    margin-bottom: 18px;
+  }
+
+  .companions-filter__set--food {
+    margin-bottom: 7px;
+  }
+
+  .companions-filter__set--travel-choosing {
+    margin-bottom: 30px;
+  }
+
+  .companions-filter__legend--travel-choosing {
+    margin-bottom: 12px;
+  }
+
+  .companions-filter__legend--level {
+    margin-bottom: 12px;
+  }
+
+  .companions-filter__item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .companions-filter__submit {
+    width: calc(100% + 5px);
+    margin-top: 43px;
+    
+    padding-left: 24px;
   }
 }
