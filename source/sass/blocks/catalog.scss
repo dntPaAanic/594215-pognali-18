@@ -41,11 +41,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 0 60px;
   }
 
   .catalog__companions {
-    margin-right: 85px;
     flex-grow: 1;
+    margin-right: 85px;
   }
 }
