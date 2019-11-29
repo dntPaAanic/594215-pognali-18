@@ -101,6 +101,13 @@
 
   .about-app__title {
     margin-bottom: 40px;
+
+    &::before {
+      top: -40px;
+      left: -36px;
+      width: 688px;
+      height: 213px;
+    }
   }
 
   .about-app__description {
