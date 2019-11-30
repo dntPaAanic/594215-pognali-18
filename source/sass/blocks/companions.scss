@@ -66,6 +66,20 @@
   }
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .companions--index .companions__inner-description {
+    &::before {
+      background-image: url("../img/smolov-back-desktop@2x.png");
+      background-size: 143px auto;
+    }
+
+    &::after {
+      background-image: url("../img/rogovaya-back-mobile@2x.png");
+      background-size: 71px auto;
+    }
+  }
+}
+
 .companions__title {
   position: relative;
 
@@ -210,6 +224,15 @@
       background-image: url("../img/rogovaya-back-desktop@1x.png");
       background-repeat: no-repeat;
       border-radius: 10px;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .companions--index .companions__inner-description {
+      &::after {
+        background-image: url("../img/rogovaya-back-desktop@2x.png");
+        background-size: 285px auto;
+      }
     }
   }
 

@@ -29,6 +29,15 @@
   }
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .about-app__wrapper {
+    &::before {
+      background: url("../img/about-mobile@2x.png");
+      background-size: 292px auto;
+    }
+  }
+}
+
 .about-app__inner {
   padding: 312px 25px 82px;
 }
@@ -95,6 +104,15 @@
     }
   }
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .about-app__wrapper {
+      &::before {
+        background-image: url("../img/about-tablet@2x.png");
+        background-size: 376px auto;
+      }
+    }
+  }
+
   .about-app__inner {
     padding: 0;
   }
@@ -157,6 +175,15 @@
 
       background-image: url("../img/about-desktop@1x.png");
       background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .about-app__wrapper {
+      &::before {
+        background-image: url("../img/about-desktop@2x.png");
+        background-size: 630px auto;
+      }
     }
   }
 
