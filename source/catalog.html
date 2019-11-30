@@ -20,19 +20,20 @@
               <a class="page-header__logo">
                 <picture>
                   <source media="(min-width: 1440px)"
-                          srcset="img/logo-desktop-white@1x.png">
+                          srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x">
                   <source media="(min-width: 768px)"
-                          srcset="img/logo-tablet-white@1x.png">
-                  <img class="page-header__logo-white" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
+                          srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x">
+                  <img class="page-header__logo-white" src="img/logo-mobile-white@1x.png"
+                       srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Погнали?">
                 </picture>
                 <picture>
                   <source media="(min-width: 1440px)"
-                          srcset="img/logo-desktop-blue@1x.png">
+                          srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
                   <source media="(min-width: 768px)"
-                          srcset="img/logo-tablet-blue@1x.png">
-                  <img class="page-header__logo-blue" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?">
+                          srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
+                  <img class="page-header__logo-blue" src="img/logo-mobile-blue@1x.png"
+                       srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Погнали?">
                 </picture>
-
               </a>
               <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
@@ -954,8 +955,9 @@
                   <p class="user__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
                   <a href="#" class="user__image-link">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-                      <img src="img/firsova-tablet@1x.jpg" srcset="img/firsova-tablet@2x.jpg 2x" alt="Фотография Тани Фирсовой" class="user__image" width="270" height="270">
+                      <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg" 2x>
+                      <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                      <img src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Фотография Тани Фирсовой" class="user__image" width="70" height="70">
                     </picture>
                   </a>
                   <button class="user__likes user__likes--checked" type="button" title="Мне нравится"><span class="user__likes-count">1,5 М</span></button>
@@ -1008,8 +1010,9 @@
                   <p class="user__tags">#бургер #бар #футбол #концерт #крафт</p>
                   <a href="#" class="user__image-link">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-                      <img src="img/demin-tablet@1x.jpg" alt="Фото графия Пети Демина" class="user__image" width="270" height="270">
+                      <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                      <img src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Фото графия Пети Демина" class="user__image" width="70" height="70">
                     </picture>
                   </a>
                   <button class="user__likes"><span class="user__likes-count">150</span></button>
@@ -1057,7 +1060,12 @@
                   <h3 class="user__name"><a href="#" class="user__name-link status status--offline">Марк Смолов</a></h3>
                   <p class="user__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
                   <a href="" class="user__image-link">
-                    <img src="https://via.placeholder.com/70x70" alt="Фотография Марка Смолова" class="user__image"></a>
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                      <img src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Фотография Марка Смолова" class="user__image" width="70" height="70">
+                    </picture>
+                  </a>
                   <button class="user__likes"><span class="user__likes-count user__likes-count--original">1700</span><span class="user__likes-count user__likes-count--tablet">150</span></button>
                   <p class="user__destination-text">хочет посетить:</p>
                   <ul class="user__country-icon-list country-icon country-icon--catalog">
@@ -1107,7 +1115,12 @@
                   <h3 class="user__name"><a href="#" class="user__name-link status status--online">Лариса Роговая</a></h3>
                   <p class="user__tags">#образование #карьера #учеба #линкедин</p>
                   <a href="#" class="user__image-link">
-                    <img src="https://via.placeholder.com/70x70" alt="" class="user__image"></a>
+                    <picture>
+                      <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                      <img src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Фотография Ларисы Роговой" class="user__image" width="70" height="70">
+                    </picture>
+                  </a>
                   <button class="user__likes"><span class="user__likes-count">23</span></button>
                   <p class="user__destination-text">хочет посетить:</p>
                   <ul class="user__country-icon-list country-icon country-icon--catalog">
@@ -1188,10 +1201,10 @@
         <a class="page-footer__logo">
           <picture>
             <source media="(min-width: 1440px)"
-                    srcset="img/logo-desktop-blue@1x.png">
+                    srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)"
-                    srcset="img/logo-tablet-blue@1x.png">
-            <img class="page-footer__logo-image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?">
+                    srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img class="page-footer__logo-image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Погнали?">
           </picture>
         </a>
         <ul class="page-footer__social-list social-list social-list--page-footer">

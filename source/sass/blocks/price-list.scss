@@ -40,6 +40,14 @@
   }
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .price-list__lead {
+    &::before {
+      background-image: url("../img/rates@2x.png");
+    }
+  }
+}
+
 .price-list__list,
 .price-list__service,
 .price-list__offer {
@@ -315,6 +323,14 @@
 
       width: 198px;
       height: 198px;
+    }
+
+    &::after {
+      top: 130px;
+      right: 114px;
+
+      width: 444px;
+      height: 300px;
     }
   }
 
