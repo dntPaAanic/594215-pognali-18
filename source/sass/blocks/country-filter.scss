@@ -9,7 +9,7 @@
   border-radius: 0 0 20px 20px;
 }
 
-.catalog__wrapper--indent {
+.country-filter--indent {
   margin-top: -20px;
 }
 
@@ -19,6 +19,7 @@
 
 .country-filter__nav {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .country-filter__title {
@@ -49,8 +50,8 @@
 
 .country-filter__toggle {
   position: absolute;
-  top: 46px;
-  right: 32px;
+  top: 8px;
+  right: 7px;
 
   width: 12px;
   height: 12px;
@@ -72,7 +73,7 @@
   &::before,
   &::after {
     top: 0;
-    left: -2px;
+    left: 0;
 
     width: 16px;
     height: 2px;
@@ -150,8 +151,9 @@
 
 .country-filter__letter-wrapper {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 17px;
+  margin-bottom: 42px;
 }
 
 .country-filter__letter {
@@ -165,3 +167,236 @@
   border: 0;
 }
 
+@media (max-width: $mobile-width-only) {
+  .country-filter__letter {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 42px;
+
+    color: #1d2e5b;
+
+    background-color: #ffffff;
+    border: solid 1px #cbced9;
+
+    &:nth-child(5n) {
+      width: 44px;
+    }
+
+    &:nth-child(5n+2) {
+      left: -1px;
+    }
+
+    &:nth-child(5n+3) {
+      left: -2px;
+    }
+
+    &:nth-child(5n+4) {
+      left: -3px;
+    }
+
+    &:nth-child(5n+5) {
+      left: -4px;
+    }
+
+    &:nth-child(n+6) {
+      top: -1px;
+    }
+
+    &:nth-child(n+11) {
+      top: -2px;
+    }
+
+    &:nth-child(n+16) {
+      top: -3px;
+    }
+
+    &:nth-child(n+21) {
+      top: -4px;
+    }
+
+    &:nth-child(n+26) {
+      top: -5px;
+    }
+
+    &:hover:not(.country-filter__letter--active),
+    &:focus {
+      z-index: 2;
+
+      border: solid 1px #959bb2;
+    }
+
+    &--active,
+    &:active {
+      z-index: 3;
+
+      color: #ffffff;
+
+      background-color: #1d2e5b;
+      border-color: #1d2e5b;
+    }
+  }
+
+  .country-filter__list:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+
+    .country-filter__item:nth-child(6),
+    .country-filter__item:nth-child(8) {
+      display: none;
+    }
+
+    .country-filter__item:nth-child(1),
+    .country-filter__item:nth-child(2),
+    .country-filter__item:nth-child(3) {
+      order: 1;
+    }
+
+    .country-filter__item:last-child {
+      order: -1;
+    }
+
+    .country-filter__item:nth-child(5) {
+      span:first-child {
+        display: none;
+      }
+    }
+  }
+}
+
+.country-filter__list {
+  display: none;
+
+  @include ul-reset;
+
+  &:nth-child(1):not(.country-filter__list--active) {
+    display: none;
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.country-filter__country-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #444444;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
+}
+
+.country-filter__close-button {
+  position: relative;
+
+  width: 100%;
+  margin-top: 36px;
+  padding: 7px 85px 6px 110px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29.45px;
+  text-align: left;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+  background: #d6daed;
+  border: 0;
+  border-radius: 20px;
+
+  &::before,
+  &::after {
+    top: 20px;
+    left: 85px;
+
+    width: 16px;
+    height: 2px;
+
+    background-color: #161c35;
+
+    @include pseudo;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #c8cee8;
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.country-filter--closed {
+  padding-bottom: 14px;
+
+  .country-filter__nav,
+  .country-filter__title {
+    margin-bottom: 0;
+  }
+
+  .country-filter__toggle {
+    top: 45px;
+    right: 29px;
+
+    width: 17px;
+    height: 3px;
+
+    &::before {
+      top: 0;
+      left: 0;
+
+      width: 3px;
+      height: 3px;
+
+      background-color: #161c35;
+      border-radius: 50%;
+      box-shadow: 7px 0 0 0 #161c35, 14px 0 0 0 #161c35;
+      transform: none;
+
+      @include pseudo;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .country-filter__popup,
+  .country-filter__continent,
+  .country-filter__close-button {
+    display: none;
+  }
+}
+
+.country-filter--nojs {
+  .country-filter__toggle,
+  .country-filter__close-button {
+    display: none;
+  }
+}
