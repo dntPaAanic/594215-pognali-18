@@ -463,6 +463,14 @@ input[type="checkbox"]:focus + .companions-filter__label::before {
     }
   }
 
+  input[type="checkbox"]:checked ~ .companions-filter__label::after {
+    top: 3px;
+    left: 6px;
+
+    width: 12px;
+    height: 12px;
+  }
+
   .companions-filter__set--hobby {
     margin-bottom: 6px;
   }
