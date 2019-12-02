@@ -121,7 +121,7 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    padding: 109px 0 62px;
+    padding: 105px 0 66px;
   }
 
   .main-header__wrapper {
@@ -131,7 +131,7 @@
 
   .main-header__current-page {
     &::before {
-      bottom: -66px;
+      bottom: -70px;
       left: 126px;
     }
   }

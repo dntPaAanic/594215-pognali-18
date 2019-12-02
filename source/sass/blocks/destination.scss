@@ -125,7 +125,7 @@
 
 .destination__name--thailand {
   &::before {
-    background-image: url("https://via.placeholder.com/35x24");
+    background-image: url("../img/flag-thailand.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -133,7 +133,7 @@
 
 .destination__name--france {
   &::before {
-    background-image: url("https://via.placeholder.com/35x24");
+    background-image: url("../img/flag-france.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -141,7 +141,7 @@
 
 .destination__name--czech {
   &::before {
-    background-image: url("https://via.placeholder.com/35x24");
+    background-image: url("../img/flag-czech.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -212,10 +212,20 @@
       width: 289px;
       height: 575px;
 
-      background: url("../img/flags-back@1x.png") no-repeat;
+      background-image: url("../img/flags-back@1x.png");
+      background-repeat: no-repeat;
       border-radius: 20px;
 
       @include pseudo;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .destination__inner {
+      &::after {
+        background-image: url("../img/flags-back@2x.png");
+        background-size: 289px auto;
+      }
     }
   }
 

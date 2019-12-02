@@ -12,7 +12,7 @@
   width: 35px;
   height: 24px;
 
-  background-color: #ffffff;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -26,7 +26,7 @@
   height: 18px;
   margin: 0 15px 0 0;
 
-  background-color: #ffffff;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -44,43 +44,43 @@
 }
 
 .country-icon__image--srilanka {
-  background-image: url("https://via.placeholder.com/35x35");
+  background-image: url("../img/flag-sri-lanka.svg");
 }
 
 .country-icon__image--thailand {
-  background-image: url("https://via.placeholder.com/35x35");
+  background-image: url("../img/flag-thailand.svg");
 }
 
 .country-icon__image--seychelles {
-  background-image: url("https://via.placeholder.com/35x35");
+  background-image: url("../img/flag-seychelles.svg");
 }
 
 .country-icon__image--belgium {
-  background-image: url("https://via.placeholder.com/35x35");
+  background-image: url("../img/flag-belgium.svg");
 }
 
 .country-icon__image--czech {
-  background-image: url("https://via.placeholder.com/35x35");
+  background-image: url("../img/flag-czech.svg");
 }
 
 .country-icon__image--usa {
-  background-image: url("https://via.placeholder.com/35x35");
+  background-image: url("../img/flag-usa.svg");
 }
 
 .country-icon__image--australia {
-  background-image: url("https://via.placeholder.com/35x35");
+  background-image: url("../img/flag-australia.svg");
 }
 
 .country-icon__image--dominican {
-  background-image: url("https://via.placeholder.com/35x35");
+  background-image: url("../img/flag-dominica.svg");
 }
 
 .country-icon__image--britain {
-  background-image: url("https://via.placeholder.com/35x35");
+  background-image: url("../img/flag-united-kingdom.svg");
 }
 
 .country-icon__image--german {
-  background-image: url("https://via.placeholder.com/35x35");
+  background-image: url("../img/flag-germany.svg");
 }
 
 .country-icon__tooltip {

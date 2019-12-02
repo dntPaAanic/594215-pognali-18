@@ -1,0 +1,128 @@
+.range-scale {
+  position: relative;
+}
+
+.range-scale__scale {
+  width: 220px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: rgba(#1d2e5b, 0.2);
+}
+
+.range-scale__between-toggle {
+  height: 2px;
+  margin-right: 0;
+  margin-left: 67px;
+  background-color: rgba(#1d2e5b, 1);
+}
+
+.range-scale__toggle {
+  position: absolute;
+  top: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: #1d2e5b;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    top: -7px;
+
+    width: 16px;
+    height: 16px;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: 0 3px 7px rgba(29, 46, 91, 0.35);
+  }
+}
+
+.range-scale__toggle--min {
+  right: 143px;
+
+  &:hover,
+  &:focus {
+    right: 139px;
+  }
+}
+
+.range-scale__toggle--max {
+  right: 0;
+
+  &:hover,
+  &:focus {
+    right: -4px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .range-scale {
+    margin-right: 65px;
+  }
+
+  .range-scale__between-toggle {
+    margin-left: 73px;
+  }
+
+  .range-scale__scale {
+    width: 277px;
+    height: 3px;
+    border-radius: 2px;
+  }
+
+  .range-scale__toggle {
+    top: -5px;
+    width: 13px;
+    height: 13px;
+
+    &--min {
+      right: 194px;
+
+      &:hover,
+      &:focus {
+        right: 192px;
+      }
+    }
+
+    &--max {
+      right: -6px;
+
+      &:hover,
+      &:focus {
+        right: -8px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      top: -8px;
+
+      width: 19px;
+      height: 19px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range-scale {
+    margin-top: 35px;
+    margin-right: 0;
+  }
+  .range-scale__scale {
+    width: 191px;
+  }
+
+  .range-scale__between-toggle {
+    margin-left: 59px;
+  }
+
+  .range-scale__toggle--min {
+    right: 121px;
+  }
+
+  .range-scale__toggle--max {
+    right: 1px;
+  }
+}
