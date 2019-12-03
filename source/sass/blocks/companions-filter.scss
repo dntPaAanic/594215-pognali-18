@@ -23,6 +23,10 @@
   padding: 0;
 
   border: none;
+}
+
+.companions-filter__set--hobby {
+  margin-bottom: 0;
 
   &::before {
     top: 1px;
@@ -37,20 +41,66 @@
   }
 }
 
-.companions-filter__set--hobby {
-  margin-bottom: 0;
-}
-
 .companions-filter__set--music {
   margin-bottom: 8px;
+
+  &::before {
+    top: 1px;
+    left: 0;
+
+    width: 220px;
+    height: 1px;
+
+    background-color: #f3c72b;
+
+    @include pseudo;
+  }
 }
 
 .companions-filter__set--food {
   margin-bottom: 0;
+
+  &::before {
+    top: 1px;
+    left: 0;
+
+    width: 220px;
+    height: 1px;
+
+    background-color: #f3c72b;
+
+    @include pseudo;
+  }
 }
 
-.companions-filter__travel-type {
-  margin-bottom: 31px;
+.companions-filter__set--travel-choosing {
+  margin-bottom: 16px;
+
+  &::before {
+    top: 1px;
+    left: 0;
+
+    width: 220px;
+    height: 1px;
+
+    background-color: #f3c72b;
+
+    @include pseudo;
+  }
+}
+
+.companions-filter__set--level {
+  &::before {
+    top: 1px;
+    left: 0;
+
+    width: 220px;
+    height: 1px;
+
+    background-color: #f3c72b;
+
+    @include pseudo;
+  }
 }
 
 .companions-filter__legend {
@@ -59,6 +109,10 @@
   width: 100%;
   min-height: 33px;
   margin-bottom: 15px;
+}
+
+.companions-filter__legend--level {
+  margin-bottom: 10px;
 }
 
 .companions-filter__toggle {
@@ -141,6 +195,12 @@
   flex-direction: column;
 }
 
+.companions-filter__set--active .travel-choosing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 input[type="checkbox"]:checked ~ .companions-filter__label::after {
   top: 1px;
   left: 4px;
@@ -199,9 +259,35 @@ input[type="checkbox"]:checked ~ .companions-filter__label::after {
   }
 }
 
+input[type="checkbox"]:focus + .companions-filter__label::before {
+  outline: thin dotted;
+}
+
+.companions-filter__submit {
+  display: block;
+  width: calc(100% + 10px);
+  margin-top: 25px;
+  margin-left: -5px;
+
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  &:active {
+    background-color: #f3c72b;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .companions-filter {
     margin-bottom: 40px;
+    padding: 34px 35px 38px;
   }
 
   .companions-filter__lead {
@@ -211,14 +297,214 @@ input[type="checkbox"]:checked ~ .companions-filter__label::after {
     font-size: 30px;
     line-height: 30px;
   }
+
+  .companions-filter__set--hobby,
+  .companions-filter__set--level {
+    &::before {
+      top: -33px;
+
+      width: 618px;
+      height: 1px;
+
+      background-color: #f3c72b;
+    }
+  }
+
+  .companions-filter__set--level {
+    &::before {
+      top: auto;
+      bottom: -38px;
+    }
+  }
+
+  .companions-filter__legend-text {
+    top: 2px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .companions-filter__label {
+    padding-left: 36px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      top: -7px;
+
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  input[type="checkbox"]:checked ~ .companions-filter__label::after {
+    top: -1px;
+    left: 6px;
+
+    width: 12px;
+    height: 12px;
+  }
+
+  .companions-filter__set--music {
+    margin-bottom: 3px;
+  }
+
+  .companions-filter__set--travel-choosing {
+    margin-bottom: 12px;
+  }
+
+  .companions-filter__submit {
+    width: 100%;
+    margin-top: 74px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  .companions-filter__set--food,
+  .companions-filter__set--travel-choosing,
+  .companions-filter__set--music {
+    &::before {
+      display: none;
+    }
+  }
+
+  .companions-filter__set-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .companions-filter__toggle {
+    display: none;
+  }
+
+  .companions-filter__legend {
+    align-items: flex-start;
+    width: 100px;
+    margin-right: 25px;
+  }
+
+  .companions-filter__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 511px;
+  }
+
+  .companions-filter__item {
+    width: 151px;
+
+    &:not(:last-of-type) {
+      margin-right: 20px;
+    }
+  }
+
+  .companions-filter__legend--travel-choosing {
+    margin-right: 20px;
+  }
+
+  .companions-filter__legend-text--travel-choosing {
+    top: 13px;
+    left: -2px;
+  }
+
+  .companions-filter__legend-text--level {
+    top: 9px;
+  }
+
+  /*ВРЕМЕННО*/
+  .companions-filter__set--active .companions-filter__list {
+    flex-direction: row;
+  }
+  /*ВРЕМЕННО*/
 }
 
 @media (min-width: $desktop-width) {
   .companions-filter {
-    //ВРЕМЕННО
-    width: 285px;
-    //ВРЕМЕННО
     order: 1;
+    width: 285px;
     margin-bottom: 0;
+    padding: 46px;
+  }
+
+  .companions-filter__lead {
+    width: 160px;
+    margin-bottom: 30px;
+  }
+
+  .companions-filter__toggle {
+    &::after {
+      width: 10px;
+      height: 5px;
+      top: 9px;
+      right: 3px;
+    }
+  }
+
+  .companions-filter__set--food,
+  .companions-filter__set--travel-choosing,
+  .companions-filter__set--music,
+  .companions-filter__set--hobby,
+  .companions-filter__set--level {
+    &::before {
+      display: none;
+    }
+  }
+
+  .companions-filter__legend {
+    margin-bottom: 20px;
+  }
+
+  .companions-filter__label {
+    &::before {
+      top: -3px;
+    }
+  }
+
+  input[type="checkbox"]:checked ~ .companions-filter__label::after {
+    top: 3px;
+    left: 6px;
+
+    width: 12px;
+    height: 12px;
+  }
+
+  .companions-filter__set--hobby {
+    margin-bottom: 6px;
+  }
+
+  .companions-filter__set--music {
+    margin-bottom: 18px;
+  }
+
+  .companions-filter__set--food {
+    margin-bottom: 7px;
+  }
+
+  .companions-filter__set--travel-choosing {
+    margin-bottom: 30px;
+  }
+
+  .companions-filter__legend--travel-choosing {
+    margin-bottom: 12px;
+  }
+
+  .companions-filter__legend--level {
+    margin-bottom: 12px;
+  }
+
+  .companions-filter__item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .companions-filter__submit {
+    width: calc(100% + 5px);
+    margin-top: 43px;
+
+    padding-left: 24px;
   }
 }

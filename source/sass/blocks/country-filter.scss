@@ -1,0 +1,787 @@
+.country-filter {
+  position: relative;
+  z-index: 1;
+
+  width: auto;
+  padding: 36px 0 27px;
+
+  background-color: #e2e5f2;
+  border-radius: 0 0 20px 20px;
+}
+
+.country-filter--indent {
+  margin-top: -20px;
+}
+
+.country-filter__wrapper {
+  padding: 0 25px;
+}
+
+.country-filter__nav {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.country-filter__title {
+  position: relative;
+
+  margin: 0 0 30px 0;
+  padding-left: 27px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #192144;
+  text-transform: uppercase;
+
+  &::before {
+    top: 6px;
+    left: 0;
+
+    width: 15px;
+    height: 10px;
+
+    background-image: url("../img/filter.svg");
+    background-repeat: no-repeat;
+
+    @include pseudo;
+  }
+}
+
+.country-filter__toggle {
+  position: absolute;
+  top: 8px;
+  right: 7px;
+
+  width: 12px;
+  height: 12px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #192144;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 0;
+
+  span {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    top: 0;
+    left: 0;
+
+    width: 16px;
+    height: 2px;
+
+    background-color: #192144;
+
+    @include pseudo;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+
+  &:hover,
+  &:focus {
+    color: rgba(#192144, 0.6);
+
+    &::before,
+    &::after {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    color: rgba(#192144, 0.3);
+
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.country-filter__continent {
+  display: block;
+  margin-left: 25px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(#192144, 0.3);
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 0;
+
+  &--active {
+    color: #161c35;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  &:hover,
+  &:focus {
+    color: rgba(#192144, 0.6);
+  }
+
+  &:active {
+    color: #192144;
+  }
+}
+
+.country-filter__popup {
+  margin-right: 21px;
+  margin-left: 25px;
+}
+
+.country-filter__letter-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 42px;
+}
+
+.country-filter__letter {
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  background-color: transparent;
+  border: 0;
+}
+
+@media (max-width: $mobile-width-only) {
+  .country-filter__letter {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 42px;
+
+    color: #1d2e5b;
+
+    background-color: #ffffff;
+    border: solid 1px #cbced9;
+
+    &:nth-child(5n) {
+      width: 44px;
+    }
+
+    &:nth-child(5n+2) {
+      left: -1px;
+    }
+
+    &:nth-child(5n+3) {
+      left: -2px;
+    }
+
+    &:nth-child(5n+4) {
+      left: -3px;
+    }
+
+    &:nth-child(5n+5) {
+      left: -4px;
+    }
+
+    &:nth-child(n+6) {
+      top: -1px;
+    }
+
+    &:nth-child(n+11) {
+      top: -2px;
+    }
+
+    &:nth-child(n+16) {
+      top: -3px;
+    }
+
+    &:nth-child(n+21) {
+      top: -4px;
+    }
+
+    &:hover:not(.country-filter__letter--active),
+    &:focus {
+      z-index: 2;
+
+      border: solid 1px #959bb2;
+    }
+
+    &--active,
+    &:active {
+      z-index: 3;
+
+      color: #ffffff;
+
+      background-color: #1d2e5b;
+      border-color: #1d2e5b;
+    }
+  }
+
+  .country-filter__list:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+
+    .country-filter__item:nth-child(6),
+    .country-filter__item:nth-child(8) {
+      display: none;
+    }
+
+    .country-filter__item:nth-child(1),
+    .country-filter__item:nth-child(2),
+    .country-filter__item:nth-child(3) {
+      order: 1;
+    }
+
+    .country-filter__item:last-child {
+      order: -1;
+    }
+
+    .country-filter__item:nth-child(5) {
+      span:first-child {
+        display: none;
+      }
+    }
+  }
+}
+
+.country-filter__list {
+  display: none;
+
+  @include ul-reset;
+
+  &:nth-child(1):not(.country-filter__list--active) {
+    display: none;
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.country-filter__country-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #444444;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
+}
+
+.country-filter__close-button {
+  position: relative;
+
+  width: 100%;
+  margin-top: 36px;
+  padding: 7px 85px 6px 110px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29.45px;
+  text-align: left;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+  background: #d6daed;
+  border: 0;
+  border-radius: 20px;
+
+  &::before,
+  &::after {
+    top: 20px;
+    left: 85px;
+
+    width: 16px;
+    height: 2px;
+
+    background-color: #161c35;
+
+    @include pseudo;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #c8cee8;
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.country-filter--closed {
+  padding-bottom: 14px;
+
+  .country-filter__nav,
+  .country-filter__title {
+    margin-bottom: 0;
+  }
+
+  .country-filter__toggle {
+    top: 9px;
+    right: 4px;
+
+    width: 17px;
+    height: 3px;
+
+    &::before {
+      top: 0;
+      left: 0;
+
+      width: 3px;
+      height: 3px;
+
+      background-color: #161c35;
+      border-radius: 50%;
+      box-shadow: 7px 0 0 0 #161c35, 14px 0 0 0 #161c35;
+      transform: none;
+
+      @include pseudo;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .country-filter__popup,
+  .country-filter__continent,
+  .country-filter__close-button {
+    display: none;
+  }
+}
+
+.country-filter--nojs {
+  .country-filter__toggle,
+  .country-filter__close-button {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .country-filter {
+    padding: 106px 0 75px;
+
+    border-radius: 0 0 60px 60px;
+  }
+
+  .country-filter--indent {
+    margin-top: -50px;
+  }
+
+  .country-filter__wrapper {
+    padding: 0 75px;
+  }
+
+  .country-filter__nav {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 58px;
+  }
+
+  .country-filter__title {
+    display: none;
+  }
+
+  .country-filter__toggle {
+    top: 0;
+    right: 0;
+
+    width: auto;
+    height: auto;
+    padding-right: 85px;
+
+    span:nth-child(2) {
+      display: inline;
+    }
+
+    &::before,
+    &::after {
+      top: 10px;
+      right: 0;
+      left: auto;
+
+      width: 24px;
+      height: 3px;
+
+      border-radius: 10px;
+    }
+  }
+
+  .country-filter__continent {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    &:not(:last-child) {
+      margin-right: 28px;
+      margin-bottom: 0;
+    }
+
+    &:nth-of-type(2) {
+      margin-right: 24px;
+    }
+
+    &:nth-of-type(4) {
+      margin-right: 30px;
+    }
+  }
+
+  .country-filter__popup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .country-filter__letter-wrapper {
+    margin-right: 75px;
+    margin-bottom: 0;
+    margin-left: -22px;
+  }
+
+  .country-filter__letter {
+    width: 20%;
+
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    color: rgba(#192144, 0.3);
+
+
+    &:not(:nth-of-type(n + 21)) {
+      margin-bottom: 23px;
+    }
+
+    &:hover,
+    &:focus {
+      color: rgba(#192144, 0.6);
+    }
+
+    &:active {
+      color: rgba(#192144, 1);
+    }
+
+    &--active {
+      color: rgba(#192144, 1);
+    }
+  }
+
+  .country-filter__country-link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .country-filter__list-wrapper {
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+
+  .country-filter__close-button {
+    margin-top: 67px;
+    padding: 35px 247px 35px 282px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before,
+    &::after {
+      top: 49px;
+      left: 240px;
+
+      width: 24px;
+      height: 3px;
+    }
+  }
+
+  .country-filter--closed {
+    padding-bottom: 55px;
+
+    .country-filter__toggle {
+      top: 0;
+      right: 0;
+
+      width: auto;
+      height: auto;
+      padding-right: 47px;
+
+      span:nth-child(1) {
+        display: inline;
+      }
+
+      span:nth-child(2) {
+        display: none;
+      }
+
+      &::before {
+        top: 10px;
+        right: 22px;
+        left: auto;
+
+        width: 5px;
+        height: 5px;
+
+        background-color: #161c35;
+        border-radius: 50%;
+        box-shadow: 11px 0 0 0 #161c35, 22px 0 0 0 #161c35;
+        transform: none;
+
+        @include pseudo;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .country-filter__continent {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .country-filter__wrapper {
+    padding: 0 60px;
+  }
+
+  .country-filter__nav {
+    margin-right: 68px;
+    margin-bottom: 72px;
+    margin-left: 20px;
+  }
+
+  .country-filter__title {
+    display: block;
+    margin-right: 39px;
+    margin-bottom: 0;
+    padding-left: 45px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      top: 5px;
+
+      width: 23px;
+      height: 15px;
+    }
+
+    &::after {
+      right: -5px;
+      top: 0;
+
+      @include pseudo(":");
+    }
+  }
+
+  .country-filter__popup {
+    position: relative;
+  }
+
+  .country-filter__letter-wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-right: 23px;
+    margin-left: 37px;
+  }
+
+  .country-filter__letter {
+    width: 247px;
+
+    text-align: left;
+    color: #161c35;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #192144;
+    }
+
+    &:nth-of-type(n+1) {
+      margin-bottom: 590px;
+    }
+
+    &:nth-of-type(n+6) {
+      margin-bottom: 438px;
+    }
+
+    &:nth-of-type(n+11) {
+      margin-bottom: 389px;
+    }
+
+    &:nth-of-type(n+16) {
+      margin-bottom: 438px;
+    }
+
+    &:nth-of-type(n+21) {
+      margin-bottom: 207px;
+    }
+
+    &:nth-of-type(5),
+    &:nth-of-type(10),
+    &:nth-of-type(15),
+    &:nth-of-type(20),
+    &:nth-of-type(25) {
+      margin-right: 9px;
+    }
+  }
+
+  .country-filter__list-wrapper {
+    position: absolute;
+    top: 0;
+    left: 67px;
+  }
+
+  .country-filter__list {
+    position: absolute;
+    top: 92px;
+    left: -31px;
+
+    display: block;
+    width: 185px;
+
+    &:nth-of-type(2),
+    &:nth-of-type(7),
+    &:nth-of-type(12),
+    &:nth-of-type(17),
+    &:nth-of-type(22) {
+      left: 223px;
+    }
+
+    &:nth-of-type(3),
+    &:nth-of-type(8),
+    &:nth-of-type(13),
+    &:nth-of-type(18),
+    &:nth-of-type(23) {
+      left: 475px;
+    }
+
+    &:nth-of-type(4),
+    &:nth-of-type(9),
+    &:nth-of-type(14),
+    &:nth-of-type(19),
+    &:nth-of-type(24) {
+      left: 727px;
+    }
+
+    &:nth-of-type(5),
+    &:nth-of-type(10),
+    &:nth-of-type(15),
+    &:nth-of-type(20),
+    &:nth-of-type(25) {
+      left: 968px;
+    }
+
+    &:nth-of-type(6) {
+      left: 1049px;
+    }
+
+    &:nth-of-type(6),
+    &:nth-of-type(7),
+    &:nth-of-type(8),
+    &:nth-of-type(9),
+    &:nth-of-type(10) {
+      top: 745px;
+    }
+
+    &:nth-of-type(6),
+    &:nth-of-type(11),
+    &:nth-of-type(16),
+    &:nth-of-type(21) {
+      left: -31px;
+    }
+
+    &:nth-of-type(11),
+    &:nth-of-type(12),
+    &:nth-of-type(13),
+    &:nth-of-type(14),
+    &:nth-of-type(15) {
+      top: 1243px;
+    }
+
+    &:nth-of-type(16),
+    &:nth-of-type(17),
+    &:nth-of-type(18),
+    &:nth-of-type(19),
+    &:nth-of-type(20) {
+      top: 1692px;
+    }
+
+    &:nth-of-type(21),
+    &:nth-of-type(22),
+    &:nth-of-type(23),
+    &:nth-of-type(24),
+    &:nth-of-type(25) {
+      top: 2194px;
+    }
+  }
+
+
+  .country-filter__close-button {
+    margin-top: 48px;
+    padding-right: 598px;
+    padding-left: 633px;
+
+    &::before,
+    &::after {
+      left: 592px;
+    }
+  }
+
+  .country-filter--closed {
+    padding-bottom: 54px;
+
+    .country-filter__nav {
+      margin-right: 63px;
+    }
+  }
+}
+

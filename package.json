@@ -41,6 +41,7 @@
   "dependencies": {
     "csscomb": "^4.3.0",
     "gulp-imagemin": "^6.1.1",
-    "imagemin": "^7.0.0"
+    "imagemin": "^7.0.0",
+    "sass": "^1.23.7"
   }
 }
