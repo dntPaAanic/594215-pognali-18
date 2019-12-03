@@ -155,10 +155,15 @@
 
 .registration__contact-list .contact-list__link--tel,
 .registration__contact-list .contact-list__link--email {
-  color: #ffd74b;
+  color: #ffd64b;
+
+  &:hover,
+  &:focus {
+    color: #ffbd30;
+  }
 
   &:active {
-    color: rgba(#ffd74b, 0.3);
+    color: rgba(#ffbd30, 0.3);
   }
 }
 
