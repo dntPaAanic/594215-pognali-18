@@ -443,11 +443,11 @@
     font-size: 60px;
     line-height: 60px;
     color: rgba(#192144, 0.3);
+    margin-bottom: 23px;
 
-
-    &:not(:nth-of-type(n + 21)) {
-      margin-bottom: 23px;
-    }
+    //&:not(:nth-of-type(n + 21)) {
+    //  margin-bottom: 23px;
+    //}
 
     &:hover,
     &:focus {
@@ -602,17 +602,78 @@
     position: relative;
   }
 
-  .country-filter__letter-wrapper {
-    justify-content: space-between;
-    align-items: flex-start;
+  .country-filter__alphabet {
     width: 100%;
-    margin-right: 23px;
-    margin-left: 37px;
+    margin-left: 0;
+    padding: 0 32px 0 35px;
+  }
+
+  .country-filter__alphabet-item {
+    width: 247px;
+    justify-content: flex-start;
+
+    &:nth-of-type(n) {
+      margin-bottom: 49px;
+    }
+
+    &:nth-of-type(n + 6) {
+      margin-bottom: 46px;
+
+      .country-filter__letter {
+        margin-bottom: 32px;
+      }
+    }
+
+    &:nth-of-type(n + 11) {
+      margin-bottom: 84px;
+
+      .country-filter__letter {
+        margin-bottom: 35px;
+      }
+    }
+
+    &:nth-of-type(n + 16) {
+      margin-bottom: 42px;
+
+      .country-filter__letter {
+        margin-bottom: 34px;
+      }
+    }
+
+    &:nth-of-type(n + 21) {
+      margin-bottom: 0;
+
+      .country-filter__letter {
+        margin-bottom: 41px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      .country-filter__list {
+        padding-left: 3px;
+      }
+    }
+
+    &:nth-of-type(4) {
+      .country-filter__list {
+        padding-left: 3px;
+      }
+    }
+
+    &:nth-of-type(5) {
+      .country-filter__list {
+        margin-left: -5px;
+      }
+    }
+
+    &:nth-of-type(n+7) {
+      .country-filter__list {
+        padding-left: 3px;
+      }
+    }
   }
 
   .country-filter__letter {
-    width: 247px;
-
     text-align: left;
     color: #161c35;
 
@@ -621,129 +682,25 @@
     &:active {
       color: #192144;
     }
-
-    &:nth-of-type(n+1) {
-      margin-bottom: 590px;
-    }
-
-    &:nth-of-type(n+6) {
-      margin-bottom: 438px;
-    }
-
-    &:nth-of-type(n+11) {
-      margin-bottom: 389px;
-    }
-
-    &:nth-of-type(n+16) {
-      margin-bottom: 438px;
-    }
-
-    &:nth-of-type(n+21) {
-      margin-bottom: 207px;
-    }
-
-    &:nth-of-type(5),
-    &:nth-of-type(10),
-    &:nth-of-type(15),
-    &:nth-of-type(20),
-    &:nth-of-type(25) {
-      margin-right: 9px;
-    }
-  }
-
-  .country-filter__list-wrapper {
-    position: absolute;
-    top: 0;
-    left: 67px;
+    margin-bottom: 31px;
+    //&:not(:nth-of-type(n+21)) {
+    //  margin-bottom: 31px;
+    //}
   }
 
   .country-filter__list {
-    position: absolute;
-    top: 92px;
-    left: -31px;
-
     display: block;
-    width: 185px;
-
-    &:nth-of-type(2),
-    &:nth-of-type(7),
-    &:nth-of-type(12),
-    &:nth-of-type(17),
-    &:nth-of-type(22) {
-      left: 223px;
-    }
-
-    &:nth-of-type(3),
-    &:nth-of-type(8),
-    &:nth-of-type(13),
-    &:nth-of-type(18),
-    &:nth-of-type(23) {
-      left: 475px;
-    }
-
-    &:nth-of-type(4),
-    &:nth-of-type(9),
-    &:nth-of-type(14),
-    &:nth-of-type(19),
-    &:nth-of-type(24) {
-      left: 727px;
-    }
-
-    &:nth-of-type(5),
-    &:nth-of-type(10),
-    &:nth-of-type(15),
-    &:nth-of-type(20),
-    &:nth-of-type(25) {
-      left: 968px;
-    }
-
-    &:nth-of-type(6) {
-      left: 1049px;
-    }
-
-    &:nth-of-type(6),
-    &:nth-of-type(7),
-    &:nth-of-type(8),
-    &:nth-of-type(9),
-    &:nth-of-type(10) {
-      top: 745px;
-    }
-
-    &:nth-of-type(6),
-    &:nth-of-type(11),
-    &:nth-of-type(16),
-    &:nth-of-type(21) {
-      left: -31px;
-    }
-
-    &:nth-of-type(11),
-    &:nth-of-type(12),
-    &:nth-of-type(13),
-    &:nth-of-type(14),
-    &:nth-of-type(15) {
-      top: 1243px;
-    }
-
-    &:nth-of-type(16),
-    &:nth-of-type(17),
-    &:nth-of-type(18),
-    &:nth-of-type(19),
-    &:nth-of-type(20) {
-      top: 1692px;
-    }
-
-    &:nth-of-type(21),
-    &:nth-of-type(22),
-    &:nth-of-type(23),
-    &:nth-of-type(24),
-    &:nth-of-type(25) {
-      top: 2194px;
-    }
   }
 
+  //.country-filter__list {
+  //  width: 185px;
+  //}
+  .country-filter__list--outside {
+    display: none;
+  }
 
   .country-filter__close-button {
-    margin-top: 48px;
+    margin-top: 64px;
     padding-right: 598px;
     padding-left: 633px;
 
