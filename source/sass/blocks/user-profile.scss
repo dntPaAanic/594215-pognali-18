@@ -1,25 +1,35 @@
 .user-profile {
   width: auto;
-  padding: 120px 0 63px;
+  padding: 44px 0 63px;
 }
 
 .user-profile--indent {
   margin-top: -20px;
-  padding: 0 25px;
 
   background-color: #edeff6;
 }
 
+.user-profile__wrapper {
+  padding: 0 25px;
+}
+
 .user-profile__form {
   position: relative;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 
 .user-profile__level {
+  position: relative;
+
   width: 100px;
   height: 100px;
-  margin: 0;
-  padding-top: 21px;
+  margin: 0 34px 16px 0;
+  padding-top: 19px;
 
   text-align: center;
   color: #161c35;
@@ -27,7 +37,7 @@
   background-color: transparent;
 
   &::after {
-    top: 62px;
+    top: 56px;
     left: 25px;
 
     width: 49px;
@@ -64,13 +74,9 @@
   border-radius: 50%;
 }
 
-.user-profile__wrapper {
-  //display: flex;
-  //flex-direction: column;
-}
-
 .user-profile__photo-upload {
   display: block;
+  width: 100%;
   margin-bottom: 33px;
   padding-top: 6px;
   padding-bottom: 5px;
