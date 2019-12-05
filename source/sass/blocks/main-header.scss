@@ -39,6 +39,12 @@
   }
 }
 
+.main-header--form .main-header__current-page {
+  &::before {
+    width: 217px;
+  }
+}
+
 .main-header__index-link {
   display: none;
 
