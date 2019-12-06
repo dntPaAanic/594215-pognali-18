@@ -5,13 +5,16 @@
     <title>HTML Academy: Погнали</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/bloggersans.woff2" as="font">
     <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
     <link rel="preload" href="fonts/bloggersans-light.woff2" as="font">
     <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font">
   </head>
   <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
     <header class="page-header page-header--catalog">
       <div class="page-header__main-wrapper">
         <nav class="page-header__nav main-nav main-nav--catalog main-nav--opened-bc main-nav--opened main-nav--nojs">
@@ -886,7 +889,7 @@
                         <input class="visually-hidden" type="checkbox" name="Plane" checked>
                         <span class="travel-choosing__checkbox">
                           <svg class="travel-choosing__image" fill="#1d2e5b" width="14" height="16">
-                            <use xlink:href="img/sprite.svg#icon-plane"></use>
+                            <use xlink:href="sprite.svg#icon-plane"></use>
                           </svg>
                         </span>
                       </label>
@@ -896,7 +899,7 @@
                         <input class="visually-hidden" type="checkbox" name="Bus" checked>
                         <span class="travel-choosing__checkbox">
                           <svg class="travel-choosing__image" fill="#1d2e5b" width="13" height="16">
-                            <use xlink:href="img/sprite.svg#icon-bus"></use>
+                            <use xlink:href="sprite.svg#icon-bus"></use>
                           </svg>
                         </span>
                       </label>
@@ -906,7 +909,7 @@
                         <input class="visually-hidden" type="checkbox" name="Bike">
                         <span class="travel-choosing__checkbox">
                           <svg class="travel-choosing__image" fill="#1d2e5b" width="19" height="17">
-                            <use xlink:href="img/sprite.svg#icon-bike"></use>
+                            <use xlink:href="sprite.svg#icon-bike"></use>
                           </svg>
                         </span>
                       </label>
@@ -916,7 +919,7 @@
                         <input class="visually-hidden" type="checkbox" name="Run" checked>
                         <span class="travel-choosing__checkbox">
                           <svg class="travel-choosing__image" fill="#1d2e5b" width="15" height="17">
-                            <use xlink:href="img/sprite.svg#icon-walk"></use>
+                            <use xlink:href="sprite.svg#icon-walk"></use>
                           </svg>
                         </span>
                       </label>
@@ -1261,7 +1264,7 @@
         <div class="page-footer__developer">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">Разработано
             <svg class="page-footer__developer-image" width="27" height="34" fill="#231f20">
-              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+              <use xlink:href="sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>
@@ -1269,6 +1272,6 @@
     </footer>
 
     <script src="js/picturefill.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
