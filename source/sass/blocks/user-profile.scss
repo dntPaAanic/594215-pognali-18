@@ -289,3 +289,92 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .user-profile {
+    padding: 0 0 120px;
+  }
+
+  .user-profile--indent {
+    margin-top: -190px;
+  }
+
+  .user-profile__wrapper {
+
+    padding-right: 60px;
+    padding-left: 125px;
+  }
+
+  .user-profile__form {
+    justify-content: flex-end;
+  }
+
+  .user-profile__level {
+    z-index: 15;
+    margin: 43px 0 0 800px;
+    order: 1;
+
+    &::after {
+      background-color: rgba(#ffffff, 0.3);
+    }
+  }
+
+  .user-profile__level-number,
+  .user-profile__level-description {
+    color: #ffffff;
+  }
+
+  .user-profile__image-wrapper {
+    z-index: 15;
+    order: 2;
+    margin: 0 95px 0 45px;
+    width: 190px;
+    height: 190px;
+  }
+
+  .user-profile__image {
+    border-radius: 10px 10px 0 0;
+    width: 190px;
+    height: 190px;
+  }
+
+  .user-profile__photo-upload {
+    width: 190px;
+    order: 3;
+    padding: 15px 67px;
+    min-height: 47px;
+    margin: 0 95px 25px 800px;
+
+    border-radius: 0 0 10px 10px;
+
+    span:nth-of-type(1) {
+      display: none;
+    }
+  }
+
+  .user-profile__travel-wrapper {
+    order: 5;
+    padding: 25px 105px;
+    width: 384px;
+    margin: 0 0 0 141px;
+  }
+
+
+  .user-profile__travel-list .travel-choosing__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .user-profile__tags {
+    width: 730px;
+    order: 4;
+    height: 94px;
+  }
+
+  .user-profile__tags-legend {
+    left: 20px;
+  }
+
+  .user-profile__travel-legend {
+    left: 111px;
+  }
+}
