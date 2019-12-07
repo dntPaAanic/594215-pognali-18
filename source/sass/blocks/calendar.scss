@@ -61,11 +61,12 @@
 
     &::before {
       content: "";
+      display: block;
       position: absolute;
       left: -1px;
       top: -1px;
       width: calc(100% + 2px);
-      height: calc(100% + 2px);
+      height: 33px;
       border: solid 2px #ff5c23;
       border-radius: 1px;
     }
@@ -83,7 +84,7 @@
   }
 
   .calendar__cell {
-    width: calc(100% / 7);
+    width: 143px;
     height: 69px;
     font-weight: 500;
     font-size: 20px;
@@ -123,7 +124,7 @@
     &--future:hover {
       &::before {
         top: -2px;
-        height: calc(100% + 4px);
+        height: 73px;
         border: solid 4px #ff5c23;
         border-radius: 2px;
       }
