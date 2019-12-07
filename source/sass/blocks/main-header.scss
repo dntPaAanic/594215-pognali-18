@@ -122,6 +122,12 @@
       }
     }
   }
+
+  .main-header--form .main-header__current-page {
+    &::before {
+      width: 355px;
+    }
+  }
 }
 
 

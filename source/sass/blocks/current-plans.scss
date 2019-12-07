@@ -120,7 +120,6 @@
 
   .current-plans__title {
     margin-bottom: 44px;
-    margin-left: 2px;
 
     font-size: 36px;
     line-height: 50px;
@@ -133,7 +132,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 27px 33px 19px 33px;
+    padding: 27px 33px 17px 33px;
 
     &::before {
       top: 42px;
@@ -183,7 +182,7 @@
     width: 180px;
   }
 
-  .current-plans__trip-duration {
+  .current-plans__travel-duration {
     margin-right: 73px;
   }
 }
