@@ -186,7 +186,126 @@
         </div>
       </section>
 
-      
+      <section class="new-plan new-plan--indent">
+        <div class="new-plan__wrapper container">
+          <form class="new-plan__form" action="https://echo.htmlacademy.ru" method="post">
+            <h2 class="visually-hidden">Новые планы для путешествий</h2>
+            <p class="new-plan__title">Добавить план:</p>
+            <fieldset class="new-plan__item new-plan__item--active" id="new-plan-step-1">
+              <ul class="new-plan__progress">
+                <li class="new-plan__steps new-plan__steps--active">Даты</li>
+                <li class="new-plan__steps">Маршрут</li>
+                <li class="new-plan__steps">Развлечения</li>
+              </ul>
+              <p class="new-plan__step-name">Шаг 1.<br> Даты пребывания</p>
+              <p class="new-plan__step-description">Укажите предпочтительное количество попутчиков, которых<br> вы хотели бы
+                позвать в поездку и ее предполагаемую длительность.</p>
+              <div class="new-plan__flex-wrapper">
+                <div class="new-plan__calc-wrapper">
+                  <label class="new-plan__calc-label" for="companions-count">Ищу попутчиков:</label>
+                  <p class="new-plan__calc-description">Чел.</p>
+                  <input class="new-plan__calc-input" id="companions-count" type="text" name="companions-count" value="2">
+                  <button class="new-plan__minus-btn" type="button"><span class="visually-hidden">Уменьшить количество</span></button>
+                  <button class="new-plan__plus-btn" type="button"><span class="visually-hidden">Увеличить количество</span></button>
+                </div>
+                <div class="new-plan__calc-wrapper">
+                  <label class="new-plan__calc-label" for="days-duration">Длительность:</label>
+                  <p class="new-plan__calc-description">Дн.</p>
+                  <input class="new-plan__calc-input" id="days-duration" type="text" name="days-duration" value="2">
+                  <button class="new-plan__minus-btn" type="button"><span class="visually-hidden">Уменьшить количество</span></button>
+                  <button class="new-plan__plus-btn" type="button"><span class="visually-hidden">Увеличить количество</span></button>
+                </div>
+                <label class="new-plan__checkbox-label">
+                  <input class="visually-hidden" type="checkbox" name="kids-alowed" checked>
+                  <span class="new-plan__checkbox"></span>Можно с детьми
+                </label>
+              </div>
+              <div class="new-plan__calendar-nav">
+                <button class="new-plan__month-arrows" type="button"><span class="visually-hidden">Предыдущий месяц</span></button>
+                <p class="new-plan__month-name">Март 2019</p>
+                <button class="new-plan__month-arrows" type="button"><span class="visually-hidden">Следующий месяц</span></button>
+              </div>
+
+              <table class="new-plan__calendar calendar">
+                <tr>
+                  <th class="calendar__cell calendar__cell--day-week">П<span>н</span></th>
+                  <th class="calendar__cell calendar__cell--day-week">В<span>т</span></th>
+                  <th class="calendar__cell calendar__cell--day-week">С<span>р</span></th>
+                  <th class="calendar__cell calendar__cell--day-week">Ч<span>т</span></th>
+                  <th class="calendar__cell calendar__cell--day-week">П<span>т</span></th>
+                  <th class="calendar__cell calendar__cell--day-week-end">С<span>б</span></th>
+                  <th class="calendar__cell calendar__cell--day-week-end">В<span>с</span></th>
+                </tr>
+                <tr>
+                  <td class="calendar__cell calendar__cell--past">23</td>
+                  <td class="calendar__cell calendar__cell--past">24</td>
+                  <td class="calendar__cell calendar__cell--past">25</td>
+                  <td class="calendar__cell calendar__cell--past">26</td>
+                  <td class="calendar__cell calendar__cell--past">27</td>
+                  <td class="calendar__cell calendar__cell--past">28</td>
+                  <td class="calendar__cell calendar__cell--past">1<span> мар</span></td>
+                </tr>
+                <tr>
+                  <td class="calendar__cell calendar__cell--past">2</td>
+                  <td class="calendar__cell calendar__cell--past">3</td>
+                  <td class="calendar__cell calendar__cell--past">4</td>
+                  <td class="calendar__cell calendar__cell--past">5</td>
+                  <td class="calendar__cell calendar__cell--past">6</td>
+                  <td class="calendar__cell calendar__cell--past">7</td>
+                  <td class="calendar__cell calendar__cell--past">8</td>
+                </tr>
+                <tr>
+                  <td class="calendar__cell calendar__cell--past">9</td>
+                  <td class="calendar__cell calendar__cell--past">10</td>
+                  <td class="calendar__cell calendar__cell--past">11</td>
+                  <td class="calendar__cell calendar__cell--past">12</td>
+                  <td class="calendar__cell calendar__cell--past">13</td>
+                  <td class="calendar__cell calendar__cell--past">14</td>
+                  <td class="calendar__cell calendar__cell--past">15</td>
+                </tr>
+                <tr>
+                  <td class="calendar__cell calendar__cell--past">16</td>
+                  <td class="calendar__cell calendar__cell--past">17</td>
+                  <td class="calendar__cell calendar__cell--past">18</td>
+                  <td class="calendar__cell calendar__cell--past">19</td>
+                  <td class="calendar__cell calendar__cell--past">20</td>
+                  <td class="calendar__cell calendar__cell--past">21</td>
+                  <td class="calendar__cell calendar__cell--past">22</td>
+                </tr>
+                <tr>
+                  <td class="calendar__cell calendar__cell--past">23</td>
+                  <td class="calendar__cell calendar__cell--past">24</td>
+                  <td class="calendar__cell calendar__cell--past">25</td>
+                  <td class="calendar__cell calendar__cell--today">26<span><br>Заезд</span></td>
+                  <td class="calendar__cell calendar__cell--future calendar__cell--mark">27</td>
+                  <td class="calendar__cell calendar__cell--future calendar__cell--mark">28<span><br>Выезд</span></td>
+                  <td class="calendar__cell calendar__cell--future">29</td>
+                </tr>
+                <tr>
+                  <td class="calendar__cell calendar__cell--future">30</td>
+                  <td class="calendar__cell calendar__cell--future">31</td>
+                  <td class="calendar__cell calendar__cell--future">1</td>
+                  <td class="calendar__cell calendar__cell--future">2</td>
+                  <td class="calendar__cell calendar__cell--future">3</td>
+                  <td class="calendar__cell calendar__cell--future">4</td>
+                  <td class="calendar__cell calendar__cell--future">5</td>
+                </tr>
+              </table>
+
+              <a class="new-plan__next-step button-with-arrow" href="#new-plan-step-2">Следующий шаг</a>
+            </fieldset>
+
+            <fieldset class="new-plan__item" id="new-plan-step-2">
+
+            </fieldset>
+            <fieldset class="new-plan__item" id="new-plan-step-3">
+
+            </fieldset>
+
+          </form>
+        </div>
+
+      </section>
     </main>
 
     <footer class="page-footer page-footer--indent">

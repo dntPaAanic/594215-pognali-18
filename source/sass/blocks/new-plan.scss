@@ -1,0 +1,385 @@
+.new-plan {
+  position: relative;
+  z-index: 3;
+
+  width: auto;
+  padding: 30px 0 74px;
+
+  background-color: #d4d9eb;
+  border-radius: 30px 30px 0 0;
+}
+
+.new-plan--indent {
+  margin-top: -30px;
+}
+
+.new-plan__wrapper {
+  padding: 0 25px;
+}
+
+.new-plan__title,
+.new-plan__step-name,
+.new-plan__step-description {
+  margin: 0;
+}
+
+.new-plan__title {
+  margin-bottom: 30px;
+
+  color: #1d2e5b;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.new-plan__item {
+  position: relative;
+  border: 0 none;
+
+  padding: 22px 25px 10px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  &:nth-of-type(1) {
+    padding-bottom: 22px;
+
+    .new-plan__step-description {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &--active {
+    .new-plan__progress {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+
+  &:nth-of-type(2) {
+    .new-plan__step-description {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &:last-child {
+    .new-plan__step-description {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.new-plan__progress {
+  position: absolute;
+  top: -43px;
+  right: 2px;
+
+  display: none;
+
+  font-size: 0;
+
+  @include ul-reset;
+}
+
+.new-plan__steps {
+  &::before {
+    display: block;
+    width: 6px;
+    height: 5px;
+    margin-right: 15px;
+
+    background-color: rgba(#808285, 0.3);
+    border-radius: 50%;
+
+    @include pseudo("", relative);
+  }
+
+  &--active {
+    &::before {
+      background-color: #1d2e5b;
+    }
+  }
+}
+
+.new-plan__step-name {
+  margin-bottom: 16px;
+
+  color: #1d2e5b;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.new-plan__step-description {
+  margin-bottom: 21px;
+
+  color: #444444;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.new-plan__flex-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-plan__calc-wrapper {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 21px;
+}
+
+.new-plan__calc-label {
+  margin-bottom: 9px;
+
+  color: #1d2e5b;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+
+.new-plan__calc-description {
+  margin: 0;
+
+  color: rgba(#1d2e5b, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.new-plan__calc-input {
+  width: 220px;
+  height: 43px;
+  padding: 10px 35px;
+
+  text-align: center;
+  color: #1d2e5b;
+  letter-spacing: 1.5px;
+
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  outline: none;
+
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 13px;
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:focus {
+    border-color: #161c35;
+  }
+}
+
+.new-plan__minus-btn,
+.new-plan__plus-btn {
+  position: absolute;
+
+  width: 14px;
+  padding: 0;
+
+  border: 0;
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    opacity: 0.4;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.new-plan__minus-btn {
+  top: 46px;
+  left: 15px;
+
+  height: 2px;
+
+  background: url("../img/qty-minus-mobile.svg") no-repeat;
+}
+
+.new-plan__plus-btn {
+  top: 40px;
+  right: 15px;
+
+  height: 14px;
+
+  background: url("../img/qty-plus-mobile.svg") no-repeat;
+}
+
+.new-plan__checkbox-label {
+  position: relative;
+
+  margin-bottom: 21px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+
+  color: #444444;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+
+  &:hover,
+  &:focus {
+    .new-plan__checkbox {
+      border-color: #959bb2;
+    }
+  }
+
+  &:active {
+    .new-plan__checkbox {
+      background-color: #e2e5f1;
+      border-color: #e2e5f1;
+    }
+
+    input[type="checkbox"]:checked + .new-plan__checkbox::before {
+      opacity: 0.3;
+    }
+  }
+}
+
+.new-plan__checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+
+input[type="checkbox"]:checked + .new-plan__checkbox {
+  &::before {
+    top: 8px;
+    left: 8px;
+    width: 9px;
+    height: 9px;
+
+    background: url("../img/tick.svg") no-repeat;
+
+    @include pseudo;
+  }
+}
+
+input[type="checkbox"]:focus + .new-plan__checkbox {
+  outline: thin dotted;
+}
+
+.new-plan__calendar-nav {
+  position: relative;
+
+  padding-top: 9px;
+  padding-bottom: 12px;
+
+  border-top: 1px solid #d6d9e6;
+  border-bottom: 1px solid #d6d9e6;
+}
+
+.new-plan__month-arrows {
+  position: absolute;
+  top: 12px;
+
+  width: 9px;
+  height: 17px;
+  padding: 0;
+
+  background: url("../img/month-arrow-left.svg") no-repeat;
+  border: 0;
+  opacity: 0.3;
+
+  &:nth-of-type(2) {
+    right: 0;
+
+    transform: rotate(180deg);
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.new-plan__month-name {
+  margin: 0;
+
+  text-align: center;
+  color: #1d2e5b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.new-plan__calendar {
+  margin-top: 15px;
+  margin-bottom: 23px;
+}
+
+
+@media (max-width: $mobile-width-only) {
+  .new-plan__next-step {
+    width: calc(100% + 10px);
+    margin-left: -7px;
+    padding: 5px 0 6px;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    border-radius: 20px;
+
+    color: #161c35;
+
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+
+
+    &::before {
+      display: none;
+    }
+
+    &:active {
+      color: rgba(#161c35, 0.3);
+    }
+  }
+}
+

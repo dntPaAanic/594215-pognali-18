@@ -1,0 +1,153 @@
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar__cell--past,
+.calendar__cell--future,
+.calendar__cell--today,
+.calendar__cell--day-week-end {
+  span {
+    display: none;
+  }
+}
+
+.calendar__cell {
+  height: 31px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #444444;
+  border: 1px solid #cbced9;
+
+  &--day-week {
+    border: none;
+
+    span {
+      display: none;
+    }
+  }
+
+  &--day-week-end {
+    color: #ff5c23;
+    border: none;
+  }
+
+  &--past {
+    color: rgba(#444444, 0.3);
+  }
+
+  &--future {
+    background-color: #edeff6;
+  }
+
+  &--today {
+    border: solid 2px #ff5c23;
+    background-color: #101d41;
+    color: #ffffff;
+  }
+
+  &--mark {
+    color: #ffffff;
+    background-color: #101d41;
+  }
+
+  &--past:hover,
+  &--future:hover {
+    position: relative;
+    color: #ffffff;
+    background-color: #1d2e5b;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      border: solid 2px #ff5c23;
+      border-radius: 1px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .calendar {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th.calendar__cell {
+    height: 35px;
+  }
+
+  .calendar__cell {
+    width: calc(100% / 7);
+    height: 69px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+
+    &--day-week {
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: 1.8px;
+      color: #444444;
+
+      span {
+        display: inline;
+      }
+    }
+
+    &--past {
+      color: rgba(#1d2e5b, 0.3);
+    }
+
+    &--future {
+      color: #1d2e5b;
+    }
+
+    &--mark {
+      color: #ffffff;
+    }
+
+    &::before {
+      top: -2px;
+      height: calc(100% + 4px);
+      border: solid 4px #ff5c23;
+      border-radius: 2px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  th.calendar__cell {
+    height: 46px;
+  }
+
+  .calendar__cell--past,
+  .calendar__cell--future {
+    padding-top: 5px;
+    letter-spacing: 0.6px;
+
+    span {
+      display: inline;
+    }
+  }
+
+  .calendar__cell {
+    height: 71px;
+    padding-left: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    vertical-align: top;
+
+    &--mark {
+      padding-top: 8px;
+      line-height: 26px;
+    }
+  }
+}
