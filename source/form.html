@@ -296,6 +296,34 @@
             </fieldset>
 
             <fieldset class="new-plan__item" id="new-plan-step-2">
+              <ul class="new-plan__progress">
+                <li class="new-plan__steps">Даты</li>
+                <li class="new-plan__steps new-plan__steps--active">Маршрут</li>
+                <li class="new-plan__steps">Развлечения</li>
+              </ul>
+              <p class="new-plan__step-name">Шаг 2.<br> Маршрут</p>
+              <p class="new-plan__step-description">Укажите страны, которые вы хотели бы посетить.<br> Это может быть одна или сразу несколько.</p>
+              <div class="new-plan__select-wrapper">
+                <button class="new-plan__select-country new-plan__select-country--selected" type="button">
+                  <span>Босния и герцеговина</span>
+                  <img class="new-plan__country-img" src="img/flag-bosnia.svg" width="35" height="24" alt="Босния и герцеговина">
+                </button>
+                <button class="new-plan__delete-country" type="button"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="new-plan__select-wrapper">
+                <button class="new-plan__select-country new-plan__select-country--selected" type="button">
+                  <span>Чехия</span>
+                  <img class="new-plan__country-img" src="img/flag-czech.svg" width="35" height="24" alt="Чехословакия">
+                </button>
+                <button class="new-plan__delete-country" type="button"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <div class="new-plan__select-wrapper">
+                <button class="new-plan__select-country" type="button"><span>Выберите страну</span></button>
+                <button class="new-plan__delete-country" type="button"><span class="visually-hidden">Удалить</span></button>
+              </div>
+              <button class="new-plan__add-country" type="button">Добавить страну</button>
+              <a class="new-plan__next-step button-with-arrow" href="#new-plan-step-3">Следующий шаг</a>
+              <a class="new-plan__previous-step" href="#new-plan-step-1">На шаг назад</a>
 
             </fieldset>
             <fieldset class="new-plan__item" id="new-plan-step-3">
