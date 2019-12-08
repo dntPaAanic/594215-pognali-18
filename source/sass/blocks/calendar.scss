@@ -1,5 +1,6 @@
 .calendar {
   width: 100%;
+
   border-collapse: collapse;
 }
 
@@ -14,11 +15,13 @@
 
 .calendar__cell {
   height: 31px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   color: #444444;
+
   border: 1px solid #cbced9;
 
   &--day-week {
@@ -31,6 +34,7 @@
 
   &--day-week-end {
     color: #ff5c23;
+
     border: none;
   }
 
@@ -43,30 +47,36 @@
   }
 
   &--today {
-    background-color: #101d41;
     color: #ffffff;
+
+    background-color: #101d41;
   }
 
   &--mark {
     color: #ffffff;
+
     background-color: #101d41;
   }
 
   &--past:hover,
   &--future:hover {
     position: relative;
+
     color: #ffffff;
+
     background-color: #1d2e5b;
     cursor: pointer;
 
     &::before {
       content: "";
-      display: block;
       position: absolute;
-      left: -1px;
       top: -1px;
+      left: -1px;
+
+      display: block;
       width: calc(100% + 2px);
       height: 33px;
+
       border: solid 2px #ff5c23;
       border-radius: 1px;
     }
@@ -76,6 +86,7 @@
 @media (min-width: $tablet-width) {
   .calendar {
     width: 100%;
+
     border-collapse: collapse;
   }
 
@@ -86,6 +97,7 @@
   .calendar__cell {
     width: 143px;
     height: 69px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 18px;
@@ -94,8 +106,8 @@
     &--day-week {
       font-size: 18px;
       line-height: 30px;
-      letter-spacing: 1.8px;
       color: #444444;
+      letter-spacing: 1.8px;
 
       span {
         display: inline;
@@ -124,7 +136,9 @@
     &--future:hover {
       &::before {
         top: -2px;
+
         height: 73px;
+
         border: solid 4px #ff5c23;
         border-radius: 2px;
       }
@@ -140,6 +154,7 @@
   .calendar__cell--past,
   .calendar__cell--future {
     padding-top: 5px;
+
     letter-spacing: 0.6px;
 
     span {
@@ -150,13 +165,15 @@
   .calendar__cell {
     height: 71px;
     padding-left: 15px;
+
     font-weight: 400;
     line-height: 30px;
-    text-align: left;
     vertical-align: top;
+    text-align: left;
 
     &--mark {
       padding-top: 8px;
+
       line-height: 26px;
     }
   }
