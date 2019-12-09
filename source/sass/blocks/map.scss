@@ -13,6 +13,21 @@
   margin-top: -30px;
 }
 
+.map__image {
+  width: 100%;
+}
+
+.map__iframe {
+  display: block;
+  width: 100%;
+
+  border: 0;
+}
+
+.map--loaded {
+  z-index: 10;
+}
+
 @media (min-width: $tablet-width) {
   .map {
     height: 570px;
@@ -21,10 +36,18 @@
   .map--indent {
     margin-top: -55px;
   }
+
+  .map__iframe {
+    height: 570px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .map {
+    height: 505px;
+  }
+
+  .map__iframe {
     height: 505px;
   }
 }
