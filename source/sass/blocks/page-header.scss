@@ -21,6 +21,7 @@
 
 .page-header__logo {
   display: block;
+  width: 100px;
 }
 
 .page-header__logo-blue,
@@ -68,6 +69,10 @@
     padding: 0 40px;
   }
 
+  .page-header__logo {
+    width: 166px;
+  }
+
   .page-header__logo-blue,
   .page-header__logo-white {
     display: block;
@@ -81,6 +86,10 @@
     min-height: 90px;
 
     background-color: #161c35;
+  }
+
+  .page-header__logo {
+    width: 200px;
   }
 
   .page-header__wrapper {

@@ -69,9 +69,14 @@
     align-self: center;
   }
 
-  .site-list__item:not(:last-child) {
-    margin-right: 34px;
+  .site-list__item {
+    letter-spacing: 0;
+
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
   }
+
 
   .site-list__link {
     font-size: 20px;
