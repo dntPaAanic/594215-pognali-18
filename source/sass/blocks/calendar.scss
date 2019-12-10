@@ -4,8 +4,8 @@
   border-collapse: collapse;
 }
 
-.calendar__cell--past,
-.calendar__cell--future,
+.calendar__cell--disabled,
+.calendar__cell--day,
 .calendar__cell--today,
 .calendar__cell--day-week-end {
   span {
@@ -38,28 +38,22 @@
     border: none;
   }
 
-  &--past {
+  &--disabled {
     color: rgba(#444444, 0.3);
   }
 
-  &--future {
+  &--day {
     background-color: #edeff6;
   }
 
-  &--today {
+  &--chosen {
     color: #ffffff;
 
     background-color: #101d41;
   }
 
-  &--mark {
-    color: #ffffff;
-
-    background-color: #101d41;
-  }
-
-  &--past:hover,
-  &--future:hover {
+  &--disabled:hover,
+  &--day:hover {
     position: relative;
 
     color: #ffffff;
@@ -120,20 +114,20 @@
       }
     }
 
-    &--past {
+    &--disabled {
       color: rgba(#1d2e5b, 0.3);
     }
 
-    &--future {
+    &--day {
       color: #1d2e5b;
     }
 
-    &--mark {
+    &--chosen {
       color: #ffffff;
     }
 
-    &--past:hover,
-    &--future:hover {
+    &--disabled:hover,
+    &--day:hover {
       &::before {
         top: -2px;
 
@@ -151,8 +145,8 @@
     height: 46px;
   }
 
-  .calendar__cell--past,
-  .calendar__cell--future {
+  .calendar__cell--disabled,
+  .calendar__cell--day {
     padding-top: 5px;
 
     letter-spacing: 0.6px;
@@ -167,11 +161,16 @@
     padding-left: 15px;
 
     font-weight: 400;
+    font-size: 18px;
     line-height: 30px;
     vertical-align: top;
     text-align: left;
 
-    &--mark {
+    span {
+      letter-spacing: 1.8px;
+    }
+
+    &--chosen {
       padding-top: 8px;
 
       line-height: 26px;
