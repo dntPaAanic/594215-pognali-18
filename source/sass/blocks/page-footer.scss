@@ -65,6 +65,19 @@
   height: 34px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .page-footer__developer {
+    position: relative;
+    &::before {
+      top:-15px;
+      left: 0;
+      width: 270px;
+      height: 1px;
+      background-color: rgba(#000000, 0.05);
+      @include pseudo;
+    }
+  }
+}
 
 @media (min-width: $tablet-width) {
   .page-footer {
