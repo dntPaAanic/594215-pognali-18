@@ -293,6 +293,20 @@
   line-height: 14px;
 }
 
+.user__level-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 45px;
+  height: 45px;
+
+  transform: rotate(-90deg);
+  transform-origin: center;
+
+  stroke-dasharray: 358;
+}
+
 
 .user--index {
   display: flex;
@@ -446,6 +460,19 @@
   }
 }
 
+.user--index .user__level-svg {
+  width: 60px;
+  height: 60px;
+}
+
+.user--firsova .user__level-svg {
+  stroke-dashoffset: 12;
+}
+
+.user--demin .user__level-svg {
+  stroke-dashoffset: 60;
+}
+
 .user__invite-button {
   padding: 6px 79px 2px;
 }
@@ -477,10 +504,23 @@
   .user__level-description {
     display: none;
   }
+
+  .user__level-svg {
+    top: 26px;
+    left: -3px;
+  }
 }
 
 .user--id3 .user__country-icon-list {
   margin-bottom: 15px;
+}
+
+.user--id3 .user__level-svg {
+  stroke-dashoffset: 268;
+}
+
+.user--rogovaya .user__level-svg {
+  stroke-dashoffset: 179;
 }
 
 @media (min-width: $tablet-width) {
@@ -541,6 +581,13 @@
         opacity: 0.1;
 
         @include pseudo;
+      }
+
+      .user__level-svg {
+        width: 60px;
+        height: 60px;
+        top: -11px;
+        left: -16px;
       }
     }
 

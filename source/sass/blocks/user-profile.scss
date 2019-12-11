@@ -67,6 +67,21 @@
   line-height: 22px;
 }
 
+.user-profile__level-svg {
+  position: absolute;
+  top: 0;
+  left: 3px;
+
+  width: 94px;
+  height: 94px;
+
+  transform: rotate(-90deg);
+  transform-origin: center;
+
+  stroke-dasharray: 358;
+  stroke-dashoffset: 60;
+}
+
 .user-profile__image {
   width: 100px;
   height: 100px;
@@ -212,18 +227,19 @@
   .user-profile__image {
     width: 94px;
     height: 94px;
+
     border-radius: 7px;
   }
 
   .user-profile__level-number {
-    font-size: 38px;
     font-weight: 700;
+    font-size: 38px;
     line-height: 38px;
   }
 
   .user-profile__level-description {
-    font-size: 18px;
     font-weight: 400;
+    font-size: 18px;
     line-height: 22.17px;
   }
 
@@ -232,14 +248,13 @@
     margin: 45px 0 52px 0;
     padding: 21px 0;
 
-    background-color: #dfe3f0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
     letter-spacing: 2px;
 
+    background-color: #dfe3f0;
     border-radius: 10px;
-
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 18px;
   }
 
   .user-profile__tags-wrapper {
@@ -249,8 +264,8 @@
 
   .user-profile__travel-wrapper {
     order: 2;
-    margin-right: 7px;
     align-self: start;
+    margin-right: 7px;
     padding: 23px 55px 25px;
   }
 
@@ -263,11 +278,10 @@
     top: auto;
     bottom: -8px;
 
-    letter-spacing: 2px;
-
-    font-size: 20px;
     font-weight: 500;
+    font-size: 20px;
     line-height: 18px;
+    letter-spacing: 2px;
   }
 
   .user-profile__tags-legend {
@@ -275,8 +289,9 @@
   }
 
   .user-profile__travel-legend {
-    padding: 0 20px;
     left: 74px;
+
+    padding: 0 20px;
   }
 
   .user-profile__tags {
@@ -284,8 +299,8 @@
     height: 94px;
     padding: 32px 40px;
 
-    font-size: 20px;
     font-weight: 400;
+    font-size: 20px;
     line-height: 24px;
   }
 }
@@ -300,7 +315,6 @@
   }
 
   .user-profile__wrapper {
-
     padding-right: 60px;
     padding-left: 125px;
   }
@@ -311,8 +325,9 @@
 
   .user-profile__level {
     z-index: 15;
-    margin: 43px 0 0 800px;
+
     order: 1;
+    margin: 43px 0 0 800px;
 
     &::after {
       background-color: rgba(#ffffff, 0.3);
@@ -326,24 +341,26 @@
 
   .user-profile__image-wrapper {
     z-index: 15;
+
     order: 2;
-    margin: 0 95px 0 45px;
     width: 190px;
     height: 190px;
+    margin: 0 95px 0 45px;
   }
 
   .user-profile__image {
-    border-radius: 10px 10px 0 0;
     width: 190px;
     height: 190px;
+
+    border-radius: 10px 10px 0 0;
   }
 
   .user-profile__photo-upload {
-    width: 190px;
     order: 3;
-    padding: 15px 67px;
+    width: 190px;
     min-height: 47px;
     margin: 0 95px 25px 800px;
+    padding: 15px 67px;
 
     border-radius: 0 0 10px 10px;
 
@@ -354,9 +371,9 @@
 
   .user-profile__travel-wrapper {
     order: 5;
-    padding: 25px 105px;
     width: 384px;
     margin: 0 0 0 141px;
+    padding: 25px 105px;
   }
 
 
@@ -365,8 +382,8 @@
   }
 
   .user-profile__tags {
-    width: 730px;
     order: 4;
+    width: 730px;
     height: 94px;
   }
 
