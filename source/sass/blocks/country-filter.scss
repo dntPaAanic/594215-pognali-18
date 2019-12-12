@@ -223,7 +223,7 @@
   .country-filter__list--outside {
     .country-filter__item:nth-child(6),
     .country-filter__item:nth-child(8) {
-       display: none;
+      display: none;
     }
 
     .country-filter__item:nth-child(1),
@@ -445,10 +445,6 @@
     font-size: 60px;
     line-height: 60px;
     color: rgba(#192144, 0.3);
-
-    //&:not(:nth-of-type(n + 21)) {
-    //  margin-bottom: 23px;
-    //}
 
     &:hover,
     &:focus {
@@ -685,18 +681,12 @@
     &:active {
       color: #192144;
     }
-    //&:not(:nth-of-type(n+21)) {
-    //  margin-bottom: 31px;
-    //}
   }
 
   .country-filter__list {
     display: block;
   }
 
-  //.country-filter__list {
-  //  width: 185px;
-  //}
   .country-filter__list--outside {
     display: none;
   }

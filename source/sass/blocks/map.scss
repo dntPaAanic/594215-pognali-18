@@ -23,6 +23,7 @@
 
   border: 0;
 }
+
 .map__wrapper {
   position: relative;
   top: -5px;
@@ -40,6 +41,7 @@
   .map--indent {
     margin-top: -55px;
   }
+
   .map__wrapper {
     top: -29px;
   }
@@ -54,11 +56,25 @@
     height: 505px;
   }
 
+  .map--indent {
+    margin-top: -55px;
+  }
+
   .map__iframe {
     height: 505px;
+    z-index: 2;
+    position: relative;
   }
 
   .map__wrapper {
-    top: -145px;
+    height: 505px;
+    z-index: 0;
+  }
+
+  .map__image {
+    position: absolute;
+    left: 0;
+    top: -116px;
+    z-index: 0;
   }
 }
