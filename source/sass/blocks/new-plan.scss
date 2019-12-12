@@ -869,6 +869,7 @@ input[type="checkbox"]:focus + .new-plan__checkbox {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    width: 500px;
 
     span {
       display: none;
@@ -994,7 +995,7 @@ input[type="checkbox"]:focus + .new-plan__checkbox {
   }
 
   .new-plan__calendar {
-    margin-top: 27px;
+    margin-top: 29px;
     margin-bottom: 48px;
   }
 

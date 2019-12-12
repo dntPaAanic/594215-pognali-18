@@ -39,6 +39,23 @@
 .destination__list {
   margin: 0 0 25px;
   padding: 0;
+
+  &::before {
+    bottom: -10px;
+    left: 0;
+    z-index: 2;
+
+    width: 320px;
+    height: 81px;
+
+    background-image: url("../img/fade-mobile.png");
+    background-repeat: no-repeat;
+
+
+    pointer-events: none;
+
+    @include pseudo;
+  }
 }
 
 .destination__item {
@@ -244,6 +261,29 @@
     position: relative;
 
     margin-bottom: 48px;
+
+    &::after {
+      top: -40px;
+      left: -35px;
+
+      width: 141px;
+      height: 141px;
+
+      background-color: #e2e5f2;
+      border-radius: 20px;
+
+      @include pseudo;
+    }
+
+    &::before {
+      bottom: -15px;
+
+      width: 688px;
+      height: 81px;
+
+      background-image: url("../img/fade-tablet.png");
+      background-repeat: no-repeat;
+    }
   }
 
   .destination__item {
@@ -338,6 +378,18 @@
 
   .destination__list {
     margin: 0;
+
+    &::after {
+      top: -73px;
+      left: -72px;
+    }
+
+    &::before {
+      width: 681px;
+      height: 81px;
+
+      background-image: url("../img/fade-desktop.png");
+    }
   }
 
   .destination__caption {
