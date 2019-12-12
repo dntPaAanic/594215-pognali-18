@@ -5,6 +5,7 @@
   height: 330px;
   margin: 0 auto;
   overflow: hidden;
+  z-index: -2;
 
   background-color: $color-background-main;
 }
@@ -23,6 +24,10 @@
 
   border: 0;
 }
+.map__wrapper {
+  position: relative;
+  top: -5px;
+}
 
 .map--loaded {
   z-index: 10;
@@ -35,6 +40,9 @@
 
   .map--indent {
     margin-top: -55px;
+  }
+  .map__wrapper {
+    top: -29px;
   }
 
   .map__iframe {
@@ -49,5 +57,9 @@
 
   .map__iframe {
     height: 505px;
+  }
+
+  .map__wrapper {
+    top: -145px;
   }
 }
