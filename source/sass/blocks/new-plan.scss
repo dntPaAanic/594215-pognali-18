@@ -667,6 +667,24 @@ input[type="checkbox"]:focus + .new-plan__checkbox {
   }
 }
 
+.new-plan__error {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+
+  display: none;
+  width: 220px;
+  margin: 0;
+  padding: 15px 0 15px 15px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ff0000;
+
+  background-color: rgba(#ff0000, 0.2);
+}
+
 @media (max-width: $mobile-width-only) {
   .new-plan__select-wrapper {
     &::before {
