@@ -210,6 +210,8 @@
     &--active,
     &:active {
       z-index: 3;
+      border: 1px solid #cbced9;
+      color: #1d2e5b;
 
       background-color: #edeff6;
     }
