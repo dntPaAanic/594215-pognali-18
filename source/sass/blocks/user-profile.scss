@@ -69,11 +69,11 @@
 
 .user-profile__level-svg {
   position: absolute;
-  top: 0;
-  left: 3px;
+  top: -3px;
+  left: 0;
 
-  width: 94px;
-  height: 94px;
+  width: 100px;
+  height: 100px;
 
   transform: rotate(-90deg);
   transform-origin: center;
@@ -282,6 +282,13 @@
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
+  }
+
+  .user-profile__level-svg {
+    width: 94px;
+    height: 94px;
+    top: 0;
+    left: -3px;
   }
 
   .user-profile__tags-legend {

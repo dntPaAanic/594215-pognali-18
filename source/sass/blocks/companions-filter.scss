@@ -414,11 +414,9 @@ input[type="checkbox"]:focus + .companions-filter__label::before {
     top: 9px;
   }
 
-  /*ВРЕМЕННО*/
   .companions-filter__set--active .companions-filter__list {
     flex-direction: row;
   }
-  /*ВРЕМЕННО*/
 }
 
 @media (min-width: $desktop-width) {
@@ -438,7 +436,7 @@ input[type="checkbox"]:focus + .companions-filter__label::before {
     &::after {
       width: 10px;
       height: 5px;
-      top: 9px;
+      top: 12px;
       right: 3px;
     }
   }
