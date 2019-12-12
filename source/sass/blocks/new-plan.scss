@@ -1247,6 +1247,14 @@ input[type="checkbox"]:focus + .new-plan__checkbox {
       border-right: 10px solid rgba(#1d2e5b, 0.3);
     }
   }
+
+  .new-plan__error {
+    width: 499px;
+    border-radius: 4px;
+    bottom: 43px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -1583,6 +1591,11 @@ input[type="checkbox"]:focus + .new-plan__checkbox {
   .new-plan__previous-step {
     margin-top: 0;
     padding-left: 28px;
+  }
+
+  .new-plan__error {
+    width: 730px;
+    padding-left: 24px;
   }
 }
 
