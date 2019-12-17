@@ -53,6 +53,8 @@
 
 @media (min-width: $desktop-width) {
   .map {
+    z-index: 0;
+
     height: 505px;
   }
 
@@ -61,20 +63,22 @@
   }
 
   .map__iframe {
-    height: 505px;
-    z-index: 2;
     position: relative;
+    z-index: 2;
+
+    height: 505px;
   }
 
   .map__wrapper {
-    height: 505px;
     z-index: 0;
+
+    height: 505px;
   }
 
   .map__image {
     position: absolute;
-    left: 0;
     top: -116px;
+    left: 0;
     z-index: 0;
   }
 }
